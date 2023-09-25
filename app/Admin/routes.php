@@ -21,5 +21,10 @@ Route::group([
     $router->resource('cms_page', CmsPageController::class);
     $router->resource('shop-products', ShopProductController::class);
     $router->resource('shop-image-products', ShopImageProductController::class);
+    $router->resource('shop-banners', ShopBannerController::class);
+    $router->resource('shop-videos', ShopVideoController::class);
+    $router->resource('shop-infos', ShopInfoController::class);
+
+
 
 });

@@ -30,6 +30,7 @@ class ShopCategoryCustomController extends AdminController
 
         $grid->column('id', __('Id'));
         $grid->column('title', __('Title'));
+        $grid->column('slug', __('Slug'));
         $grid->column('description', __('Description'));
         $grid->status('status', __('Status'))->switch();
         $grid->column('sort', __('Sort'));
@@ -71,6 +72,7 @@ class ShopCategoryCustomController extends AdminController
         $form = new Form(new ShopCategoryCustom());
 
         $form->text('title', __('Title'));
+        $form->text('slug', __('Slug'));
         $form->textarea('description', __('Description'));
         $form->switch('status', __('Status'))->default(1);
         $form->number('sort', __('Sort'))->default(0);

@@ -19,6 +19,8 @@ class ShopProductController extends AdminController
     protected $title = 'ShopProduct';
 
     public $typeimage= ['1' => 'Ảnh sản phẩm theo màu', '2' => 'Ảnh mô tả sản phẩm', '3' => 'Ảnh khác'];
+
+    public $typeproduct= ['1' => 'Xe điện', '2' => 'Ác quy', '3' => 'Phụ tùng'];
     /**
      * Make a grid builder.
      *
@@ -30,11 +32,30 @@ class ShopProductController extends AdminController
 
         $grid->column('id', __('Id'));
         $grid->column('name', __('Name'));
+        $grid->column('slug', __('Slug'));
+        $grid->column('imagemain', __('ImageMain'))->image();
         $grid->column('price', __('Price'));
-        $grid->column('type', __('Type'));
-        $grid->column('description', __('Description'));
-        $grid->column('review', __('Review'));
-        $grid->column('shop_category_custom_id', __('Danh mục'))->display(function ($shop_category_custom_id) {
+        $grid->column('color', __('Color'));
+        $grid->column('type', __('Type'))->display(function ($type) {
+            if($type == 1) return 'Xe điện';
+            else if($type ==2) return 'Ác quy';
+            else return 'Phụ tùng';
+    });
+        $grid->column('status', __('Status'))->switch();
+        $grid->column('description', __('Description'))->expand(function () {
+            $html = '<br><span>';
+            $html.=$this->description;
+            return $html . "</span><br>";
+
+        }, 'View description');
+
+        $grid->column('review', __('Review'))
+            ->expand(function () {
+            $html = '<br><span>';
+            $html.=$this->review;
+            return $html . "</span><br>";
+        }, 'View Review');
+        $grid->column('shop_category_custom_id', __('Category Custom'))->display(function ($shop_category_custom_id) {
             $shopcustomcategory = ShopCategoryCustom::find($shop_category_custom_id);
             return $shopcustomcategory->title;
         });
@@ -76,18 +97,29 @@ class ShopProductController extends AdminController
     {
         $form = new Form(new ShopProduct());
 
-        $form->text('name', __('Name'));
-        $form->text('price', __('Price'));
-        $form->number('type', __('Type'))->default(1);
-        $form->hasMany('shop_image_product', 'Hình ảnh', function (Form\NestedForm $form) {
-            $form->text('shop_image_product.title', 'Tiêu đề ảnh');
-            $form->image('image', 'Hình ảnh')->uniqueName()->removable();
-            $form->select('type', 'Loại')->options($this->typeimage)->rules('required');
+        $form->tab('Thông tin sản phẩm', function ($form) {
+
+            $form->text('name', __('Name'));
+            $form->text('slug', __('Slug'));
+            $form->text('price', __('Price'));
+            $form->text('color', __('Color'));
+            $form->select('type', __('Type'))->options($this->typeproduct);
+            $form->image('imagemain',__('Image Main'))->removable();
+            $form->switch('status',__('Status'))->default(1);
+            $listcateCus= (new ShopCategoryCustom())->listCateCustom();
+            $form->select('shop_category_custom_id','Category Custom')->options($listcateCus);
+            $form->ckeditor('description', __('Description'));
+            $form->ckeditor('review', __('Review'));
+        }) ->tab('Hình ảnh phụ', function ($form) {
+            $form->hasMany('shop_image_product', 'Hình ảnh', function (Form\NestedForm $form) {
+                $form->text('title', 'Title Image');
+                $form->image('image', 'Image')->uniqueName()->removable();
+                $form->select('type', 'Type Image')->options($this->typeimage)->rules('required');
+                $form->textarea('description', __('Description'));
+            });
         });
-        $listcateCus= (new ShopCategoryCustom())->listCateCustom();
-        $form->select('shop_category_custom_id','Danh mục sản phẩm con')->options($listcateCus);
-        $form->ckeditor('description', __('Description'));
-        $form->ckeditor('review', __('Review'));
+
+
 
         return $form;
     }

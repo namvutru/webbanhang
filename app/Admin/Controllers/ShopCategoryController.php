@@ -17,6 +17,7 @@ class ShopCategoryController extends AdminController
      */
     protected $title = 'ShopCategory';
 
+    public $typecategory= ['1' => 'Danh mục của phương tiện', '2' => 'Danh mục của phụ tùng hoặc ác quy'];
     /**
      * Make a grid builder.
      *
@@ -28,9 +29,18 @@ class ShopCategoryController extends AdminController
 
         $grid->column('id', __('Id'));
         $grid->column('title', __('Title'));
+        $grid->column('slug', __('Slug'));
         $grid->column('description', __('Description'));
         $grid->status('status', __('Status'))->switch();
         $grid->column('sort', __('Sort'));
+        $grid->column('type', __('Type'))->display(function ($type){
+            if($type == 1){
+                return 'Danh mục của phương tiện';
+            }else {
+                return 'Danh mục của phụ tùng hoặc ác quy';
+            }
+        });
+
 
         return $grid;
     }
@@ -64,7 +74,9 @@ class ShopCategoryController extends AdminController
         $form = new Form(new ShopCategory());
 
         $form->text('title', __('Title'));
+        $form->text('slug', __('Slug'));
         $form->textarea('description', __('Description'));
+        $form->select('type',__('Type Category'))->options($this->typecategory);
         $form->switch('status', __('Status'))->default(1);
         $form->number('sort', __('Sort'))->default(null);
 

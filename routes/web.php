@@ -13,3 +13,6 @@ use App\Http\Controllers\Shop;
 |
 */
 Route::get('/', [Shop::class, 'home']);
+Route::get('/thong-tin-san-pham/{slug}', [Shop::class, 'detail'])->name('thong-tin-san-pham');
+Route::get('/danh-muc-san-pham/{slug}', [Shop::class, 'category'])->name('danh-muc-san-pham');
+Route::get('/danh-muc-san-pham-con/{slug}', [Shop::class, 'categorycustom'])->name('danh-muc-san-pham-con');
