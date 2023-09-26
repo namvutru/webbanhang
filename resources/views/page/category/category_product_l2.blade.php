@@ -2631,6 +2631,19 @@ fbq('track', 'PageView');
                     </ul>
                 </li>
             @endforeach
+            <li id="menu-item-2098"
+                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2098">
+                <a href="{{route('danh-sach-bai-viet')}}">Tin tức</a>
+                <ul class="sub-menu">
+                    @foreach($cms_category as $key1 => $cms_cate)
+
+                        <li id="menu-item-28385"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28385">
+                            <a href="{{route('danh-muc-san-pham-con',$cms_cate->uniquekey)}}">{{$cms_cate->title}}</a></li>
+
+                    @endforeach
+                </ul>
+            </li>
         </ul>
 
 
@@ -2797,6 +2810,19 @@ fbq('track', 'PageView');
                 </ul>
             </li>
         @endforeach
+        <li id="menu-item-2098"
+            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2098">
+            <a href="{{route('danh-sach-bai-viet')}}">Tin tức</a>
+            <ul class="sub-menu">
+                @foreach($cms_category as $key1 => $cms_cate)
+
+                    <li id="menu-item-28385"
+                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28385">
+                        <a href="{{route('danh-muc-san-pham-con',$cms_cate->uniquekey)}}">{{$cms_cate->title}}</a></li>
+
+                @endforeach
+            </ul>
+        </li>
     </ul>
     </nav>
 <!-- footer -->

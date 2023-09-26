@@ -16,3 +16,5 @@ Route::get('/', [Shop::class, 'home']);
 Route::get('/thong-tin-san-pham/{slug}', [Shop::class, 'detail'])->name('thong-tin-san-pham');
 Route::get('/danh-muc-san-pham/{slug}', [Shop::class, 'category'])->name('danh-muc-san-pham');
 Route::get('/danh-muc-san-pham-con/{slug}', [Shop::class, 'categorycustom'])->name('danh-muc-san-pham-con');
+Route::get('/danh-sach-bai-viet', [Shop::class, 'list_news'])->name('danh-sach-bai-viet');
+Route::get('/bai-viet/{slug}', [Shop::class, 'news'])->name('bai-viet');

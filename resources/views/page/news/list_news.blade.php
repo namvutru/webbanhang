@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-     <script>if (navigator.userAgent.match(/MSIE|Internet Explorer/i) || navigator.userAgent.match(/Trident\/7\..*?rv:11/i)) {
+    <script>if (navigator.userAgent.match(/MSIE|Internet Explorer/i) || navigator.userAgent.match(/Trident\/7\..*?rv:11/i)) {
             var href = document.location.href;
             if (!href.match(/[?&]nowprocket/)) {
                 if (href.indexOf("?") == -1) {
@@ -202,7 +202,7 @@
     <link href="//www.google-analytics.com" rel="dns-prefetch">
     <!-- <link href="https://xedienvietthanh.com/favicon.png" rel="shortcut icon"> -->
     <meta name="description"
-          content="Xe Điện Việt Thanh - Bán xe máy điện, xe đạp điện, xe điện chính hãng, xe điện nhập khẩu chất lượng hàng đầu Nijia, Giant, Xmen, Aima,...Bán trả góp xe đạp điện">
+          content="Xe máy điện là một trong những phương tiện phổ biến của người dân. Trước khi điều khiển phương tiện, [&hellip;]">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <meta name="robots" content="noindex"/> -->
     <!-- <link rel="stylesheet" href="https://pc.baokim.vn/css/bk.css"> -->
@@ -1973,23 +1973,21 @@
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'/>
 
     <!-- This site is optimized with the Yoast SEO plugin v19.11 - https://yoast.com/wordpress/plugins/seo/ -->
-    <title>Xe Điện Việt Thanh - Bán xe đạp điện, xe máy điện nhập khẩu</title>
+    <title>TIN TỨC VỀ XE ĐIỆN MỚI NHẤT | Xe Điện Việt Thanh</title>
     <link rel="stylesheet"
-          href="https://xedienvietthanh.com/wp-content/cache/min/1/6cf9e88bd4569045586feeecd42b1539.css" media="all"
+          href="https://xedienvietthanh.com/wp-content/cache/min/1/4b05f5f2afae0a8357421138f077c208.css" media="all"
           data-minify="1"/>
-    <link rel="canonical" href="https://xedienvietthanh.com/"/>
-    <link rel="next" href="https://xedienvietthanh.com/page/2/"/>
+    <link rel="canonical" href="https://xedienvietthanh.com/tin-tuc/"/>
+    <link rel="next" href="https://xedienvietthanh.com/tin-tuc/page/2/"/>
     <meta property="og:locale" content="vi_VN"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:title"
-          content="Hệ Thống Xe Điện Việt Thanh - Bán xe máy 50cc - Xe đạp điện - Xe máy điện chính hãng, nhập khẩu"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="TIN TỨC VỀ XE ĐIỆN MỚI NHẤT | Xe Điện Việt Thanh"/>
     <meta property="og:description"
-          content="Xe Điện Việt Thanh - Bán xe máy điện, xe đạp điện, xe điện chính hãng, xe điện nhập khẩu chất lượng hàng đầu Nijia, Giant, Xmen, Aima,...Bán trả góp xe đạp điện"/>
-    <meta property="og:url" content="https://xedienvietthanh.com/"/>
+          content="Tin tức tồng hợp về xe đạp điện, xe máy điện mới nhất. Thông tin chính thức tra cứu các mẫu xe điện HOT nhất thị trường - Xe điện Việt Thanh"/>
+    <meta property="og:url" content="https://xedienvietthanh.com/tin-tuc/"/>
     <meta property="og:site_name"
           content="Hệ Thống Xe Điện Việt Thanh - Bán xe máy 50cc - Xe đạp điện - Xe máy điện chính hãng, nhập khẩu"/>
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="google-site-verification" content="3nJMXEBYrR81OSurixmj5UuDl5wqdic8Tbq79DhoNMg"/>
     <!-- / Yoast SEO plugin. -->
 
 
@@ -2244,18 +2242,20 @@
         }
     </style>
 
-    <link rel="https://api.w.org/" href="https://xedienvietthanh.com/wp-json/"/><!-- start Simple Custom CSS and JS -->
+    <link rel="https://api.w.org/" href="https://xedienvietthanh.com/wp-json/"/>
+    <link rel="alternate" type="application/json" href="https://xedienvietthanh.com/wp-json/wp/v2/categories/1"/>
+    <!-- start Simple Custom CSS and JS -->
     <style type="text/css">
         /* Add your CSS code here.
 
-For example:
-.example {
-    color: red;
-}
+        For example:
+        .example {
+            color: red;
+        }
 
-For brushing up on your CSS knowledge, check out http://www.w3schools.com/css/css_syntax.asp
+        For brushing up on your CSS knowledge, check out http://www.w3schools.com/css/css_syntax.asp
 
-End of comment */
+        End of comment */
 
         @media (max-width: 480px) {
             .navhome a, .more-menu-target {
@@ -2346,11 +2346,7 @@ End of comment */
 
 
     <script type="application/ld+json" class="saswp-schema-markup-output">
-        [{"@context":"https://schema.org/","@type":"WebSite","@id":"https://xedienvietthanh.com#website","headline":"Hệ Thống Xe Điện Việt Thanh - Bán xe máy 50cc - Xe đạp điện - Xe máy điện chính hãng, nhập khẩu","name":"Hệ Thống Xe Điện Việt Thanh - Bán xe máy 50cc - Xe đạp điện - Xe máy điện chính hãng, nhập khẩu","description":"Xe Điện Việt Thanh - Bán xe máy điện, xe đạp điện, xe điện chính hãng, xe điện nhập khẩu chất lượng hàng đầu Nijia, Giant, Xmen, Aima,...Bán trả góp xe đạp điện","url":"https://xedienvietthanh.com","potentialAction":{"@type":"SearchAction","target":"https://xedienvietthanh.com/?s={search_term_string}","query-input":"required name=search_term_string"}},
-
-{"@context":"https://schema.org/","@type":"Article","@id":"https://xedienvietthanh.com/tin-tuc/khuyen-mai-cho-hoc-sinh-chao-nam-hoc-moi-2021/#Article","url":"https://xedienvietthanh.com/tin-tuc/khuyen-mai-cho-hoc-sinh-chao-nam-hoc-moi-2021/","inLanguage":"vi","mainEntityOfPage":"https://xedienvietthanh.com/tin-tuc/khuyen-mai-cho-hoc-sinh-chao-nam-hoc-moi-2021/","headline":"Khuyến mãi cho học sinh &#8211; Chào năm học mới 2023","description":"Chung vui ngày tựu trường năm học mới, Xe Điện Việt Thanh luôn có những chương trình khuyến mãi cho học sinh. Mời bạn đọc cùng xem chi tiết","articleBody":"Hàng năm cứ mỗi độ thu về cổng các trường học lại rộng mở. Để chung vui cùng mùa tựu trường đón năm học mới của các em thiếu niên. Xe Điện Việt Thanh thường xuyên tổ chức các chương trình khuyến mãi cho học sinh. Hãy đi những chiếc xe mới để đón chào năm học mới! Mời bạn đọc cùng theo dõi thông tin khuyến mãi...        Chương trình khuyến mãi - một món quà tri ân!        Xe điện Việt Thanh là hệ thống chuỗi cửa hàng chuyên bán lẻ xe điện, xe máy 50cc hàng đầu cả nước. Công ty xin được gửi lời cảm ơn đến toàn bộ các quý khách hàng. Đặc biệt là các quý phụ huynh và các em học sinh đã luôn tin tưởng ủng hộ. Trong năm sẽ luôn có những sự kiện về các chương trình khuyến mãi. Nhưng chương trình khuyến mãi cho học sinh chào đón năm học mới luôn nhiều cảm xúc nhất.                  Xe Điện Việt Thanh đã đồng hành cùng các em tiếp sức mùa thi. Cùng các em đi qua những ngày chờ thi và đợi kết quả đầy hồi hộp. Song hệ thống xe điện Việt Thanh vẫn luôn nhận được sự ủng hộ tích cực của các phụ huynh và các em.        Chương trình khuyến mãi cho học sinh nhân mùa tựu trường 2023 là một chương trình tri ân! Xe Điện Việt Thanh mong rằng sẽ tạo một niềm vui nhỏ động viên các em tinh thần cho năm học mới. Xin mời quý khách hàng cùng xem thông tin chương trình chi tiết ngay sau đây:        Nội dung chương trình        \" Chào Năm Học Mới - Rinh Xe Ngay - Quà Tới Tay \" là tên chương trình khuyến mãi.Thời gian diễn ra chương trình từ 25/8 - 25/9/2023.Chương trình áp dụng cho toàn bộ các loại xe đạp điện, xe máy điện, xe máy 50cc. Mỗi loại sẽ được phân nhóm và có các khuyến mãi riêng.Phạm vi áp dụng chương trình khuyến mãi năm học mới trên toàn hệ thống của Xe Điện Việt Thanh.                Với khuôn khổ chương trình khuyến mãi cho học sinh chào năm học mới 2023 năm nay. Ngoài việc các em học sinh được mua xe với giá bán đã giảm. Xe Điện Việt Thanh thiết kế hai combo quà tặng (không quy đổi tiền mặt) đi kèm cho hai nhóm xe.        Combo quà tặng số 1        Trong combo quà tặng này giá trị lên đến 1.200.000/phần quà. Áp dụng cho khách hàng khi mua các sản phẩm xe máy điện chính hãng Yadea cho Việt Thanh phân phối. Áp dụng cho cả đặt mua Online và mua hàng trực tiếp tại các cơ sở.Phần quà bao gồm: Một gói tặng phẩm thiết kế riêng trị giá 700.000đ. Một phiếu mua hàng trị giá 300.000đ. Phiếu mua hàng này được dùng 1 lần. Quý khách được quyền cho, tặng, chuyển nhượng cho người khác sử dụng. Hoặc chính quý khách sẽ sử dụng ở lần mua hàng tiếp theo. Ngoài ra quý khách còn được nhận ngay 01 mũ bảo hiểm hàng đặt của hãng trị giá 250.000đ/chiếc. Đảm bảo đạt chuẩn chất lượng, bền và an toàn sử dụng.        Combo quà tặng số 2        Gói quà tặng số 2 này tổng trị giá 800.000/phần quà. Gói quà áp dụng cho các loại xe 50cc. Cụ thể là các mẫu xe Wave 50cc, các mẫu Cub 50cc và các loại xe tay ga 50cc. Trong gói quà này khách hàng sẽ nhận được một bộ phụ kiện thích hợp cho từng loại xe trị giá 250.000đ. Một mũ bảo hiểm đạt chuẩn trị giá 250.000 và một phiếu mua hàng trị giá 300.000đ. Phiếu mua hàng này cũng được dùng 1 lần. Và có thể được cho tặng để người khác sử dụng.        Mọi thông tin chi tiết cần hỗ trợ về xe và chương trình khuyến mãi cho học sinh này, quý khách hãy liên hệ về:Xe Điện Việt Thanh Hệ thống cửa hàng: xem thêm tại đâyTổng đài: 1900.2082 - Hotline: 0903.04.3333","keywords":"","datePublished":"2023-01-11T03:35:42+07:00","dateModified":"2023-07-11T11:00:31+07:00","author":{"@type":"Person","name":"Dory","url":"https://xedienvietthanh.com/author/sonnguyen/","sameAs":[],"image":{"@type":"ImageObject","url":"https://secure.gravatar.com/avatar/7bba63e63dc46006040beef3da6dddb1?s=96&d=mm&r=g","height":96,"width":96}},"editor":{"@type":"Person","name":"Dory","url":"https://xedienvietthanh.com/author/sonnguyen/","sameAs":[],"image":{"@type":"ImageObject","url":"https://secure.gravatar.com/avatar/7bba63e63dc46006040beef3da6dddb1?s=96&d=mm&r=g","height":96,"width":96}},"publisher":{"@type":"Organization","name":"Hệ Thống Xe Điện Việt Thanh &#8211; Bán xe máy 50cc &#8211; Xe đạp điện &#8211; Xe máy điện chính hãng, nhập khẩu","url":"https://xedienvietthanh.com"},"image":[{"@type":"ImageObject","@id":"https://xedienvietthanh.com/tin-tuc/khuyen-mai-cho-hoc-sinh-chao-nam-hoc-moi-2021/#primaryimage","url":"https://xedienvietthanh.com/wp-content/uploads/2020/04/banner-nam-hoc-moi-1200x900.jpg","width":"1200","height":"900"},{"@type":"ImageObject","url":"https://xedienvietthanh.com/wp-content/uploads/2020/04/banner-nam-hoc-moi-1200x720.jpg","width":"1200","height":"720"},{"@type":"ImageObject","url":"https://xedienvietthanh.com/wp-content/uploads/2020/04/banner-nam-hoc-moi-1200x675.jpg","width":"1200","height":"675"},{"@type":"ImageObject","url":"https://xedienvietthanh.com/wp-content/uploads/2022/03/m6i-4-1.jpg","width":800,"height":533},{"@type":"ImageObject","url":"https://xedienvietthanh.com/wp-content/uploads/2020/04/xbanner-nam-hoc-moi.jpg.pagespeed.ic.dHu4QWBo6Y.webp","width":0,"height":0}]},
-
-{"@context":"https://schema.org/","@type":"Organization","@id":"https://xedienvietthanh.com#Organization","name":"Hệ Thống Xe Điện Việt Thanh &#8211; Bán xe máy 50cc &#8211; Xe đạp điện &#8211; Xe máy điện chính hãng, nhập khẩu","url":"https://xedienvietthanh.com","sameAs":[]}]
+        [{"@context":"https://schema.org/","@type":"Article","@id":"https://xedienvietthanh.com/tin-tuc/bao-nhieu-tuoi-duoc-di-xe-may-dien-quy-dinh-can-biet/#Article","url":"https://xedienvietthanh.com/tin-tuc/bao-nhieu-tuoi-duoc-di-xe-may-dien-quy-dinh-can-biet/","inLanguage":"vi","mainEntityOfPage":"https://xedienvietthanh.com/tin-tuc/bao-nhieu-tuoi-duoc-di-xe-may-dien-quy-dinh-can-biet/","headline":"Bao Nhiêu Tuổi Được Đi Xe Máy Điện Quy Định Cần Biết","description":"Bao nhiêu tuổi được đi xe máy điện? Quy định độ tuổi điều khiển xe máy điện dựa theo quy định của Luật Giao thông năm 2008.","articleBody":"Xe máy điện là một trong những phương tiện phổ biến của người dân. Trước khi điều khiển phương tiện, bạn cần phải nắm được một số quy định trong đó có vấn đề bao nhiêu tuổi được đi xe máy điện để thực hiện đúng. Bài viết sau đây, Xe Điện Việt Thanh sẽ giải đáp chi tiết về vấn đề này.  Bao nhiêu tuổi được đi xe máy điện?  Độ tuổi điều khiển xe máy điện được căn cứ theo quy định của Luật Giao thông 2008, theo đó:    \"Người đủ 16 tuổi mới được điều khiển xe máy điện.\"    Xe máy điện là xe cơ giới. Công suất động cơ xe máy điện tối đa dưới 4000W và có vận tốc lớn nhất khoảng 50Km/h. Nếu xét về khả năng vận hành thì xe máy điện tương đương với xe máy 50cc.    Cũng vì vậy, hai phương tiện này có cùng quy định độ tuổi sử dụng.  Tham khảo thêm &gt;&gt;&gt; Bao nhiêu tuổi đươc đi xe máy 50cc.                            Học sinh THCS có được đi xe máy điện không?  Từ quy định được đưa ra ở trên có thể thấy, học sinh Trung học cơ sở ở độ tuổi từ 12-15 tuổi chưa được phép điều khiển xe máy điện. Nên các phụ huynh cần phải lưu ý trước khi mua xe cho con.    Giải pháp thích hợp nhất dành cho các bạn là dòng xe đạp điện.  Xem thêm &gt;&gt;&gt; Xe đạp điện cho học sinh cấp 2 chất lượng, an toàn  Hình phạt đối với người điều khiển xe máy điện không đúng quy định  Phải đạt độ tuổi quy định mới được phép sử dụng xe máy điện. Nếu không chấp hành, người lái phương tiện sẽ bị xử phạt.    Theo khoản 1 Điều 21 Nghị định 100/2019/NĐ-CP, hình phạt đối với người chưa đủ tuổi điều khiển xe máy điện như sau:    \"Phạt cảnh cáo người từ đủ 14 tuổi đến dưới 16 tuổi điều khiển xe mô tô, xe gắn máy (kể cả xe máy điện) và các loại xe tương tự xe mô tô hoặc điều khiển xe ô tô, máy kéo và các loại xe tương tự xe ô tô.\"    Ngoài ra, còn có quy định hình thức xử phạt đối với người giao xe cho đối tượng chưa đủ điều kiện lái xe máy điện. Theo điểm đ khoản 5 Điều 30 Nghị định 100/2019/NĐ-CP:    \"Nếu giao xe máy điện cho người chưa đủ 16 tuổi điều khiển, người giao xe sẽ bị phạt hành chính từ 800.000 – 2.000.000 đồng.\"  Đi xe máy điện có cần bằng lái không?  Hiện nay chưa có quy định nào về việc đi xe máy điện phải xuất trình bằng lái xe. Người điều khiển phương tiện chỉ cần đáp ứng yêu cầu độ tuổi hợp lệ là có thể sử dụng.        Xe máy điện đang là phương tiện di chuyển chủ yếu của nhiều người dân. Bởi không phải là xe máy phân khối lớn cho nên nhiều người cho phép mình sử dụng xe máy điện tuỳ ý. Tuy nhiên, bạn cần lưu ý về các quy định Pháp Luật được đưa ra đối với phương tiện này để thực hiện cho đúng nhằm mục đích cao nhất là bảo vệ chính bản thân.    Trên đây, chúng tôi đã cung cấp rất chi tiết những thông tin về quy định độ tuổi điều khiển xe máy điện. Cảm ơn bạn dã theo dõi bài viết, mọi thắc mắc cần giải đáp vui lòng liên hệ Xe Điện Việt Thanh qua:    Tổng Đài: 19002082 hoặc HOTLINE: 0904998899.","keywords":"","datePublished":"2023-09-14T15:00:45+07:00","dateModified":"2023-09-14T15:26:40+07:00","author":{"@type":"Person","name":"hapham","url":"https://xedienvietthanh.com/author/hapham/","sameAs":[],"image":{"@type":"ImageObject","url":"https://secure.gravatar.com/avatar/b1e5a0e0db74b9ff495e33d3ddd074b9?s=96&d=mm&r=g","height":96,"width":96}},"editor":{"@type":"Person","name":"hapham","url":"https://xedienvietthanh.com/author/hapham/","sameAs":[],"image":{"@type":"ImageObject","url":"https://secure.gravatar.com/avatar/b1e5a0e0db74b9ff495e33d3ddd074b9?s=96&d=mm&r=g","height":96,"width":96}},"publisher":{"@type":"Organization","name":"Hệ Thống Xe Điện Việt Thanh &#8211; Bán xe máy 50cc &#8211; Xe đạp điện &#8211; Xe máy điện chính hãng, nhập khẩu","url":"https://xedienvietthanh.com"},"image":[{"@type":"ImageObject","@id":"https://xedienvietthanh.com/tin-tuc/bao-nhieu-tuoi-duoc-di-xe-may-dien-quy-dinh-can-biet/#primaryimage","url":"https://xedienvietthanh.com/wp-content/uploads/2023/09/xe-may-dien-yadea-vigor-trang-1-1200x900.jpg","width":"1200","height":"900"},{"@type":"ImageObject","url":"https://xedienvietthanh.com/wp-content/uploads/2023/09/xe-may-dien-yadea-vigor-trang-1-1200x720.jpg","width":"1200","height":"720"},{"@type":"ImageObject","url":"https://xedienvietthanh.com/wp-content/uploads/2023/09/xe-may-dien-yadea-vigor-trang-1-1200x675.jpg","width":"1200","height":"675"},{"@type":"ImageObject","url":"https://xedienvietthanh.com/wp-content/uploads/2023/06/xe-ga-50cc-dk-roma-sx-den-kim-cuong-2.jpg","width":950,"height":520},{"@type":"ImageObject","url":"https://xedienvietthanh.com/wp-content/uploads/2023/07/xe-may-dien-yadea-odora-s1-mau-xam-tinh-van.jpg","width":950,"height":520}]}]
     </script>
 
     <link rel="icon"
@@ -2480,15 +2476,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
     <!-- Meta Pixel Code -->
     <script type="rocketlazyloadscript">
         !function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1940869732771843');
-fbq('track', 'PageView');
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1940869732771843');
+        fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
                    src="https://www.facebook.com/tr?id=1940869732771843&ev=PageView&noscript=1"
@@ -2500,7 +2496,7 @@ fbq('track', 'PageView');
         max-height: 40px;
         overflow: hidden;
     }</style>
-<body class="home" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body class="archive category category-tin-tuc category-1" data-spy="scroll" data-target=".navbar" data-offset="60">
 <!-- Google Tag Manager (noscript) 29.01.2021-->
 <noscript>
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7XLR8S"
@@ -2634,19 +2630,19 @@ fbq('track', 'PageView');
                     </ul>
                 </li>
             @endforeach
-                <li id="menu-item-2098"
-                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2098">
-                    <a href="{{route('danh-sach-bai-viet')}}">Tin tức</a>
-                    <ul class="sub-menu">
-                        @foreach($cms_category as $key1 => $cms_cate)
+            <li id="menu-item-2098"
+                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2098">
+                <a href="{{route('danh-sach-bai-viet')}}">Tin tức</a>
+                <ul class="sub-menu">
+                    @foreach($cms_category as $key1 => $cms_cate)
 
-                                <li id="menu-item-28385"
-                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28385">
-                                    <a href="{{route('danh-muc-san-pham-con',$cms_cate->uniquekey)}}">{{$cms_cate->title}}</a></li>
+                        <li id="menu-item-28385"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28385">
+                            <a href="{{route('danh-muc-san-pham-con',$cms_cate->uniquekey)}}">{{$cms_cate->title}}</a></li>
 
-                        @endforeach
-                    </ul>
-                </li>
+                    @endforeach
+                </ul>
+            </li>
         </ul>
 
 
@@ -2658,21 +2654,196 @@ fbq('track', 'PageView');
 
 </header>
 
+<div class="table-service destop ipad-mini wrap-camket">
+    <div class="container service">
+        <div class="+row ">
+            <div class="no-padding col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="service-th service-th-1">
+                    <a href="https://xedienvietthanh.com/cam-ket-chat-luong-hang-chinh-hang/" class="service-th-div">
+                        <div class="service-th-div-mask"><p>CAM KẾT CHẤT LƯỢNG<br/>
+                                CHÍNH HÃNG</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="no-padding col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="service-th service-th-2">
+                    <a href="https://xedienvietthanh.com/giao-hang-mien-phi-nhanh-uy-tin/" class="service-th-div">
+                        <div class="service-th-div-mask"><p>GIAO HÀNG MIỄN PHÍ<br/>
+                                NHANH &#8211; UY TÍN</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="no-padding col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="service-th service-th-3">
+                    <a href="https://xedienvietthanh.com/mua-hang-tra-gop-thu-tuc-nhanh-gon/" class="service-th-div">
+                        <div class="service-th-div-mask"><p>MUA HÀNG TRẢ GÓP<br/>
+                                THỦ TỤC NHANH GỌN</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="no-padding col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="service-th service-th-4">
+                    <a href="https://xedienvietthanh.com/sua-chua/" class="service-th-div">
+                        <div class="service-th-div-mask"><p>SỬA CHỮA TẬN NƠI<br/>
+                                CỨU HỘ KHẨN CẤP</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="main">
+    <div class="container">
+        <div class="title2">
+            <p class="tit">Tin tức</p>
+            <span class="gach"></span>
 
-{{--@include('includes.narbar');--}}
+        </div>
+        <div class="news-list">
+
+            @foreach($cms_content as $key => $cms_con)
+                <div class="news-item">
+                    <div class="news-item_thumb">
+                        <a href="{{route('bai-viet',$cms_con->slug)}}"
+                           title="{{$cms_con->title}}">
+                            <!--  <img class="img-responsive" width="100%" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%200'%3E%3C/svg%3E" alt="" data-lazy-src="images/news1.jpg" /><noscript><img class="img-responsive" width="100%" src="images/news1.jpg" alt="" /></noscript> -->
+                            <img src="{{env('APP_URL').'/documents/website/'.$cms_con->image}}"
+                                 data-src="{{env('APP_URL').'/documents/website/'.$cms_con->image}}"
+                                 class="lazyload attachment-img-responsive size-img-responsive wp-post-image" alt=""/> </a>
+                    </div>
+                    <div class="news-item_body">
+                        <h3 class="title">
+                            <a href="{{route('bai-viet',$cms_con->slug)}}"
+                               title="{{$cms_con->title}}">
+                                {{$cms_con->title}}
+                            </a>
+                        </h3>
+                        <div class="_42nr">
+                            <div class="_khz"><a class="_up_" href="javascript:void(0);">Bình luận</a></div>
+                            <div class="_khz"><a class="_cmtp" href="javascript:void(0);">
+                                    <fb:comments-count
+                                        href="{{env('APP_URL').'/bai-viet/'.$cms_con->slug}}"></fb:comments-count>
+                                    Comments<!-- 36 Comments --></a></div>
+                        </div>
+                        <div class="intro">{{$cms_con->summary_content}}
+                        </div>
+                        <div class="clearfix">
+                            <a class="link"
+                               href="{{route('bai-viet',$cms_con->slug)}}"
+                               title="{{$cms_con->title}}">Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+
+            @endforeach
 
 
-@yield('content')
 
+
+{{--            <div class="news-item">--}}
+{{--                <div class="news-item_thumb">--}}
+{{--                    <a href="https://xedienvietthanh.com/tin-tuc/di-xe-dap-dien-co-phai-doi-mu-bao-hiem-khong-quy-dinh-can-nam/"--}}
+{{--                       title="Đi Xe Đạp Điện Có Phải Đội Mũ Bảo Hiểm Không? Quy Định Cần Nắm">--}}
+{{--                        <!--  <img class="img-responsive" width="100%" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%200'%3E%3C/svg%3E" alt="" data-lazy-src="images/news1.jpg" /><noscript><img class="img-responsive" width="100%" src="images/news1.jpg" alt="" /></noscript> -->--}}
+{{--                        <img src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"--}}
+{{--                             data-src="https://xedienvietthanh.com/wp-content/uploads/2023/09/tam-quan-trong-cua-viec-doi-mu-bao-hiem-khi-di-xe-dap-dien.png"--}}
+{{--                             class="lazyload attachment-img-responsive size-img-responsive wp-post-image" alt=""--}}
+{{--                             loading="lazy"/> </a>--}}
+{{--                </div>--}}
+{{--                <div class="news-item_body">--}}
+{{--                    <h3 class="title">--}}
+{{--                        <a href="https://xedienvietthanh.com/tin-tuc/di-xe-dap-dien-co-phai-doi-mu-bao-hiem-khong-quy-dinh-can-nam/"--}}
+{{--                           title="Đi Xe Đạp Điện Có Phải Đội Mũ Bảo Hiểm Không? Quy Định Cần Nắm">--}}
+{{--                            Đi Xe Đạp Điện Có Phải Đội Mũ Bảo Hiểm Không? Quy Định Cần Nắm--}}
+{{--                        </a>--}}
+{{--                    </h3>--}}
+{{--                    <div class="_42nr">--}}
+{{--                        <div class="_khz"><a class="_up_" href="javascript:void(0);">Bình luận</a></div>--}}
+{{--                        <div class="_khz"><a class="_cmtp" href="javascript:void(0);">--}}
+{{--                                <fb:comments-count--}}
+{{--                                    href="https://xedienvietthanh.com/tin-tuc/di-xe-dap-dien-co-phai-doi-mu-bao-hiem-khong-quy-dinh-can-nam/"></fb:comments-count>--}}
+{{--                                Comments<!-- 36 Comments --></a></div>--}}
+{{--                    </div>--}}
+{{--                    <div class="intro">Nhiều người hiện nay trong đó phần lớn là các bạn học sinh chưa nắm rõ ràng về--}}
+{{--                        việc đi--}}
+{{--                    </div>--}}
+{{--                    <div class="clearfix">--}}
+{{--                        <a class="link"--}}
+{{--                           href="https://xedienvietthanh.com/tin-tuc/di-xe-dap-dien-co-phai-doi-mu-bao-hiem-khong-quy-dinh-can-nam/"--}}
+{{--                           title="Đi Xe Đạp Điện Có Phải Đội Mũ Bảo Hiểm Không? Quy Định Cần Nắm">Xem thêm</a>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+
+
+
+
+            <!-- /article -->
+                <div class="clearfix"></div>
+                <div class="text-center">
+                    {!!$cms_content->links("pagination::bootstrap-4")!!}
+                </div>
+
+            <!-- pagination -->
+
+            <!-- /pagination -->
+
+        </div>
+
+    </div>
+</section>
 <!-- /main-content -->
 <!-- Cate Special Modal -->
-<!-- <div id="modalCateSpecial" class="modal fade" role="dialog" ></div> -->
+<div id="modalCateSpecial" class="modal fade" role="dialog"></div>
 <style>
     .overhiden {
         overflow: hidden
     }
 </style>
-<section class="acquy_phutung_2019"></section>
+<section class="acquy_phutung_2019">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 ">
+                <div class="head-title font30 text-uppercase h2"><a href="https://xedienvietthanh.com/ac-quy/">ắc quy
+                        chính hãng</a>
+                </div>
+                <div class="owl-carousel overhiden" id="owl-acquy-2019">
+                    <!-- loop product -->
+                    <div class="display-pt10 item-special">
+                        <div class="col-item">
+                            <div class="item-inner">
+                                <div class="product-wrapper">
+                                    <a href="https://xedienvietthanh.com/ac-quy-yadea-60v-22ah-ttfar/"
+                                       title="ẮC QUY XE ĐIỆN YADEA 60V &#8211; 22AH TTFAR">
+                                        <img src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
+                                             data-src="https://xedienvietthanh.com/wp-content/uploads/2023/04/ac-quy-xe-dien-yadea-60v-22ah.jpg"
+                                             class="lazyload img-full transition lazy lazyload wp-post-image" alt=""
+                                             loading="lazy"/></a>
+                                </div>
+                                <div class="item-info">
+                                    <h5 class="item-title text-uppercase"><a
+                                            href="https://xedienvietthanh.com/ac-quy-yadea-60v-22ah-ttfar/"
+                                            title="ẮC QUY XE ĐIỆN YADEA 60V &#8211; 22AH TTFAR">ẮC QUY XE ĐIỆN YADEA 60V
+                                            &#8211; 22AH TTFAR</a></h5>
+                                    <div class="item-price">
+                                        <span class="old-price"><span class="price">4.600.000 đ</span></span>
+                                        <span class="regular-price"><span class="price">4.000.000 đ</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- loop product -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <nav class="bottom-nav full text-center" style="background: #dfe6e9;">
     <ul id="mainnav" class="nav nav-menu destop">
         @foreach($shop_categorys as $key => $shop_cate)
@@ -2712,7 +2883,7 @@ fbq('track', 'PageView');
             <div class="row">
                 <div class="col-xs-12 col-lg-4 col-md-4 widget">
                     <div class="head_widget">
-                        <b>Về chúng tôi</b>
+                        <b>Về chúng tôi<b>
                     </div>
                     <ul id="menu-footer" class="list-unstyled">
                         <li id="menu-item-25685"
@@ -3832,8 +4003,8 @@ fbq('track', 'PageView');
                         </div>
                     </div>
                     <div class="statistic">
-                        <div class="pull-left"><span><i class="fa fa-rss"></i>&nbsp; Đã truy câp: 616140</span>
-                            <span><i class="fa fa-users"></i>&nbsp;297 Đang online</span>
+                        <div class="pull-left"><span><i class="fa fa-rss"></i>&nbsp; Đã truy câp: 620754</span>
+                            <span><i class="fa fa-users"></i>&nbsp;323 Đang online</span>
                         </div>
                         <div class="share_link">
                             <a class="fb" href="https://www.facebook.com/tapdoanxedien" rel="nofollow" title="associal"
@@ -4181,7 +4352,7 @@ fbq('track', 'PageView');
                     <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p>
                         <ul></ul>
                     </div>
-                    <form action="/phu-tung-xe-dien/#wpcf7-f19666-o1" method="post" class="wpcf7-form init"
+                    <form action="/tin-tuc/#wpcf7-f19666-o1" method="post" class="wpcf7-form init"
                           novalidate="novalidate" data-status="init">
                         <div style="display: none;">
                             <input type="hidden" name="_wpcf7" value="19666"/>
@@ -4249,1111 +4420,6 @@ fbq('track', 'PageView');
 </html>
 
 
-
-<style>
-
-    /* cyrillic-ext */
-
-
-    a {
-        color: #000;
-        text-decoration: none
-    }
-
-    a:hover, a:focus {
-        color: #0066cc;
-        text-decoration: none
-    }
-
-    article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-        display: block
-    }
-
-    img {
-    + max-width: 100 %;
-        border: none
-    }
-
-
-    h1, h2, h3, h4, h5, h6 {
-
-        font-family: 'Roboto', sans-serif;
-
-        margin: 0;
-
-        font-size: inherit;
-
-    }
-
-    .wrap {
-        width: 100%;
-        display: inline-block
-    }
-
-    .container {
-        width: 100%
-    }
-
-    .upper {
-        text-transform: uppercase
-    }
-
-    .z_container {
-        width: 100%;
-        padding-left: 35px;
-        padding-right: 35px
-    }
-
-    .nav-toogle {
-        border-radius: 50%;
-        color: #679818;
-        cursor: pointer;
-        position: absolute;
-        top: 30px;
-        left: 30px;
-        font-size: 28px;
-        text-align: center;
-        z-index: 1;
-        display: none
-    }
-
-    .clear5px {
-        clear: both;
-        height: 5px
-    }
-
-    .clear10px {
-        clear: both;
-        height: 10px
-    }
-
-    .clear20px {
-        clear: both;
-        height: 20px
-    }
-
-    .clear30px {
-        clear: both;
-        height: 30px
-    }
-
-    .mt10, .mv10, .ma10 {
-        margin-top: 10px
-    }
-
-    .mb10, .mv10, .ma10 {
-        margin-bottom: 10px
-    }
-
-    .ml10, .mh10, .ma10 {
-        margin-left: 10px
-    }
-
-    .mr10, .mh10, .ma10 {
-        margin-right: 10px
-    }
-
-    .old-price {
-
-        display: inline;
-
-        margin-right: 5px
-
-    }
-
-    .no-padding {
-        padding: 0 !important;
-    }
-
-    .old-price .price {
-
-        font-size: 16px;
-
-        color: #666;
-
-        text-decoration: line-through;
-
-    }
-
-    .regular-price {
-
-        display: inline;
-
-    }
-
-    .regular-price .price {
-
-        color: #ff0600;
-
-        font-weight: 700;
-
-        font-size: 20px;
-
-    }
-
-
-    .col-item {
-
-        position: relative;
-
-        background: #FFF;
-
-    }
-
-    .col-item {
-
-        text-align: left;
-
-        float: left;
-
-    + margin-bottom: 30 px;
-
-        width: 100%;
-
-        padding: 8px 8px 25px 8px;
-
-    }
-
-    .col-item .product-wrapper {
-
-        position: relative;
-
-        margin-top: 10px;
-
-        overflow: hidden;
-
-        text-align: center;
-
-        margin-bottom: 7px;
-
-    }
-
-    .col-item .product-wrapper i.icon {
-
-        width: 41px;
-
-        height: 21px;
-
-        position: absolute;
-
-        top: 0px;
-
-        right: 0px;
-
-    }
-
-    .col-item .product-wrapper i.icon-hot {
-
-        background: url(https://xedienvietthanh.com/wp-content/themes/auto/images/icon_hot.png) no-repeat
-
-    }
-
-    .col-item .product-wrapper i.icon-new,
-    .col-item .product-wrapper i.icon-moi {
-
-        background: url(https://xedienvietthanh.com/wp-content/themes/auto/images/icon_new.png) no-repeat
-
-    }
-
-    .col-item .product-wrapper i.icon-xa,
-    .col-item .product-wrapper i.icon-thanh-ly {
-
-        background: url(https://xedienvietthanh.com/wp-content/themes/auto/images/icon_xa.png) no-repeat
-
-    }
-
-    .col-item .item-title {
-
-        margin-bottom: 5px;
-
-        padding-top: 16px;
-
-        font-size: 20px;
-
-        font-weight: 700;
-
-        white-space: nowrap;
-
-        overflow: hidden;
-
-        text-overflow: ellipsis;
-
-    }
-
-    .col-item .item-price {
-
-        margin: 6px 0;
-
-    }
-
-    .col-item .item-detail {
-
-        display: block;
-
-        height: 65px;
-
-        position: relative;
-
-    }
-
-    .col-item .item-detail .item-offers {
-
-        font-size: 14px;
-
-        height: 65px;
-
-        color: #666;
-
-        background: url(https://xedienvietthanh.com/wp-content/themes/auto/images/icon_offers.png) left 8px no-repeat;
-
-        padding-left: 45px;
-
-    + padding-top: 8 px;
-
-        padding-right: 130px;
-
-    }
-
-    .col-item .item-detail .item-link {
-
-        width: 122px;
-
-        height: 65px;
-
-        position: absolute;
-
-        top: 0px;
-
-        right: 0px;
-
-        text-align: center;
-
-    }
-
-
-    .col-item .item-detail .item-link a {
-
-        width: 100%;
-
-        padding: 4px 0px;
-
-        display: block;
-
-        color: #fff;
-
-        text-transform: uppercase;
-
-        font-size: 11px;
-
-        background-color: #fc6e0f;
-
-    + border-radius: 0;
-
-        margin-bottom: 7px;
-
-    }
-
-    .col-item .item-detail .item-link a.link-buy {
-
-        background-color: #28b22d;
-
-    }
-
-    .product-show-more {
-
-        text-align: center;
-
-        margin: 10px 0;
-
-    }
-
-    .product-show-more span:hover {
-        background: #ff7621;
-        color: #fff;
-    }
-
-
-    .product-show-more span {
-
-        cursor: pointer;
-
-        display: inline-block;
-
-        height: 50px;
-
-        line-height: 50px;
-
-        font-size: 24px;
-
-        text-transform: uppercase;
-
-        background: #28b22d;
-
-        padding: 0 50px;
-
-        color: #fff;
-
-        text-align: center;
-
-        white-space: nowrap;
-
-        border-radius: 4px;
-
-    }
-
-    .table-news {
-
-        width: 100%;
-
-        height: 60px;
-
-        background-color: #000000;
-
-        margin-bottom: 15px;
-
-    }
-
-    .table-news td {
-
-        height: 60px;
-
-        text-align: center;
-
-        border-top: 3px solid red;
-
-        line-height: 60px;
-
-    }
-
-    .table-news td:nth-child(1) {
-
-        border-color: #4285f4
-
-    }
-
-    .table-news td:nth-child(2) {
-
-        border-color: #eeb715
-
-    }
-
-    .table-news td:nth-child(3) {
-
-        border-color: #34a853
-
-    }
-
-    .table-news td:nth-child(4) {
-
-        border-color: #ed008c
-
-    }
-
-    .table-news td:nth-child(5) {
-
-        border-color: #ea4335
-
-    }
-
-    .table-news td + td::before {
-
-        content: "";
-
-        background-color: #9a9595;
-
-        float: left;
-
-        width: 2px;
-
-        height: 41px;
-
-        margin-top: 8px;
-
-    }
-
-    .table-news td a {
-
-        color: #fff;
-
-        text-transform: uppercase;
-
-    }
-
-    .box_news_home .col-ext {
-
-        padding: 0 35px;
-
-        margin: 0 4px;
-
-        background: #fff;
-
-    }
-
-    .box_news_home .col-ext-left {
-        margin-left: 0;
-    }
-
-    .box_news_home .col-ext-right {
-        margin-right: 0;
-    }
-
-    .box_news_home .heading_box {
-
-        text-align: center;
-
-        text-transform: uppercase;
-
-    }
-
-    .box_news_home .heading_box .title2 {
-
-        font-size: 30px;
-
-        font-weight: 700;
-
-        line-height: 63px;
-
-    }
-
-    .box_news_home .large_item img {
-
-    + max-height: 370 px;
-
-    + margin-bottom: 18 px;
-
-    }
-
-    .box_news_home .lst_item_ext {
-
-        list-style: none;
-
-        outline: medium none;
-
-        margin: 0px;
-
-        padding: 0px;
-
-    }
-
-    .box_news_home .lst_item_ext li {
-
-        width: 100%;
-
-        display: inline-block;
-
-        margin-bottom: 20px;
-
-        cursor: pointer;
-
-        max-height: 470px;
-
-    }
-
-    .box_news_home .lst_item_ext li .photo {
-
-        width: 130px;
-
-        height: 80px;
-
-        float: left;
-
-    }
-
-    .box_news_home .lst_item_ext li .photo img {
-        max-width: 100%;
-    }
-
-    .box_news_home .lst_item_ext li .r {
-
-        margin-left: 157px;
-
-        vertical-align: top;
-
-    }
-
-    .box_news_home .lst_item_ext li .r h4.title {
-
-        font-size: 14px;
-
-        margin-bottom: 4px;
-
-    }
-
-    .box_news_home .lst_item_ext li .r .reg_date {
-
-        font-size: 11px;
-
-        color: #666
-
-    }
-
-    footer {
-
-        width: 100%;
-
-        background: url(https://xedienvietthanh.com/wp-content/themes/auto/images/footer.jpg) repeat-x;
-
-    }
-
-    .top_footer {
-
-        padding-top: 35px;
-
-        padding-bottom: 35px;
-
-        position: relative;
-
-    }
-
-    .top_footer .head_widget {
-
-        font-size: 30px;
-
-        font-weight: 700;
-
-        text-transform: uppercase;
-
-        position: relative;
-
-        margin-bottom: 55px;
-
-    }
-
-    .top_footer .head_widget:after {
-
-        content: "";
-
-        width: 30px;
-
-        height: 2px;
-
-        background: #fc6e0f;
-
-        position: absolute;
-
-        left: 0px;
-
-        bottom: -15px;
-
-    }
-
-    .top_footer ul li {
-
-        font-size: 14px;
-
-        margin-bottom: 15px;
-
-    }
-
-    .top_footer .album-gallery {
-
-        height: 171px;
-
-        border: solid 1px #fc6e0f;
-
-        overflow: hidden;
-
-        display: inline-block;
-
-        float: left;
-
-    }
-
-    .top_footer .company-map {
-
-        height: 171px;
-
-        border: solid 1px #fc6e0f;
-
-        overflow: hidden;
-
-        display: inline-block
-
-    }
-
-    .subcribe_box {
-
-        margin-top: 10px;
-
-    }
-
-    .subcribe_box .input_subcribe {
-
-        width: 136px;
-
-        border: solid 1px #666;
-
-        margin-right: 10px;
-
-        outline: medium none;
-
-        padding: 3px 5px;
-
-        float: left;
-
-        display: inline-block;
-
-    }
-
-    .subcribe_box input[type=submit] {
-
-        border: none;
-
-        outline: medium none;
-
-        height: 28px;
-
-        background-color: #2fbb04;
-
-        color: #fff;
-
-        padding: 2px 14px;
-
-    }
-
-    .top_footer .company_line {
-
-        margin-top: 18px;
-
-    }
-
-    .top_footer .company_line img {
-
-        vertical-align: top;
-
-    }
-
-    .top_footer .footer_hotline {
-
-        height: 41px;
-
-        line-height: 45px;
-
-        display: inline-block;
-
-        padding-left: 52px;
-
-        margin-right: 10px;
-
-        background: url(https://xedienvietthanh.com/wp-content/themes/auto/images/icon_hotline.png) left center no-repeat;
-
-    }
-
-    .top_footer .dcma {
-
-        margin-right: 10px;
-
-    }
-
-    footer .payment_method {
-
-        width: 100%;
-
-        display: inline-block;
-
-        height: 54px;
-
-        border-top: solid 1px #2fbb04;
-
-        border-bottom: solid 1px #fc6e0f
-
-    }
-
-    footer .payment_method label {
-
-        width: 13%;
-
-        float: left;
-
-        height: 52px;
-
-        line-height: 52px;
-
-        text-align: right;
-
-        background-color: #fc6e0f;
-
-        color: #fff;
-
-        font-weight: 700;
-
-        padding-right: 4px;
-
-        font-size: 16px;
-
-        text-transform: uppercase;
-
-        position: relative;
-
-        margin: 0 50px 0 0;
-
-    }
-
-    footer .payment_method label:after {
-
-        content: "";
-
-        width: 50px;
-
-        height: 52px;
-
-        position: absolute;
-
-        right: -49px;
-
-        top: 0px;
-
-        background: url(https://xedienvietthanh.com/wp-content/themes/auto/images/pm_after.png) no-repeat;
-
-    }
-
-    .main_footer {
-
-        width: 100%;
-
-        display: inline-block;
-
-        background-color: #515154;
-
-        padding-top: 15px;
-
-    + padding-bottom: 35 px;
-
-    }
-
-    .main_footer h2.head {
-
-        color: #fff;
-
-        text-transform: uppercase;
-
-        margin-bottom: 15px;
-
-        font-size: 18px
-
-    }
-
-    .main_footer p {
-
-        font-size: 14px;
-
-        color: #fff;
-
-        margin-bottom: 15px
-
-    }
-
-    .main_footer .statistic span {
-
-        color: #fff;
-
-        margin-right: 15px
-
-    }
-
-    .form-check-bao-hanh .wrap {
-
-    + margin-top: 15 px;
-
-        margin-bottom: 15px;
-
-    }
-
-    .form-check-bao-hanh input[type=text] {
-
-        background-color: #fff;
-
-        background-image: url(https://xedienvietthanh.com/wp-content/themes/auto/images/icon_tool.png);
-
-        background-repeat: no-repeat;
-
-        background-position: 16px center;
-
-        padding-left: 48px;
-
-        padding-right: 10px;
-
-        border: none;
-
-        outline: none;
-
-        width: 272px;
-
-        height: 33px;
-
-        outline: medium none;
-
-        display: inline-block;
-
-        float: left;
-
-    }
-
-    .form-check-bao-hanh input[type=submit] {
-
-        border: none;
-
-        outline: medium none;
-
-        height: 33px;
-
-        background-color: #fff;
-
-        color: #000;
-
-        padding: 2px 14px;
-
-        margin-left: 8px;
-
-        display: inline-block;
-
-        text-transform: uppercase;
-
-        font-weight: 700
-
-    }
-
-    .share_link a {
-
-        width: 24px;
-
-        height: 24px;
-
-        display: inline-block;
-
-        margin-right: 3px;
-
-        background: url(https://xedienvietthanh.com/wp-content/themes/auto/images/icon_fb.png);
-
-    }
-
-    .share_link a.google {
-
-        background-image: url(https://xedienvietthanh.com/wp-content/themes/auto/images/icon_google.png);
-
-    }
-
-    .share_link a.youtube {
-
-        background-image: url(https://xedienvietthanh.com/wp-content/themes/auto/images/icon_youtube.png);
-
-    }
-
-
-</style>
-
-
-<script type="rocketlazyloadscript" data-minify="1"
-        src="https://xedienvietthanh.com/wp-content/cache/min/1/jquery-3.5.1.min.js?ver=1694882034"
-        crossorigin="anonymous" defer></script>
-
-<!-- <script src="https://xedienvietthanh.com/wp-content/themes/auto/js/jquery.min.js"></script> -->
-<script type="rocketlazyloadscript" src="https://xedienvietthanh.com/wp-content/themes/auto/js/bootstrap.min.js"
-        defer></script>
-<script type="rocketlazyloadscript" src="https://xedienvietthanh.com/wp-content/themes/auto/js/jquery.lazyload.min.js"
-        defer></script>
-<script type="rocketlazyloadscript"
-        src="https://xedienvietthanh.com/wp-content/themes/auto/owl-carousel/owl.carousel.min.js" defer></script>
-
-<script type="rocketlazyloadscript"
-        src="https://xedienvietthanh.com/wp-content/themes/auto/bxslider/jquery.bxslider.min.js" defer></script>
-
-<script type="rocketlazyloadscript" data-minify="1"
-        src="https://xedienvietthanh.com/wp-content/cache/min/1/wp-content/themes/auto/fotorama/fotorama.js?ver=1694882061"
-        data-rocket-type="text/javascript" defer></script>
-
-<script type="rocketlazyloadscript" data-minify="1"
-        src="https://xedienvietthanh.com/wp-content/cache/min/1/wp-content/themes/auto/js/jquery_tdxd.js?ver=1694882061"
-        defer></script>
-<script type="rocketlazyloadscript" data-minify="1"
-        src="https://xedienvietthanh.com/wp-content/cache/min/1/wp-content/themes/auto/js/detail-prod.js?ver=1694882061"
-        defer></script>
-<script type="rocketlazyloadscript" data-minify="1"
-        src="https://xedienvietthanh.com/wp-content/cache/min/1/wp-content/themes/auto/js/scripts.js?ver=1694882037"
-        defer></script>
-<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
-    window.addEventListener("load", function (event) {
-    lazyload();
-});
-
-  window.onload = function() {
-
-
-    function goToByScroll(id){
-          id = id.replace("link", "");
-        jQuery('html,body').animate({
-            scrollTop: jQuery("#"+id).offset().top - 52},'slow');
-    }
-
-  }
-    function showVideo(id,url){
-      document.getElementById(id).removeAttribute('src');
-      document.getElementById(id).setAttribute('src',url);
-    }
-    function formatNumber(num) {
-        return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.")
-    }
-</script>
-<script type='text/javascript' src='https://xedienvietthanh.com/wp-content/plugins/ccodon-optimizer/lab.min.js'
-        id='ccodon-lab-js'></script>
-<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript'
-        src='https://xedienvietthanh.com/wp-content/cache/min/1/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=1694882034'
-        id='swv-js' defer></script>
-<script type='text/javascript' id='contact-form-7-js-extra'>
-    /* <![CDATA[ */
-    var wpcf7 = {
-        "api": {"root": "https:\/\/xedienvietthanh.com\/wp-json\/", "namespace": "contact-form-7\/v1"},
-        "cached": "1"
-    };
-    /* ]]> */
-</script>
-<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript'
-        src='https://xedienvietthanh.com/wp-content/cache/min/1/wp-content/plugins/contact-form-7/includes/js/index.js?ver=1694882034'
-        id='contact-form-7-js' defer></script>
-<script>window.lazyLoadOptions = {
-        elements_selector: "img[data-lazy-src],.rocket-lazyload",
-        data_src: "lazy-src",
-        data_srcset: "lazy-srcset",
-        data_sizes: "lazy-sizes",
-        class_loading: "lazyloading",
-        class_loaded: "lazyloaded",
-        threshold: 300,
-        callback_loaded: function (element) {
-            if (element.tagName === "IFRAME" && element.dataset.rocketLazyload == "fitvidscompatible") {
-                if (element.classList.contains("lazyloaded")) {
-                    if (typeof window.jQuery != "undefined") {
-                        if (jQuery.fn.fitVids) {
-                            jQuery(element).parent().fitVids()
-                        }
-                    }
-                }
-            }
-        }
-    };
-    window.addEventListener('LazyLoad::Initialized', function (e) {
-        var lazyLoadInstance = e.detail.instance;
-        if (window.MutationObserver) {
-            var observer = new MutationObserver(function (mutations) {
-                var image_count = 0;
-                var iframe_count = 0;
-                var rocketlazy_count = 0;
-                mutations.forEach(function (mutation) {
-                    for (var i = 0; i < mutation.addedNodes.length; i++) {
-                        if (typeof mutation.addedNodes[i].getElementsByTagName !== 'function') {
-                            continue
-                        }
-                        if (typeof mutation.addedNodes[i].getElementsByClassName !== 'function') {
-                            continue
-                        }
-                        images = mutation.addedNodes[i].getElementsByTagName('img');
-                        is_image = mutation.addedNodes[i].tagName == "IMG";
-                        iframes = mutation.addedNodes[i].getElementsByTagName('iframe');
-                        is_iframe = mutation.addedNodes[i].tagName == "IFRAME";
-                        rocket_lazy = mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');
-                        image_count += images.length;
-                        iframe_count += iframes.length;
-                        rocketlazy_count += rocket_lazy.length;
-                        if (is_image) {
-                            image_count += 1
-                        }
-                        if (is_iframe) {
-                            iframe_count += 1
-                        }
-                    }
-                });
-                if (image_count > 0 || iframe_count > 0 || rocketlazy_count > 0) {
-                    lazyLoadInstance.update()
-                }
-            });
-            var b = document.getElementsByTagName("body")[0];
-            var config = {childList: !0, subtree: !0};
-            observer.observe(b, config)
-        }
-    }, !1)</script>
-<script data-no-minify="1" async
-        src="https://xedienvietthanh.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.5/lazyload.min.js"></script>
-<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
-    window.onload = function() {
-    $( "#qb_quantity" ).blur(function() {
-
-        qualty = $('#qb_quantity').val();
-
-        tongtien = qualty *  ;
-
-        $('#tongtien, #qb_thanh_tien').html(formatNumber(tongtien));
-
-      });
-
-  }
-</script>
-
-<!-- Google Tag Manager 23-4-2020 -->
-<!-- <script type="rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||f[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-N7XLR8S');</script> -->
-<!-- End Google Tag Manager -->
-<!-- Vchat -->
-<!-- <script type="rocketlazyloadscript" lang="javascript">var _vc_data = {id : 3314176, secret : 'c4d35761ff7f52a9bd393808b0186669'};(function() {var ga = document.createElement('script');ga.type = 'text/javascript';ga.async=true; ga.defer=true;ga.src = '//live.vnpgroup.net/client/tracking.js?id=3314176';var s = document.getElementsByTagName('script');s[0].parentNode.insertBefore(ga, s[0]);})();</script> -->
-<!-- chat -->
-<!-- <a href="https://m.me/tapdoanxedien" target="_blank" rel="nofollow" id="btn_messenger">
-<svg width="60px" height="60px" viewBox="0 0 60 60"><svg x="0" y="0" width="60px" height="60px"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g><circle fill="#25982B" cx="30" cy="30" r="30"></circle><svg x="10" y="10"><g transform="translate(0.000000, -10.000000)" fill="#FFFFFF"><g id="logo" transform="translate(0.000000, 10.000000)"><path d="M20,0 C31.2666,0 40,8.2528 40,19.4 C40,30.5472 31.2666,38.8 20,38.8 C17.9763,38.8 16.0348,38.5327 14.2106,38.0311 C13.856,37.9335 13.4789,37.9612 13.1424,38.1098 L9.1727,39.8621 C8.1343,40.3205 6.9621,39.5819 6.9273,38.4474 L6.8184,34.8894 C6.805,34.4513 6.6078,34.0414 6.2811,33.7492 C2.3896,30.2691 0,25.2307 0,19.4 C0,8.2528 8.7334,0 20,0 Z M7.99009,25.07344 C7.42629,25.96794 8.52579,26.97594 9.36809,26.33674 L15.67879,21.54734 C16.10569,21.22334 16.69559,21.22164 17.12429,21.54314 L21.79709,25.04774 C23.19919,26.09944 25.20039,25.73014 26.13499,24.24744 L32.00999,14.92654 C32.57369,14.03204 31.47419,13.02404 30.63189,13.66324 L24.32119,18.45264 C23.89429,18.77664 23.30439,18.77834 22.87569,18.45674 L18.20299,14.95224 C16.80079,13.90064 14.79959,14.26984 13.86509,15.75264 L7.99009,25.07344 Z"></path></g></g></svg></g></g></svg></svg>
-</a> -->
-
-<style>
-    #btn_messenger {
-        cursor: pointer;
-        position: fixed;
-        right: 18pt;
-        bottom: 18pt;
-        z-index: 2147483646;
-        border-radius: 50%;
-        height: 60px;
-        width: 60px;
-    }
-
-    #btn_messenger:hover {
-        box-shadow: 0 5px 24px rgba(0, 0, 0, .3);
-    }
-</style>
-
-<div id="fb-root"></div>
-<script type="rocketlazyloadscript" async defer crossorigin="anonymous"
-        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v5.0"></script>
-
-<script type="rocketlazyloadscript" data-minify="1"
-        src="https://xedienvietthanh.com/wp-content/cache/min/1/js/bk_plus_v2.popup.js?ver=1694882034" defer></script>
-<script type="rocketlazyloadscript">
-    window.onload = function() {
-        // $('.bk-btn-paynow').html('');
-        // $('.bk-btn-installment').html('');
-        // $('.bk-btn-paynow').html('<strong>Mua ngay</strong>' +'<br>' + '<span>(Thanh toán qua Bảo Kim giảm 500k)</span>' + '<br>' +'<span>Giao hàng miễn phí</span>');
-        // $('.bk-btn-installment').html('<strong>Mua trả góp 0%</strong>' + '<br>'+ '<span> Thủ tục đơn giản</span>' +' <br> '+'<span>Qua thẻ: Visa, Master, JCB</span>');
-
-        // $('.item-link .bk-btn-paynow').html('');
-        // $('.item-link .bk-btn-installment').html('');
-        // $('.item-link .bk-btn-paynow').html('<strong>Mua ngay</strong>');
-        // $('.item-link .bk-btn-installment').html('<strong>Mua trả góp 0%</strong>');
-
-        var base_url = 'https://xedienvietthanh.com' ;
-        function modal_video(that, id, id_youtube){
-
-          jQuery.ajax({
-              method: "POST",
-              url: base_url+'/ajax-video' ,
-              data: { id_prod : id, id_youtube: id_youtube }
-            })
-
-          .done(function( data ) {
-              jQuery("#modalVideo").html(data);
-            });
-        }
-    }
-</script>
-
-
-
 <style>
 
     /* cyrillic-ext */
@@ -6267,26 +5333,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         defer></script>
 <script type="rocketlazyloadscript" data-rocket-type="text/javascript">
     window.addEventListener("load", function (event) {
-    lazyload();
-});
+        lazyload();
+    });
 
-  window.onload = function() {
+      window.onload = function() {
 
 
-    function goToByScroll(id){
-          id = id.replace("link", "");
-        jQuery('html,body').animate({
-            scrollTop: jQuery("#"+id).offset().top - 52},'slow');
-    }
+        function goToByScroll(id){
+              id = id.replace("link", "");
+            jQuery('html,body').animate({
+                scrollTop: jQuery("#"+id).offset().top - 52},'slow');
+        }
 
-  }
-    function showVideo(id,url){
-      document.getElementById(id).removeAttribute('src');
-      document.getElementById(id).setAttribute('src',url);
-    }
-    function formatNumber(num) {
-        return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.")
-    }
+      }
+        function showVideo(id,url){
+          document.getElementById(id).removeAttribute('src');
+          document.getElementById(id).setAttribute('src',url);
+        }
+        function formatNumber(num) {
+            return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.")
+        }
 </script>
 <script type='text/javascript' src='https://xedienvietthanh.com/wp-content/plugins/ccodon-optimizer/lab.min.js'
         id='ccodon-lab-js'></script>
@@ -6313,9 +5379,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     /* <![CDATA[ */
     var loadmore_params = {
         "ajaxurl": "https:\/\/xedienvietthanh.com\/wp-admin\/admin-ajax.php",
-        "term_id": "1401",
+        "term_id": "1",
         "current_page": "1",
-        "max_page": "1",
+        "max_page": "74",
         "num_per_page": "12",
         "post_type": "products"
     };
@@ -6425,50 +5491,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         src="https://xedienvietthanh.com/wp-content/cache/min/1/js/bk_plus_v2.popup.js?ver=1694882034" defer></script>
 <script type="rocketlazyloadscript">
     window.onload = function() {
-        // $('.bk-btn-paynow').html('');
-        // $('.bk-btn-installment').html('');
-        // $('.bk-btn-paynow').html('<strong>Mua ngay</strong>' +'<br>' + '<span>(Thanh toán qua Bảo Kim giảm 500k)</span>' + '<br>' +'<span>Giao hàng miễn phí</span>');
-        // $('.bk-btn-installment').html('<strong>Mua trả góp 0%</strong>' + '<br>'+ '<span> Thủ tục đơn giản</span>' +' <br> '+'<span>Qua thẻ: Visa, Master, JCB</span>');
+       // $('.bk-btn-paynow').html('');
+       // $('.bk-btn-installment').html('');
+       // $('.bk-btn-paynow').html('<strong>Mua ngay</strong>' +'<br>' + '<span>(Thanh toán qua Bảo Kim giảm 500k)</span>' + '<br>' +'<span>Giao hàng miễn phí</span>');
+       // $('.bk-btn-installment').html('<strong>Mua trả góp 0%</strong>' + '<br>'+ '<span> Thủ tục đơn giản</span>' +' <br> '+'<span>Qua thẻ: Visa, Master, JCB</span>');
 
-        // $('.item-link .bk-btn-paynow').html('');
-        // $('.item-link .bk-btn-installment').html('');
-        // $('.item-link .bk-btn-paynow').html('<strong>Mua ngay</strong>');
-        // $('.item-link .bk-btn-installment').html('<strong>Mua trả góp 0%</strong>');
+       // $('.item-link .bk-btn-paynow').html('');
+       // $('.item-link .bk-btn-installment').html('');
+       // $('.item-link .bk-btn-paynow').html('<strong>Mua ngay</strong>');
+       // $('.item-link .bk-btn-installment').html('<strong>Mua trả góp 0%</strong>');
 
-        var base_url = 'https://xedienvietthanh.com' ;
-        function modal_video(that, id, id_youtube){
+       var base_url = 'https://xedienvietthanh.com' ;
+       function modal_video(that, id, id_youtube){
 
-          jQuery.ajax({
-              method: "POST",
-              url: base_url+'/ajax-video' ,
-              data: { id_prod : id, id_youtube: id_youtube }
-            })
+         jQuery.ajax({
+             method: "POST",
+             url: base_url+'/ajax-video' ,
+             data: { id_prod : id, id_youtube: id_youtube }
+           })
 
-          .done(function( data ) {
-              jQuery("#modalVideo").html(data);
-            });
-        }
-    }
+         .done(function( data ) {
+             jQuery("#modalVideo").html(data);
+           });
+       }
+   }
 </script>
 
 <!-- BK MODAL -->
 <!-- <div id='bk-modal'></div> -->
 <!-- END BK MODAL -->
-<!-- <script type="rocketlazyloadscript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
 
-<!-- <script type="rocketlazyloadscript" data-rocket-type='text/javascript'>
-
-  var base_url = 'https://xedienvietthanh.com';
-  function modalCateSpecial(that, id){
-      $.ajax({
-          method: "POST",
-          url: base_url + "/ajax-special-cate",
-          data: { id_prod : id }
-      })
-      .done(function( data ) {
-          $("#modalCateSpecial").html(data);
-      });
-  }
-
-</script> -->
-<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1695023091 -->
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

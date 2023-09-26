@@ -77,7 +77,9 @@ class CmsContentController extends Controller
 
             $grid->id('ID')->sortable();
             $grid->title('Tên bài viết')->sortable();
+            $grid->slug('Slug');
             $grid->image('Hình ảnh')->image();
+            $grid->summary_content('Nội dung tóm tắt');
             $grid->content('Nội dung')->expand(function () {
                 $html = '<br>';
                 $html.= $this->content ;
@@ -114,9 +116,11 @@ class CmsContentController extends Controller
         return Admin::form(CmsContent::class, function (Form $form) {
             $form->text('title', 'Tên bài viết')->rules('required', ['required' => 'Bạn chưa nhập tên']);
             $form->text('title_en', 'Tên bài viết (Tiếng Anh)');
+            $form->text('slug', 'Slug');
             $arrCate = (new CmsCategory)->listCate();
             $form->select('category_id', 'Danh mục')->options($arrCate)->rules('required');
             $form->image('image', 'Hình ảnh')->uniqueName()->move('cms_content')->removable();
+            $form->text('summary_content', 'Nội dung tóm tắt');
             $form->ckeditor('content', 'Nội dung');
 //            $form->ckeditor('content_en', 'Nội dung (Tiếng Anh)');
             $form->switch('status', 'Trạng thái');

@@ -2641,6 +2641,19 @@ fbq('track', 'PageView');
                     </ul>
                 </li>
             @endforeach
+            <li id="menu-item-2098"
+                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2098">
+                <a href="{{route('danh-sach-bai-viet')}}">Tin tức</a>
+                <ul class="sub-menu">
+                    @foreach($cms_category as $key1 => $cms_cate)
+
+                        <li id="menu-item-28385"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28385">
+                            <a href="{{route('danh-muc-san-pham-con',$cms_cate->uniquekey)}}">{{$cms_cate->title}}</a></li>
+
+                    @endforeach
+                </ul>
+            </li>
         </ul>
 
 
@@ -3170,12 +3183,10 @@ fbq('track', 'PageView');
 <div class="w100 text-center p">Kinh Doanh: <a class="cl_cam2" title="0975.66.8386" href="tel:0975668386">0916.055588</a> &#8211; <a class="cl_cam2" title="0984.44.3388" href="tel:0984443388">0986.06.3888</a></div>
  -->
                             <div class="w100 text-center p" style="padding-left: 40px;">Hotline: <a class="cl_cam2"
-                                                                                                    title="19002082"
-                                                                                                    href="tel:19002082">19002082</a>
-                                – <a class="cl_cam2" title="0904.998899" href="tel:0904.998899">0904.998899 </a></div>
-                            <div class="w100 text-center p">Kinh Doanh: <a class="cl_cam2" title="0988.47.6336"
-                                                                           href="tel:0988.47.6336">0988.47.6336</a> – <a
-                                    class="cl_cam2" title="0984.44.3388" href="tel:0984.44.3388">0984.44.3388</a></div>
+                                                                                                    title="{{$shop_info->phone}}"
+                                                                                                    href="tel:{{$shop_info->phone}}">{{$shop_info->phone}}</a>
+                                </div>
+                            <div class="w100 text-center p"></div>
                         </div>
 
                     </div>
@@ -3791,32 +3802,30 @@ window.onload = function() {
                 <div class="head-title font30 text-uppercase h2"><a href="https://xedienvietthanh.com/ac-quy/">ắc quy
                         chính hãng</a>
                 </div>
+
                 <div class="owl-carousel overhiden" id="owl-acquy-2019">
                     <!-- loop product -->
-                    <div class="display-pt10 item-special">
-                        <div class="col-item">
-                            <div class="item-inner">
-                                <div class="product-wrapper">
-                                    <a href="https://xedienvietthanh.com/ac-quy-yadea-60v-22ah-ttfar/"
-                                       title="ẮC QUY XE ĐIỆN YADEA 60V &#8211; 22AH TTFAR">
-                                        <img src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                             data-src="https://xedienvietthanh.com/wp-content/uploads/2023/04/ac-quy-xe-dien-yadea-60v-22ah.jpg"
-                                             class="lazyload img-full transition lazy lazyload wp-post-image" alt=""
-                                             loading="lazy"/></a>
-                                </div>
-                                <div class="item-info">
-                                    <h5 class="item-title text-uppercase"><a
-                                            href="https://xedienvietthanh.com/ac-quy-yadea-60v-22ah-ttfar/"
-                                            title="ẮC QUY XE ĐIỆN YADEA 60V &#8211; 22AH TTFAR">ẮC QUY XE ĐIỆN YADEA 60V
-                                            &#8211; 22AH TTFAR</a></h5>
-                                    <div class="item-price">
-                                        <span class="old-price"><span class="price">4.600.000 đ</span></span>
-                                        <span class="regular-price"><span class="price">4.000.000 đ</span></span>
+
+                    <div class="owl-item active" style="width: 257.5px; margin-right: 10px;"><div class="display-pt10 item-special">
+                            <div class="col-item">
+                                <div class="item-inner">
+                                    <div class="product-wrapper">
+                                        <a href="https://xedienvietthanh.com/ac-quy-yadea-60v-22ah-ttfar/" title="ẮC QUY XE ĐIỆN YADEA 60V – 22AH TTFAR">
+                                            <img src="https://xedienvietthanh.com/wp-content/uploads/2023/04/ac-quy-xe-dien-yadea-60v-22ah.jpg" data-src="https://xedienvietthanh.com/wp-content/uploads/2023/04/ac-quy-xe-dien-yadea-60v-22ah.jpg" class="lazyload img-full transition lazy lazyload wp-post-image" alt="" loading="lazy"></a>
+                                    </div>
+                                    <div class="item-info">
+                                        <h5 class="item-title text-uppercase"><a href="https://xedienvietthanh.com/ac-quy-yadea-60v-22ah-ttfar/" title="ẮC QUY XE ĐIỆN YADEA 60V – 22AH TTFAR">ẮC QUY XE ĐIỆN YADEA 60V – 22AH TTFAR</a></h5>
+                                        <div class="item-price">
+                                            <span class="old-price"><span class="price">4.600.000 đ</span></span>
+                                            <span class="regular-price"><span class="price">4.000.000 đ</span></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+
                     <!-- loop product -->
 
                     <!-- loop product -->
@@ -3842,6 +3851,19 @@ window.onload = function() {
                 </ul>
             </li>
         @endforeach
+        <li id="menu-item-2098"
+            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2098">
+            <a href="{{route('danh-sach-bai-viet')}}">Tin tức</a>
+            <ul class="sub-menu">
+                @foreach($cms_category as $key1 => $cms_cate)
+
+                    <li id="menu-item-28385"
+                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28385">
+                        <a href="{{route('danh-muc-san-pham-con',$cms_cate->uniquekey)}}">{{$cms_cate->title}}</a></li>
+
+                @endforeach
+            </ul>
+        </li>
     </ul>
 </nav>
 <!-- footer -->
