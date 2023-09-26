@@ -2640,13 +2640,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
 
                         <li id="menu-item-28385"
                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28385">
-                            <a href="{{route('danh-muc-san-pham-con',$cms_cate->uniquekey)}}">{{$cms_cate->title}}</a></li>
+                            <a href="{{route('danh-muc-bai-viet',$cms_cate->uniquekey)}}">{{$cms_cate->title}}</a></li>
 
                     @endforeach
                 </ul>
             </li>
         </ul>
-
 
 
     </nav>
@@ -2872,7 +2871,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
 
                     <li id="menu-item-28385"
                         class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28385">
-                        <a href="{{route('danh-muc-san-pham-con',$cms_cate->uniquekey)}}">{{$cms_cate->title}}</a></li>
+                        <a href="{{route('danh-muc-bai-viet',$cms_cate->uniquekey)}}">{{$cms_cate->title}}</a></li>
 
                 @endforeach
             </ul>
@@ -5519,6 +5518,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
        }
    }
 </script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
 <!-- BK MODAL -->
 <!-- <div id='bk-modal'></div> -->

@@ -24,6 +24,9 @@ Route::group([
     $router->resource('shop-banners', ShopBannerController::class);
     $router->resource('shop-videos', ShopVideoController::class);
     $router->resource('shop-infos', ShopInfoController::class);
+    $router->resource('shop-addresses', ShopAddressController::class);
+    $router->resource('shop-policies', ShopPolicyController::class);
+
 
 
 

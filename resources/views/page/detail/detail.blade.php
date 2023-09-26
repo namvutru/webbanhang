@@ -2649,13 +2649,12 @@ fbq('track', 'PageView');
 
                         <li id="menu-item-28385"
                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28385">
-                            <a href="{{route('danh-muc-san-pham-con',$cms_cate->uniquekey)}}">{{$cms_cate->title}}</a></li>
+                            <a href="{{route('danh-muc-bai-viet',$cms_cate->uniquekey)}}">{{$cms_cate->title}}</a></li>
 
                     @endforeach
                 </ul>
             </li>
         </ul>
-
 
 
     </nav>
@@ -3434,15 +3433,12 @@ fbq('track', 'PageView');
                                 <li><i class="fa fa-gift"></i> Áp dụng giao hàng toàn quốc</li>
                             </ul>
                         </div>
-                        <div class="ads_467_466">
-                            <a href="{{env('APP_URL').'/thong-tin-san-pham/'.$product->slug}}" title="">
-                                <img class="img-responsive"
-                                     src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                                     alt="{{$product->name}}"
-                                     data-lazy-src="{{env('APP_URL').'/documents/website/'.$product->imagemain}}"/>
-                                <noscript><img class="img-responsive"
-                                               src="{{env('APP_URL').'/documents/website/'.$product->imagemain}}"
-                                               alt="{{$product->name}}"/></noscript>
+                        <div class="ads_467_466" id="text-3">
+                            <a href="{{$banner_duoiphai->linkbanner}}" title="">
+                                <img class="img-responsive lazyload lazy"
+                                     src="{{env('APP_URL').'/documents/website/'.$banner_duoiphai->image}}"
+                                     data-src="{{env('APP_URL').'/documents/website/'.$banner_duoiphai->image}}"
+                                     alt=""/>
                             </a>
                         </div>
                     </div>
@@ -3859,7 +3855,7 @@ window.onload = function() {
 
                     <li id="menu-item-28385"
                         class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28385">
-                        <a href="{{route('danh-muc-san-pham-con',$cms_cate->uniquekey)}}">{{$cms_cate->title}}</a></li>
+                        <a href="{{route('danh-muc-bai-viet',$cms_cate->uniquekey)}}">{{$cms_cate->title}}</a></li>
 
                 @endforeach
             </ul>
@@ -6352,6 +6348,7 @@ window.onload = function() {
         return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.")
     }
 </script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script type='text/javascript' src='https://xedienvietthanh.com/wp-content/plugins/ccodon-optimizer/lab.min.js'
         id='ccodon-lab-js'></script>
 <script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript'

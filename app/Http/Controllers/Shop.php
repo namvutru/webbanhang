@@ -24,22 +24,22 @@ class Shop extends Controller
         $baner_trangchu = ShopBanner::where('status',1)->where('typebanner',1)->orderBy('id', 'desc')->orderBy('sort','desc')->get();
         $banner_lon =ShopBanner::where('status',1)->where('typebanner',2)->first();
         $bannber_nho =ShopBanner::where('status',1)->where('typebanner',3)->orderBy('id', 'desc')->orderBy('sort','desc')->get();
+        $banner_duoiphai = ShopBanner::where('status',1)->where('typebanner',4)->orderBy('id', 'desc')->orderBy('sort','desc')->first();
 
         $shop_categorys = ShopCategory::where('status',1)->orderBy('id','asc')->get();
         $shop_category_custom =  ShopCategoryCustom::where('status',1)->get();
         $cms_category = CmsCategory::where('status',1)->get();
 
-
-
         $list_products_l1= ShopProduct::where('status',1)->where('type',1)->orderBy('id', 'desc')->paginate(20);
-        $list_products_l2= ShopProduct::where('status',1)->where('type',2)->orderBy('id', 'desc')->paginate(20);
-        $list_products_l3= ShopProduct::where('status',1)->where('type',3)->orderBy('id', 'desc')->paginate(20);
+        $list_products_l2= ShopProduct::where('status',1)->where('type',2)->orderBy('id', 'desc')->take(10)->get();
+        $list_products_l3= ShopProduct::where('status',1)->where('type',3)->orderBy('id', 'desc')->take(10)->get();
 
-        $cms_content_first = CmsContent::where('status',1)->first();
-        $cms_content = CmsContent::where('status',1)->orderby('id', 'desc')->take(5);
+        $cms_content_first = CmsContent::where('status',1)->orderby('id', 'desc')->first();
+        $cms_content = CmsContent::where('status',1)->orderby('id', 'desc')->orderby(DB::raw('RAND()'))->whereNotIn('slug',[$cms_content_first->slug])->take(6)->get();
 
-        $shop_videos = ShopVideo::where('status',1)->orderby('id', 'desc')->get();
-        $shop_video_top = ShopVideo::where('status',1)->first();
+        $shop_video_top = ShopVideo::where('status',1)->orderby('id', 'desc')->first();
+        $shop_videos = ShopVideo::where('status',1)->orderby('id', 'desc')->orderby(DB::raw('RAND()'))->whereNotIn('link',[$shop_video_top->link])->take(6)->get();
+
 
         return view('page.home',
             array(
@@ -56,6 +56,7 @@ class Shop extends Controller
                 'banner_trangchu'=> $baner_trangchu,
                 'banner_lon'=>$banner_lon ,
                 'banner_nho'=>$bannber_nho ,
+                'banner_duoiphai'=>$banner_duoiphai,
 
                 'cms_content' => $cms_content,
                 'cms_content_first'=> $cms_content_first,
@@ -71,6 +72,8 @@ class Shop extends Controller
     public function detail($slug){
         $shop_info = ShopInfo::first();
 
+        $banner_duoiphai = ShopBanner::where('status',1)->where('typebanner',4)->orderBy('id', 'desc')->orderBy('sort','desc')->first();
+
         $shop_categorys  = ShopCategory::where('status',1)->orderBy('id','asc')->get();
         $shop_category_custom =  ShopCategoryCustom::where('status',1)->get();
         $cms_category = CmsCategory::where('status',1)->get();
@@ -83,6 +86,8 @@ class Shop extends Controller
             return view('page.detail.detail',
                 array(
                     'shop_info'=>$shop_info,
+
+                    'banner_duoiphai'=>$banner_duoiphai,
 
                     'shop_categorys' => $shop_categorys,
                     'shop_category_custom' => $shop_category_custom,
@@ -97,6 +102,9 @@ class Shop extends Controller
             return view('page.detail.detail_l2',
                 array(
                     'shop_info'=>$shop_info,
+
+                    'banner_duoiphai'=>$banner_duoiphai,
+
 
                     'shop_categorys' => $shop_categorys,
                     'shop_category_custom' => $shop_category_custom,
@@ -208,7 +216,7 @@ class Shop extends Controller
         $shop_category_custom =  ShopCategoryCustom::where('status',1)->get();
         $cms_category = CmsCategory::where('status',1)->get();
 
-        $cms_content = CmsContent::where('status',1)->orderBy('updated_at','desc')->paginate(2);
+        $cms_content = CmsContent::where('status',1)->orderBy('updated_at','desc')->paginate(10);
 
 
         return view('page.news.list_news',
@@ -229,8 +237,66 @@ class Shop extends Controller
 
     }
 
+    public function category_news($slug){
+        $shop_info = ShopInfo::first();
+
+        $shop_categorys = ShopCategory::where('status',1)->orderBy('id','asc')->get();
+        $shop_category_custom =  ShopCategoryCustom::where('status',1)->get();
+        $cms_category = CmsCategory::where('status',1)->get();
+
+        $category_news =  CmsCategory::where('uniquekey',$slug)->first();
+
+        $cms_content = CmsContent::where('status',1)->where('category_id',$category_news->id)->orderBy('updated_at','desc')->paginate(10);
+
+
+        return view('page.news.list_news',
+            array(
+                'shop_info'=>$shop_info,
+
+                'shop_categorys' => $shop_categorys,
+                'shop_category_custom' => $shop_category_custom,
+                'cms_category'=>$cms_category,
+
+                'category_news'=>$category_news,
+
+                'cms_content'=>$cms_content,
+
+
+            )
+        );
+    }
+
 
     public function news($slug){
+        $shop_info = ShopInfo::first();
+
+        $banner_duoiphai = ShopBanner::where('status',1)->where('typebanner',4)->orderBy('id', 'desc')->orderBy('sort','desc')->first();
+
+        $shop_categorys = ShopCategory::where('status',1)->orderBy('id','asc')->get();
+        $shop_category_custom =  ShopCategoryCustom::where('status',1)->get();
+        $cms_category = CmsCategory::where('status',1)->get();
+
+        $news = CmsContent::where('status',1)->where('slug',$slug)->first();
+        $related_news =  CmsContent::where('category_id',$news->category_id)->where('status',1)->orderby(DB::raw('RAND()'))->whereNotIn('slug',[$slug])->take(5)->get();
+
+        return view('page.news.detail_new',
+            array(
+                'shop_info'=>$shop_info,
+
+                'banner_duoiphai'=>$banner_duoiphai,
+
+                'shop_categorys' => $shop_categorys,
+                'shop_category_custom' => $shop_category_custom,
+                'cms_category'=>$cms_category,
+
+                'news'=>$news,
+                'related_news'=>$related_news,
+
+
+
+            )
+        );
+
 
     }
 

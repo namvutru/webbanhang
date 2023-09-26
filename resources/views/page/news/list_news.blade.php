@@ -2638,7 +2638,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
 
                         <li id="menu-item-28385"
                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28385">
-                            <a href="{{route('danh-muc-san-pham-con',$cms_cate->uniquekey)}}">{{$cms_cate->title}}</a></li>
+                            <a href="{{route('danh-muc-bai-viet',$cms_cate->uniquekey)}}">{{$cms_cate->title}}</a></li>
 
                     @endforeach
                 </ul>
@@ -2699,7 +2699,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
 <section class="main">
     <div class="container">
         <div class="title2">
-            <p class="tit">Tin tức</p>
+            <p class="tit">Tin tức
+                @if(isset($category_news))
+                    >> {{$category_news->title}}
+                @endif
+            </p>
+
             <span class="gach"></span>
 
         </div>
@@ -2869,7 +2874,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
 
                     <li id="menu-item-28385"
                         class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28385">
-                        <a href="{{route('danh-muc-san-pham-con',$cms_cate->uniquekey)}}">{{$cms_cate->title}}</a></li>
+                        <a href="{{route('danh-muc-bai-viet',$cms_cate->uniquekey)}}">{{$cms_cate->title}}</a></li>
 
                 @endforeach
             </ul>
@@ -5354,6 +5359,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
             return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.")
         }
 </script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script type='text/javascript' src='https://xedienvietthanh.com/wp-content/plugins/ccodon-optimizer/lab.min.js'
         id='ccodon-lab-js'></script>
 <script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript'

@@ -5465,6 +5465,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         }
     }
 </script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
 <!-- BK MODAL -->
 <!-- <div id='bk-modal'></div> -->

@@ -2651,7 +2651,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
 
                         <li id="menu-item-28385"
                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28385">
-                            <a href="{{route('danh-muc-san-pham-con',$cms_cate->uniquekey)}}">{{$cms_cate->title}}</a></li>
+                            <a href="{{route('danh-muc-bai-viet',$cms_cate->uniquekey)}}">{{$cms_cate->title}}</a></li>
 
                     @endforeach
                 </ul>
@@ -3081,10 +3081,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
                 </div>
 
                 <div class="ads_467_466" id="text-3">
-                    <a href="https://xedienvietthanh.com/xe-may-dien-yadea-v002-vfv/" title="">
+                    <a href="{{$banner_duoiphai->linkbanner}}" title="">
                         <img class="img-responsive lazyload lazy"
-                             src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
-                             data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/xe-dien-viet-thanh-banner-doc.jpg"
+                             src="{{env('APP_URL').'/documents/website/'.$banner_duoiphai->image}}"
+                             data-src="{{env('APP_URL').'/documents/website/'.$banner_duoiphai->image}}"
                              alt=""/>
                     </a>
                 </div>
@@ -3193,7 +3193,7 @@ window.onload = function() {
 
                     <li id="menu-item-28385"
                         class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28385">
-                        <a href="{{route('danh-muc-san-pham-con',$cms_cate->uniquekey)}}">{{$cms_cate->title}}</a></li>
+                        <a href="{{route('danh-muc-bai-viet',$cms_cate->uniquekey)}}">{{$cms_cate->title}}</a></li>
 
                 @endforeach
             </ul>
@@ -5688,6 +5688,7 @@ window.onload = function() {
             return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.")
         }
 </script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script type='text/javascript' src='https://xedienvietthanh.com/wp-content/plugins/ccodon-optimizer/lab.min.js'
         id='ccodon-lab-js'></script>
 <script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript'

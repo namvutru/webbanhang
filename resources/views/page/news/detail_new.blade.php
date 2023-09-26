@@ -2653,7 +2653,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
 
                         <li id="menu-item-28385"
                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28385">
-                            <a href="{{route('danh-muc-san-pham-con',$cms_cate->uniquekey)}}">{{$cms_cate->title}}</a></li>
+                            <a href="{{route('danh-muc-bai-viet',$cms_cate->uniquekey)}}">{{$cms_cate->title}}</a></li>
 
                     @endforeach
                 </ul>
@@ -2675,9 +2675,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
         <span class="h1 cl_white">Tin tức</span>
 
         <div class="breadcrumb_wrapper">
-            <div class="brcrumb"><span><span><a href="https://xedienvietthanh.com/"><i
-                                class="fa fa-home"></i></a>  <span><a href="https://xedienvietthanh.com/tin-tuc/">Tin tức</a>  <span
-                                class="breadcrumb_last" aria-current="page">2 dòng xe máy điện Vespa chính hãng được ưa chuộng hiện nay</span></span></span></span>
+            <div class="brcrumb"><span><span><a href="{{env('APP_URL')}}"><i
+                                class="fa fa-home">Trang chủ</i></a>  <span><a href="{{route('danh-sach-bai-viet')}}">Tin tức</a>  <span
+                                class="breadcrumb_last" aria-current="page">{{$news->title}}</span></span></span></span>
             </div>
         </div>
     </div>
@@ -2686,108 +2686,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-8 left-panel">
-                <h1 class="tit_content full">2 dòng xe máy điện Vespa chính hãng được ưa chuộng hiện nay</h1>
+                <h1 class="tit_content full">{{$news->summary_content}}</h1>
                 <div class="clearfix marb10"></div>
-                <span class="author nhaxuatban left" style="margin-left: 0;"><i style="margin-left: 0;"
-                                                                                class="fa fa-user"></i><a
-                        href="https://xedienvietthanh.com/author/hapham/" title="Đăng bởi hapham"
-                        rel="author">hapham</a></span>
-                <span class="nhaxuatban left"><i class="fa fa-calendar"></i>16/02/2021</span>
+{{--                <span class="author nhaxuatban left" style="margin-left: 0;"><i style="margin-left: 0;"--}}
+{{--                                                                                class="fa fa-user"></i><a--}}
+{{--                        href="https://xedienvietthanh.com/author/hapham/" title="Đăng bởi hapham"--}}
+{{--                        rel="author">hapham</a></span>--}}
+                <span class="nhaxuatban left"><i class="fa fa-calendar"></i>{{$news->updated_at}}</span>
                 <div class="clearfix mar10"></div>
                 <div class="the_content">
 
-                    <div class='divfirst'>
-                        <p>Các loại xe máy điện Vespa có đặc điểm chung là khá nhỏ gọn, động cơ cao cấp và mức giá rẻ
-                            (thường dưới 20 triệu đồng). Các mẫu xe này thích hợp sử dụng cho nhiều đối tượng khách
-                            hàng. Từ học sinh sinh viên, dân văn phòng hay cả những người cao tuổi. Trong bài viết này
-                            chúng tôi muốn giới thiệu đến bạn đọc 2 trong các loại xe máy điện Vespa chính hãng hiện
-                            được ưa chuộng nhất trên thị trường. Để bạn có thể tham khảo và chọn mua nhé.</p></p>
+                    {!! $news->content !!}
 
-
-                        <p><strong>Xe máy điện Vespa
-                                Venus</strong></p></p></div>
-                    <span class="h4">Sản phẩm gợi ý:</span>
-                    <ul id="sp-de-xuat">
-                        <li><a target="_blank" class="bold"
-                               href="https://xedienvietthanh.com/xe-may-dien-vespa-valerio-sp/"
-                               title="XE MÁY ĐIỆN VESPA VALERIO SP">👉 <span>XE MÁY ĐIỆN VESPA VALERIO SP</span></a></li>
-                        <li><a target="_blank" class="bold" href="https://xedienvietthanh.com/xe-may-dien-roma-sv/"
-                               title="XE MÁY ĐIỆN ROMA SV">👉 <span>XE MÁY ĐIỆN ROMA SV</span></a></li>
-                    </ul><!-- #prod-de-xuat-end -->
-                    <div class='divend'>
-
-
-                        <div class="wp-block-image">
-                            <figure class="aligncenter"><img
-                                    src="https://xedienvietthanh.com/wp-content/themes/auto/images/loading.gif"
-                                    data-src="https://xedienvietthanh.com/wp-content/uploads/2019/11/Venus-thêm-2.png"
-                                    alt="giá xe máy điện Vespa" class="lazyload wp-image-10415"/></figure>
-                        </div>
-
-
-                        <p>Mẫu xe này có lẽ không còn xa lạ với những người yêu xe. Đặc biệt là các loại xe máy điện
-                            Vespa chính hãng. Vì đây được coi là một mẫu xe khá “hot” với thiết kế hiện đại. Xe vẫn mang
-                            đặc điểm chung của các mẫu xe Vespa là khá nhỏ gọn và phù hợp với vóc dáng người Việt; tuy
-                            nhiên ở mẫu xe máy điện Vespa Venus này toát lên sự tinh tế mang phong cách châu Âu. Màu xe
-                            sáng bóng được sơn bằng công nghệ riêng tạo ra ấn tượng riêng với các dòng xe điện
-                            khác.</p></p>
-
-
-                        <p>Xe sử dụng 5 bình ắc quy giúp tăng lượng điện dự trữ, xe có
-                            thể đi được quãng đường lên tới 80km cho một lần sạc đầy. Hệ thống tự khởi động
-                            giúp người dùng dễ dàng làm quen và làm chủ được tốc độ chiếc xe máy điện Venus
-                            của mình.</p></p>
-
-
-                        <p>Bên cạnh đó, việc tích hợp các tiện ích thông minh giúp người
-                            dùng luôn có những trải nghiệm thoải mái nhất. Màn hình Led cung cấp đầy đủ các
-                            thông tin liên quan đến lộ trình, sàn để chân rộng rãi, yên xe khá dài và êm
-                            ái, tay lái bọc cao su nên dễ cầm nắm và điều khiển tốc độ,&#8230; Với xe máy điện
-                            Vespa Venus, mỗi quãng đường bạn đi qua sẽ là một hành trình đáng nhớ nhờ có những
-                            tiện ích từ động cơ đến thiết kế mang phong cách riêng.</p></p>
-
-
-                        <p>Xe máy điện Vespa Venus có mức giá vào khoảng 14.5 triệu đồng, trung bình so với mặt bằng các
-                            loại xe máy điện Vespa chính hãng khác. Vậy nên bạn có thể tham khảo chọn mua mẫu xe điện
-                            Venus này nhé.</p></p>
-
-
-                        <p><strong>Xe máy điện Vespa Valerio S</strong></p></p>
-
-
-                        <div class="wp-block-image">
-                            <figure class="aligncenter"><img
-                                    src="https://xedienvietthanh.com/wp-content/themes/auto/images/loading.gif"
-                                    data-src="https://xedienvietthanh.com/wp-content/uploads/2019/08/Valerio-S-thêm-3.png"
-                                    alt="xe máy điện Vespa chính hãng" class="lazyload wp-image-10420"/></figure>
-                        </div>
-
-
-                        <p>Xe máy điện Vespa Valerio S có mức giá vào khoảng 15 triệu đồng – là một trong các loại
-                            <strong><a href="https://xedienvietthanh.com/vespa/">xe máy điện Vespa giá rẻ</a></strong>
-                            và được người dùng ưa chuộng hiện nay. Xe điện Valerio S sở hữu động cơ công suất lên tới
-                            1000W mạnh mẽ, bền bỉ, chống nước, tốc độ tối đa lên tới 50km/h. Hệ thống phanh đĩa trước,
-                            phanh cơ sau kết hợp với lốp không săm chắc chắn giúp chiếc xe trở nên ổn định, an toàn hơn
-                            cho người lái, dễ dàng xử lý tình huống bất ngờ xảy ra trên đường.</p></p>
-
-
-                        <p>Tổng thể chiếc xe máy điện Valerio S là những đường bo tròn
-                            cổ điển và mềm mại, phần đèn diện tích lớn tăng khả năng chiếu sáng, đèn hậu
-                            thiết kế cân đối. Khung xe 100% làm từ vật liệu thép cao cấp cho độ bền cao, tải
-                            trọng lớn lên đến 180kg – xe có thể chở đến 2 người mà không lo ì ạch.</p></p>
-
-
-                        <p>Mẫu xe điện này sử dụng 5 ắc quy 20Ah giúp tăng khả năng tải
-                            trọng cũng như quãng đường cho một lần sạc đầy bình. Muốn giữ chất lượng xe tốt
-                            nhất thì bạn cũng nên tìm hiểu, thay bình ắc quy kịp thời tại những địa chỉ uy
-                            tín.</p></p>
-
-
-                        <p>Hệ thống xe điện Việt Thanh với 14 cửa hàng trên toàn quốc chuyên cung cấp các dòng xe điện
-                            chính hãng với mức giá cạnh tranh nhất cùng nhiều ưu đãi hấp dẫn, được bảo hành lên tới 3
-                            năm. Bạn có thể tham khảo và chọn mua các loại xe máy điện Vespa chính hãng tại xe điện Việt
-                            Thanh với 1 trong 14 cửa hàng ở trên nhé. Hi vọng bạn sẽ có những trải nghiệm tuyệt vời với
-                            chiếc xe điện Vespa của mình.</p></p></div><!-- #divend -->            </div>
+                </div>
                 <div class="pull-left">
 
                 </div>
@@ -2797,57 +2708,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
                 <div id="list_post_thumb_id-2" class="LPT box-sidebar">
                     <div class="tit_box_tin">Tin tức khác</div>
                     <ul class="list-unstyled full">
+                        @foreach( $related_news as $key => $re_news)
                         <li class="full marb10">
-                            <a href="https://xedienvietthanh.com/tin-tuc/bao-nhieu-tuoi-duoc-di-xe-may-dien-quy-dinh-can-biet/"
-                               title="Bao Nhiêu Tuổi Được Đi Xe Máy Điện Quy Định Cần Biết">
-                                <img src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                     data-src="https://xedienvietthanh.com/wp-content/uploads/2023/09/xe-may-dien-yadea-vigor-trang-1-394x222.jpg"
-                                     class="lazyload img-thumb lazyload wp-post-image" alt="" loading="lazy"/> <span>Bao Nhiêu Tuổi Được Đi Xe Máy Điện Quy Định Cần Biết</span>
+                            <a href="{{route('bai-viet',$re_news->slug)}}"
+                               title="{{$re_news->summary_content}}">
+                                <img src="{{env('APP_URL').'/documents/website/'.$re_news->image}}"
+                                     data-src="{{env('APP_URL').'/documents/website/'.$re_news->image}}"
+                                     class="lazyload img-thumb lazyload wp-post-image" alt="" loading="lazy"/> <span>{{$re_news->summary_content}}</span>
 
                             </a></li>
-                        <li class="full marb10">
-                            <a href="https://xedienvietthanh.com/tin-tuc/di-xe-dap-dien-co-phai-doi-mu-bao-hiem-khong-quy-dinh-can-nam/"
-                               title="Đi Xe Đạp Điện Có Phải Đội Mũ Bảo Hiểm Không? Quy Định Cần Nắm">
-                                <img src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                     data-src="https://xedienvietthanh.com/wp-content/uploads/2023/09/tam-quan-trong-cua-viec-doi-mu-bao-hiem-khi-di-xe-dap-dien-394x222.png"
-                                     class="lazyload img-thumb lazyload wp-post-image" alt="" loading="lazy"/> <span>Đi Xe Đạp Điện Có Phải Đội Mũ Bảo Hiểm Không? Quy Định Cần Nắm</span>
 
-                            </a></li>
-                        <li class="full marb10">
-                            <a href="https://xedienvietthanh.com/tin-tuc/nen-mua-xe-dien-nhap-khau-hay-xe-dien-lap-rap-trong-nuoc/"
-                               title="Nên Mua Xe Điện Nhập Khẩu Hay Lắp Ráp Trong Nước?">
-                                <img src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                     data-src="https://xedienvietthanh.com/wp-content/uploads/2023/03/xe-ga-50cc-espero-classic-se-394x222.jpg"
-                                     class="lazyload img-thumb lazyload wp-post-image" alt="" loading="lazy"/> <span>Nên Mua Xe Điện Nhập Khẩu Hay Lắp Ráp Trong Nước?</span>
+                        @endforeach
 
-                            </a></li>
-                        <li class="full marb10">
-                            <a href="https://xedienvietthanh.com/tin-tuc/co-nen-hay-khong-khi-chon-mua-xe-dien-cu/"
-                               title="Tư Vấn: Có Nên Mua Xe Điện Cũ Hay Không?">
-                                <img src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                     data-src="https://xedienvietthanh.com/wp-content/uploads/2023/06/xe-dap-dien-yadea-igo-cho-hoc-sinh-394x222.jpg"
-                                     class="lazyload img-thumb lazyload wp-post-image" alt="" loading="lazy"/> <span>Tư Vấn: Có Nên Mua Xe Điện Cũ Hay Không?</span>
-
-                            </a></li>
-                        <li class="full marb10">
-                            <a href="https://xedienvietthanh.com/tin-tuc/huong-dan-su-dung-xe-dap-dien-dung-cach/"
-                               title="Hướng Dẫn Sử Dụng Xe Đạp Điện Đúng Cách, An Toàn">
-                                <img src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                     data-src="https://xedienvietthanh.com/wp-content/uploads/2023/05/xe-dap-dien-kenko-m133-394x222.jpg"
-                                     class="lazyload img-thumb lazyload wp-post-image" alt="" loading="lazy"/> <span>Hướng Dẫn Sử Dụng Xe Đạp Điện Đúng Cách, An Toàn</span>
-
-                            </a></li>
 
                     </ul>
                     <div class="full space10"></div>
-                    <a href="https://xedienvietthanh.com/tin-tuc/" class="btn_xemthem full"
+                    <a href="{{route('danh-sach-bai-viet')}}" class="btn_xemthem full"
                        title="Xem thêm Tin tức khác">Xem thêm</a>
                 </div>
                 <div class="ads_467_466" id="text-3">
-                    <a href="https://xedienvietthanh.com/xe-may-dien-yadea-v002-vfv/" title="">
+                    <a href="{{$banner_duoiphai->linkbanner}}" title="">
                         <img class="img-responsive lazyload lazy"
-                             src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
-                             data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/xe-dien-viet-thanh-banner-doc.jpg"
+                             src="{{env('APP_URL').'/documents/website/'.$banner_duoiphai->image}}"
+                             data-src="{{env('APP_URL').'/documents/website/'.$banner_duoiphai->image}}"
                              alt=""/>
                     </a>
                 </div>
@@ -2925,7 +2808,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
 
                     <li id="menu-item-28385"
                         class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28385">
-                        <a href="{{route('danh-muc-san-pham-con',$cms_cate->uniquekey)}}">{{$cms_cate->title}}</a></li>
+                        <a href="{{route('danh-muc-bai-viet',$cms_cate->uniquekey)}}">{{$cms_cate->title}}</a></li>
 
                 @endforeach
             </ul>
@@ -5408,6 +5291,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
             return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.")
         }
 </script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script type="rocketlazyloadscript" data-rocket-type='text/javascript'
         src='https://xedienvietthanh.com/wp-includes/js/comment-reply.min.js' id='comment-reply-js' defer></script>
 <script type='text/javascript' src='https://xedienvietthanh.com/wp-content/plugins/ccodon-optimizer/lab.min.js'
