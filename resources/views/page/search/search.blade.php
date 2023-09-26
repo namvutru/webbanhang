@@ -202,7 +202,7 @@
     <link href="//www.google-analytics.com" rel="dns-prefetch">
     <!-- <link href="https://xedienvietthanh.com/favicon.png" rel="shortcut icon"> -->
     <meta name="description"
-          content="Xe ga 50cc Valerio full đèn Led Những đường cong hoàn hảo cùng những vết cắt thông minh giúp xe [&hellip;]">
+          content="Xe máy điện TAILG CONE là phiên bản mới được tích hợp nhiều công nghệ tiên tiến hiện đại của [&hellip;]">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <meta name="robots" content="noindex"/> -->
     <!-- <link rel="stylesheet" href="https://pc.baokim.vn/css/bk.css"> -->
@@ -1973,26 +1973,19 @@
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'/>
 
     <!-- This site is optimized with the Yoast SEO plugin v19.11 - https://yoast.com/wordpress/plugins/seo/ -->
-    <title>Xe ga 50cc Valerio - Xe máy xăng cho học sinh không cần bằng</title>
+    <title>Hệ thống Việt Thanh chuyên phân phối xe máy điện cao cấp</title>
     <link rel="stylesheet"
-          href="https://xedienvietthanh.com/wp-content/cache/min/1/7b6c40c842192a3528da105e3f8af942.css" media="all"
+          href="https://xedienvietthanh.com/wp-content/cache/min/1/5d3ff17da23707a0f3ec4bcc0d200bfd.css" media="all"
           data-minify="1"/>
-    <link rel="canonical" href="https://xedienvietthanh.com/xe-ga-50cc-valerio/"/>
+    <link rel="canonical" href="https://xedienvietthanh.com/xe-may-dien/"/>
     <meta property="og:locale" content="vi_VN"/>
     <meta property="og:type" content="article"/>
-    <meta property="og:title" content="Xe ga 50cc Valerio - Xe máy xăng cho học sinh không cần bằng"/>
+    <meta property="og:title" content="Hệ thống Việt Thanh chuyên phân phối xe máy điện cao cấp"/>
     <meta property="og:description"
-          content="Xe ga 50cc Valerio là sản phẩm xe máy tay ga được sản xuất tại Việt Nam, chạy nhiên liệu xăng, dung tích xi-lanh nhỏ, người dùng không cần bằng lái."/>
-    <meta property="og:url" content="https://xedienvietthanh.com/xe-ga-50cc-valerio/"/>
+          content="Hệ thống xe điện Việt Thanh chuyên phân phối các loại xe máy điện của các hãng Yadea, Vinfast, Honda, Giant, Aima, Vespa, Zoomer, xe máy điện 3 bánh,..."/>
+    <meta property="og:url" content="https://xedienvietthanh.com/xe-may-dien/"/>
     <meta property="og:site_name"
           content="Hệ Thống Xe Điện Việt Thanh - Bán xe máy 50cc - Xe đạp điện - Xe máy điện chính hãng, nhập khẩu"/>
-    <meta property="article:publisher" content="https://www.facebook.com/tapdoanxedien"/>
-    <meta property="article:modified_time" content="2023-08-29T06:44:45+00:00"/>
-    <meta property="og:image"
-          content="https://xedienvietthanh.com/wp-content/uploads/2019/09/avata-vespa-valerio-50cc.png"/>
-    <meta property="og:image:width" content="370"/>
-    <meta property="og:image:height" content="240"/>
-    <meta property="og:image:type" content="image/png"/>
     <meta name="twitter:card" content="summary_large_image"/>
     <!-- / Yoast SEO plugin. -->
 
@@ -2249,23 +2242,19 @@
     </style>
 
     <link rel="https://api.w.org/" href="https://xedienvietthanh.com/wp-json/"/>
-    <link rel="alternate" type="application/json" href="https://xedienvietthanh.com/wp-json/wp/v2/products/14422"/>
-    <link rel="alternate" type="application/json+oembed"
-          href="https://xedienvietthanh.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fxedienvietthanh.com%2Fxe-ga-50cc-valerio%2F"/>
-    <link rel="alternate" type="text/xml+oembed"
-          href="https://xedienvietthanh.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fxedienvietthanh.com%2Fxe-ga-50cc-valerio%2F&#038;format=xml"/>
+    <link rel="alternate" type="application/json" href="https://xedienvietthanh.com/wp-json/wp/v2/categories/189"/>
     <!-- start Simple Custom CSS and JS -->
     <style type="text/css">
         /* Add your CSS code here.
 
-For example:
-.example {
-    color: red;
-}
+        For example:
+        .example {
+            color: red;
+        }
 
-For brushing up on your CSS knowledge, check out http://www.w3schools.com/css/css_syntax.asp
+        For brushing up on your CSS knowledge, check out http://www.w3schools.com/css/css_syntax.asp
 
-End of comment */
+        End of comment */
 
         @media (max-width: 480px) {
             .navhome a, .more-menu-target {
@@ -2356,7 +2345,9 @@ End of comment */
 
 
     <script type="application/ld+json" class="saswp-schema-markup-output">
-        [{"@context":"https://schema.org/","@type":"Article","@id":"https://xedienvietthanh.com/xe-ga-50cc-valerio/#Article","url":"https://xedienvietthanh.com/xe-ga-50cc-valerio/","inLanguage":"vi","mainEntityOfPage":"https://xedienvietthanh.com/xe-ga-50cc-valerio/","headline":"Xe ga 50cc Valerio - Xe máy xăng cho học sinh không cần bằng","description":"Xe ga 50cc Valerio là sản phẩm xe máy tay ga được sản xuất tại Việt Nam, chạy nhiên liệu xăng, dung tích xi-lanh nhỏ, người dùng không cần bằng lái.","articleBody":"Xe ga 50cc Valerio full đèn Led         Những đường cong hoàn hảo cùng những vết cắt thông minh giúp xe ga 50cc Valerio luôn nổi bật. Valerio 50cc là sự kết hợp hài hòa giữa vẻ đẹp cổ và vẻ đẹp hiện đại. Cụm đèn pha tròn truyền thống được bo viền mạ crom tạo nét cổ kính. Hiện đại ở điểm công nghệ đèn Led được ứng trên trên toàn hệ thống đèn xe. Đèn pha Led 2 tầng siêu sáng và siêu tiết kiệm nhiên liệu.            Xe ga Valerio 50cc mang vẻ đẹp khỏe khoắn.            Cặp đèn xi nhan Led được tích hợp đèn định vị nhỏ cho ánh sáng trắng, đồng thời tạo điểm nhấn cho đầu xe. Cụm đèn hậu cũng sử dụng đèn Led được thiết kế tỉ mỉ, trau truốt, thể hiện sự đẳng cấp.        Một điểm nhấn ở mặt nạ xe nữa là khe hút gió tạo hình 3 mũi tên viền crom sáng bóng tạo vẻ đẹp khỏe khoắn và độc đáo. Mặt đồng hồ LCD bắt mắt đồng thời giúp người dùng nắm bắt chính xác các thông số khi vận hành của xe.        Xe ga 50cc Valerio phối màu cá tính        Sự phối màu cá tính mang điểm nhấn bởi khối màu đen từ đầu xe, mặt nạ, viền xe, chắn bùn kết hợp các gam màu sắc như vàng, trắng, xanh đậm, xanh lơ, ghi xám….. Toàn bộ động cơ và ống xả xe cũng được sơn màu đen khác biệt hoàn toàn các mẫu xe ga 50cc khác cùng phân khúc. Viền mâm bánh xe được sơn cùng màu sơn xe tạo điểm nhấn nổi bật. Công nghệ sơn tĩnh điện nhũ ngọc trai cho độ phủ bóng hoàn hảo. Xe ga 50cc Valerio đã tạo nên trào lưu mới, thể hiện cá tính mạnh mẽ của người dùng.            Cốp xe tay ga Valerio được thiết kế rộng rãi.            Không gian chứa đồ của xe tay ga 50 phân khối Valerio rất rộng rãi. Cốp chính dưới yên xe có dung tích khoảng 16L, có thể để vừa mũ bảo hiểm cùng các vật dụng cá nhân khác. Xe Valerio 50cc được trang bị hộc đựng đồ nhỏ giúp người dùng có thểm không gian chứa đồ. Phía dưới cổ xe là móc treo đồ. Tại đây bạn có thể treo mũ bảo hiểm cũng như các vật dụng khác.        Xe ga Valerio vận hành an toàn trong mọi điều kiện        Hệ thống giảm xóc trên xe ga 50cc Valerio gồm giảm chấn thủy lực kết hợp lò xo ống lồng. Vành đúc 12inch nguyên khối tích hợp phanh đĩa trước đường kính lớn. Cùng với đó là lốp không săm kích thước lớn có vân xẻ rãnh sâu. Tất cả những điều đó đem đến khả năng vận hành an toàn cho người dùng trong mọi điều kiện.            Hệ thống giảm xóc trên xe ga Valerio giúp xe vận hành an toàn.            Động cơ đạt chuẩn quốc tế đem tới những điểm cộng cho xe tay ga Valerio 50cc. Động cơ 4 thì, làm mát bằng không khí, dung tích xy lanh đơn 49.5cc. Vận tốc max của xe 50km/h. Vận tốc này là an toàn với các bạn học sinh hoặc những người mới tập đi xe.","keywords":"xe ga 50cc, xe máy cho học sinh, xe máy xăng không cần bằng, ","datePublished":"2021-01-17T04:57:44+07:00","dateModified":"2023-08-29T13:44:45+07:00","author":{"@type":"Person","name":"Dory","url":"https://xedienvietthanh.com/author/sonnguyen/","sameAs":[],"image":{"@type":"ImageObject","url":"https://secure.gravatar.com/avatar/7bba63e63dc46006040beef3da6dddb1?s=96&d=mm&r=g","height":96,"width":96}},"editor":{"@type":"Person","name":"Dory","url":"https://xedienvietthanh.com/author/sonnguyen/","sameAs":[],"image":{"@type":"ImageObject","url":"https://secure.gravatar.com/avatar/7bba63e63dc46006040beef3da6dddb1?s=96&d=mm&r=g","height":96,"width":96}},"publisher":{"@type":"Organization","name":"Hệ Thống Xe Điện Việt Thanh &#8211; Bán xe máy 50cc &#8211; Xe đạp điện &#8211; Xe máy điện chính hãng, nhập khẩu","url":"https://xedienvietthanh.com"},"image":[{"@type":"ImageObject","@id":"https://xedienvietthanh.com/xe-ga-50cc-valerio/#primaryimage","url":"https://xedienvietthanh.com/wp-content/uploads/2019/09/avata-vespa-valerio-50cc-1200x778.png","width":"1200","height":"778"},{"@type":"ImageObject","url":"https://xedienvietthanh.com/wp-content/uploads/2019/09/avata-vespa-valerio-50cc-1200x900.png","width":"1200","height":"900"},{"@type":"ImageObject","url":"https://xedienvietthanh.com/wp-content/uploads/2019/09/avata-vespa-valerio-50cc-1200x675.png","width":"1200","height":"675"},{"@type":"ImageObject","url":"https://xedienvietthanh.com/wp-content/uploads/2020/03/chi-tiet-valerio-50cc-6.png","width":700,"height":380},{"@type":"ImageObject","url":"https://xedienvietthanh.com/wp-content/uploads/2020/03/chi-tiet-valerio-50cc-1.png","width":700,"height":380},{"@type":"ImageObject","url":"https://xedienvietthanh.com/wp-content/uploads/2020/03/valerio-50cc-2.png","width":950,"height":520}]}]
+        [{"@context":"https://schema.org/","@type":"Product","@id":"189","url":"https://xedienvietthanh.com/xe-may-dien/xe-may-dien-tailg-cone/","name":"xe máy điện","sku":"","description":"Hệ thống xe điện Việt Thanh chuyên phân phối các loại xe máy điện của các hãng Yadea, Vinfast, Honda, Giant, Aima, Vespa, Zoomer, xe máy điện 3 bánh,...","brand":{"@type":"Brand","name":""},"offers":{"@type":"AggregateOffer","availability":"BackOrder","itemCondition":"NewCondition","price":"0","priceCurrency":"VND","url":"https://xedienvietthanh.com/xe-may-dien/xe-may-dien-tailg-cone/","priceValidUntil":"2023-01-30T00:00:00Z","highPrice":"0","lowPrice":"0","offerCount":"66","seller":{"@type":"Organization","name":""},"priceSpecification":{"@type":"priceSpecification","valueAddedTaxIncluded":""}},"gtin8":"","color":"","gtin13":"","gtin12":"","mpn":"","additionalType":"","image":[{"@type":"ImageObject","url":"https://xedienvietthanh.com/wp-content/uploads/2022/12/xe-may-dien-tailg-cone-1-1200x675.jpg","width":1200,"height":675,"@id":"https://xedienvietthanh.com/xe-may-dien/xe-may-dien-tailg-cone/#primaryimage"}]},
+
+        {"@context":"https://schema.org/","@type":"Article","@id":"https://xedienvietthanh.com/xe-may-dien/xe-may-dien-tailg-cone/#Article","url":"https://xedienvietthanh.com/xe-may-dien/xe-may-dien-tailg-cone/","inLanguage":"vi","mainEntityOfPage":"https://xedienvietthanh.com/xe-may-dien/xe-may-dien-tailg-cone/","headline":"XE MÁY ĐIỆN TAILG CONE","description":"Xe máy điện TAILG CONE là mẫu xe máy điện được ưa chuộng hiện nay của nhà TAILG. Hãy cùng chúng tôi tìm hiểu về mẫu xe này nhé!","articleBody":"Xe máy điện TAILG CONE là phiên bản mới được tích hợp nhiều công nghệ tiên tiến hiện đại của nhà TAILG. Hôm nay, hãy đồng hành cùng Xe điện Việt Thanh khám phá những ưu điểm của mẫu xe này nhé!  Thiết kế xe máy điện TAILG CONE  Xe máy điện TAILG CONE được thiết kế vô cùng hiện đại và phong cách, phù hợp với giới trẻ hiện nay. Thiết kế độc đáo của xe điện sẽ khiến bạn luôn nổi bật và thu hút khi di chuyển.    Linh kiện đều được sản xuất độc quyền tại nhà TAILG, từng chi tiết đều được tỉ mỉ mà tạo thành. Nhựa xe có khả năng chống chọi với thời tiết cao. Có thể chịu nắng chịu mưa với thời tiết khắc nghiệt tại Việt Nam.    Xe được trang bị cốp siêu rộng, có thể để đồ thoải mái. Yên xe êm ái, giúp bạn thoải mái khi đi đường xa. Có thể rộng ngồi 2 người, cũng có thể dễ dàng để chở đồ hay thú cưng.     Xe máy điện TAILG CONE  Hệ thống đèn xe, đầu xe mới lạ  Toàn bộ hệ thống đèn xe đều được sử dụng đèn Led hiện đại, cho khả năng chiếu sáng tốt hơn với đèn Halogen hiện nay. Xe có thể chiếu sáng xuyên màn đêm, khiến bạn an tâm hơn khi di chuyển trên những cung đường tối.    TAILG còn thiết kế cho dòng xe máy điện CONE này một dải đèn Led ở ngay trên đầu xe khá bắt mắt và hiện đại. Vậy nên, xe sẽ được nổi bật hơn hẳn khi di chuyển vào buổi tối. Đây cũng là một điểm giúp xe khác biệt với những dòng xe khác.  Động cơ tiêu chuẩn, chất lượng, bền bỉ  Hệ thống động cơ của xe máy điện siêu bền bỉ, đạt tiêu chuẩn chất lượng. Xe có thể di chuyển ổn định ngay cả khi đi trời mưa hay đường ngập. Vận tốc tối đa 45km/h, rất an toàn khi di chuyển cho học sinh và sinh viên nhé. Quãng đường tối đa khi di chuyển khoảng 60km/ 1 lần sạc. Xe được trang bị bình ắc quy 72V-20Ah hiện đại.    Hiện tại, mẫu xe điện TAILG CONE đã có sẵn tại cửa hàng Xe điện Việt Thanh. Khách hàng muốn mua xe hãy liên hệ ngay hôm nay để rinh về em xe siêu chất nhé!","keywords":"","datePublished":"2022-12-15T09:05:24+07:00","dateModified":"2022-12-15T09:05:24+07:00","author":{"@type":"Person","name":"hapham","url":"https://xedienvietthanh.com/author/hapham/","sameAs":[],"image":{"@type":"ImageObject","url":"https://secure.gravatar.com/avatar/b1e5a0e0db74b9ff495e33d3ddd074b9?s=96&d=mm&r=g","height":96,"width":96}},"editor":{"@type":"Person","name":"hapham","url":"https://xedienvietthanh.com/author/hapham/","sameAs":[],"image":{"@type":"ImageObject","url":"https://secure.gravatar.com/avatar/b1e5a0e0db74b9ff495e33d3ddd074b9?s=96&d=mm&r=g","height":96,"width":96}},"publisher":{"@type":"Organization","name":"Hệ Thống Xe Điện Việt Thanh &#8211; Bán xe máy 50cc &#8211; Xe đạp điện &#8211; Xe máy điện chính hãng, nhập khẩu","url":"https://xedienvietthanh.com"},"image":[{"@type":"ImageObject","url":"https://xedienvietthanh.com/wp-content/uploads/2022/12/xe-may-dien-tailg-cone-1-1200x675.jpg","width":1200,"height":675,"@id":"https://xedienvietthanh.com/xe-may-dien/xe-may-dien-tailg-cone/#primaryimage"}]}]
     </script>
 
     <link rel="icon"
@@ -2486,15 +2477,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
     <!-- Meta Pixel Code -->
     <script type="rocketlazyloadscript">
         !function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1940869732771843');
-fbq('track', 'PageView');
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1940869732771843');
+        fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
                    src="https://www.facebook.com/tr?id=1940869732771843&ev=PageView&noscript=1"
@@ -2506,8 +2497,8 @@ fbq('track', 'PageView');
         max-height: 40px;
         overflow: hidden;
     }</style>
-<body class="products-template-default single single-products postid-14422 xe-ga-50cc-valerio" data-spy="scroll"
-      data-target=".navbar" data-offset="60">
+<body class="archive category category-xe-may-dien category-189 category-template-category-products-php"
+      data-spy="scroll" data-target=".navbar" data-offset="60">
 <!-- Google Tag Manager (noscript) 29.01.2021-->
 <noscript>
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7XLR8S"
@@ -2522,7 +2513,7 @@ fbq('track', 'PageView');
 
             <div class="sup-online">
 
-                <a href="tel:{{$shop_info->phone}}" title="Tổng Đài 19002082">Tổng Đài hỗ trợ {{$shop_info->phone}}</a>
+                <a href="tel:{{$shop_info->phone}}" title="Tổng Đài {{$shop_info->phone}}">Tổng Đài hỗ trợ {{$shop_info->phone}}</a>
 
             </div>
         </div>
@@ -2664,1005 +2655,94 @@ fbq('track', 'PageView');
 
 </header>
 
-<!--  -->
-<div class="hidden" id="cr_sanpham">
-    <img src="{{env('APP_URL').'/documents/website/'.$product->imagemain}}"
-         data-src="{{env('APP_URL').'/documents/website/'.$product->imagemain}}"
-         class="lazyload +img-full transition wp-post-image" alt="" loading="lazy"/> <span class="id-sp">{{$product->id}}</span>
-    <span class="url-sp">{{env('APP_URL') . '/chi-tiet-san-pham/'.$product->slug}}}</span>
-</div>
-<section id="slide_child">
-    <div class="slide_child">
-        <span class="h1 cl_white">CHI TIẾT SẢN PHẨM</span>
-        <div class="breadcrumb_wrapper">
-            <div class="brcrumb"><span><span><a href="{{env('APP_URL')}}"><i
-                                class="fa fa-home"></i></a>  <span class="breadcrumb_last" aria-current="page">{{$product->name}}</span></span></span>
-            </div>
-        </div>
-    </div>
-</section>
+
+<!-- <link rel="stylesheet" href="https://pc.baokim.vn/css/bk.css"> -->
 
 @include('page.includes.narbar')
-
-<nav id="sidebar" class="navbar navbar-inverse transition w100 destop" style="display: none;">
-    <div class="container">
-        <ul class="nav list-unstyled">
-            <li><a class="page-scroll" href="#thongso">Thông số kỹ thuật</a></li>
-            <li><a class="page-scroll" href="#about">Đặc điểm nổi bật</a></li>
-
-
-            <li><a class="page-scroll" href="#danhgia">Đánh giá</a></li>
-            <li><a class="page-scroll" href="#contact">Bình luận</a></li>
-            <li><a class="page-scroll" href="#faq-2">Câu hỏi thường gặp</a></li>
-        </ul>
-    </div>
-</nav>
-
-<style>
-    #quick-buy .none {
-        display: none !important;
-    }
-
-    #quick-buy .infopromotion ul {
-        float: left;
-        list-style: none;
-        outline: medium none;
-        padding: 0px;
-        margin: 0px;
-    }
-
-    #quick-buy .infopromotion ul li i.fa-gift {
-        margin-right: 5px;
-        color: #ffb546;
-        font-size: 15px
-    }
-
-    #quick-buy .infopromotion ul li {
-        margin-bottom: 10px;
-        font-size: 14px;
-        color: #666
-    }
-</style>
-<div class="modal fade  font16" id="quick-buy" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <form method="post" id="ss-form" class="form-quickbuy">
-                <div class="modal-header">
-                    <h4 class="row text-center title_form text-uppercase">{{$product->name}}</h4>
-                </div>
-                <div class="modal-body">
-                    <table class="table bold">
-                        <thead class="thead-inverse">
-                        <tr>
-                            <th class="hidden-xs hidden-sm">Hình ảnh</th>
-                            <th class="hidden-xs hidden-sm">Sản phẩm</th>
-                            <th>Đơn giá</th>
-                            <th>Số lượng</th>
-                            <th class="hidden-xs hidden-sm">Thành tiền</th>
-                            <th>Hủy</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td class="hidden-xs hidden-sm">
-                                <img src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                     data-src="https://xedienvietthanh.com/wp-content/uploads/2019/09/avata-vespa-valerio-50cc.png"
-                                     class="lazyload thumb-prod wp-post-image" alt=""/></td>
-                            <td class="hidden-xs hidden-sm" id="qb_name">XE GA 50CC VALERIO</td>
-                            <td id="qb_don_gia"></td>
-                            <td>
-                                <input id="qb_quantity" type="number" step="1" min="1" max="" name="po_quantity"
-                                       value="1" size="4" pattern="[0-9]*" inputmode="numeric">
-                            </td>
-                            <td class="hidden-xs hidden-sm" id="qb_thanh_tien"></td>
-                            <td><span class="del" data-dismiss="modal">Hủy</span></td>
-                        </tr>
-                        <tr>
-                            <td colspan="6">
-                                <div class="infopromotion">
-                                    <ul>
-                                        <li><i class="fa fa-gift"></i> Mũ bảo hiểm đạt chuẩn trị giá 250.000đ</li>
-                                        <li><i class="fa fa-gift"></i> Áp dụng giao hàng toàn quốc</li>
-                                    </ul>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="6" class="">Tổng tiền: <span class="cl_red"><span
-                                        id="tongtien"></span> VNĐ</span></td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <div class="wd100 khach-hang">
-                        <h4 class="row text-center title_form bold text-uppercase">Chọn phương thức thanh toán</h4>
-                        <div class="space20"></div>
-                        <p>Quý khách vui lòng chọn một hình thức thanh toán trong số các hình thức bên dưới phù hợp
-                            nhất.</p>
-
-                        <table width="100%" cellpadding="0" cellspacing="0" class="conTable">
-                            <tbody>
-                            <tr>
-                                <td width="20">
-                                    <input type="radio" id="pay_bank" name="paytype" value="3"
-                                           onclick="change_paytype(3)"></td>
-                                <td valign="top">
-                                    <label for="pay_bank"><strong class="payTitle">Chuyển khoản ngân hàng</strong>
-                                    </label>
-                                    <br>
-                                    <div class="bankInfo" style="padding-top: 5px;display: none; ">
-                                        <p><strong>Ngân hàng Techcombank</strong>
-                                            <br>Chủ tài khoản LE HONG THANH
-                                            <br>STK: 19132176668886
-                                            <br>SĐT: 0903043333
-                                            <br>Ngân hàng techcombank chi nhánh cầu giấy, Hà Nội</p>
-                                        Sau khi chuyển khoản, để việc gửi hàng được tiến hành nhanh chóng, Quý khách vui
-                                        lòng mail hóa đơn đã chuyển tiền hoặc điện thoại 090 304 3333. Xin cảm ơn Quý
-                                        khách.
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td width="20">
-                                    <input type="radio" id="pay_cod" name="paytype" value="1"
-                                           onclick="change_paytype(1)"></td>
-                                <td valign="top">
-                                    <label for="pay_cod"><strong class="payTitle">Trả tiền mặt trực tiếp ngay khi nhận
-                                            hàng</strong>
-                                    </label>
-                                    <div class="compInfo" style="margin-top: 25px; display: none;">
-                                        <p>Nhân viên của chúng tôi sẽ thu tiền khi giao nhận hàng hóa.</p>
-                                    </div>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-
-
-                        <h4 class="row text-center title_form text-uppercase">Nhập thông tin đơn hàng</h4>
-                        <div class="space20"></div>
-                        <div class="form-group">
-                            <label for="contact-name" class="col-sm-2 control-label">Họ tên</label>
-                            <div class="col-sm-10">
-                                <input type="text" name="hoten" value="" class="ss-q-short form-control"
-                                       id="entry_1918389590" dir="auto" aria-label="Họ tên  " title="">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="contact-email" class="col-sm-2 control-label">Số điện thoại</label>
-                            <div class="col-sm-10">
-                                <input type="number" name="sdt" value="" class="ss-q-short form-control"
-                                       id="entry_1974945640" dir="auto" aria-label="Điện thoại  Phải là một số nguyên."
-                                       aria-required="true" required="" step="1"
-                                       title="Nhập đúng số điện thoại của bạn">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="contact-email" class="col-sm-2 control-label">Địa chỉ</label>
-                            <div class="col-sm-10">
-                                <input type="text" name="diachi" value="" class="ss-q-short form-control"
-                                       id="entry_638975727" dir="auto" aria-label="Địa chỉ  " title="">
-                            </div>
-                        </div>
-                        <div class="form-group none">
-                            <label for="contact-email" class="col-sm-2 control-label">Email</label>
-                            <div class="col-sm-10">
-                                <input type="text" name="email" value="" class="ss-q-short form-control"
-                                       id="entry_589038675" dir="auto" aria-label="Email  Phải chứa @" pattern=".*@.*"
-                                       title="Ph&#7843;i ch&#7913;a @">
-                            </div>
-                        </div>
-                        <div class="form-group none">
-                            <label for="contact-email" class="col-sm-2 control-label">Yêu cầu</label>
-                            <div class="col-sm-10">
-                                <textarea name="yeucau" rows="2" cols="0" class="ss-q-long form-control"
-                                          id="entry_1997209857" dir="auto" aria-label="Nội dung yêu cầu  "></textarea>
-                            </div>
-                        </div>
-                        <div class="none">
-                            <input type="text" name="tensanpham" value="XE GA 50CC VALERIO"
-                                   class="ss-q-short form-control" id="entry_100017905" dir="auto"
-                                   aria-label="Tên sản phẩm  " title="">
-                            <input type="text" name="dongia" value="" class="ss-q-short form-control"
-                                   id="entry_1558387368" dir="auto" aria-label="Đơn giá hiện tại  " title="">
-                            <input type="text" name="soluong" value="" class="ss-q-short form-control"
-                                   id="entry_1568021111" dir="auto" aria-label="Số lượng đặt mua  " title="">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer wd100">
-                    <!-- <a class="btn btn-default" data-dismiss="modal">Close</a> -->
-                    <input type="submit" class="btn btn-primary" name="submit" value="Đặt hàng">
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-<style>
-    .khach-hang table {
-        line-height: 20px
-    }
-
-    .khach-hang p {
-        margin-bottom: 20px;
-    }
-
-    .bankInfo {
-        line-height: 1.5
-    }
-
-    .khach-hang table tr {
-        border-bottom: 1px dashed #dfdfdf;
-    }
-
-    .khach-hang table tr th, .khach-hang table tr td {
-        padding: 10px;
-        vertical-align: top
-    }
-</style>
-
-<style>
-    .fotorama__stage__shaft, .fotorama__thumb {
-        padding: 9px;
-        border: 1px solid #aecc9a;
-    }
-</style>
 <section class="main">
-
     <div class="container">
-        <div id='bk-modal'></div>
-
-        <div class="+row details-product" id="xoay360anh">
-
-            <div class="col-lg-6 no-padding">
-                <div class="wrap_item">
-                    <div class="wrap_item_l2">
-                        <div class="large-image clearfix hidden-xs" id="gallery">
-
-                            <div class="fotorama text-center" data-arrows="false" data-width="100%"
-                                 data-nav="thumbs" data-navposition="bottom" data-fit="cover"
-                                 data-autoplay="true" data-thumbmargin="10" data-thumbwidth="70"
-                                 data-thumbheight="70" data-allowfullscreen="native">
-                                    @foreach($shop_image_product as $key => $image_product)
-                                        @if($image_product->type==1)
-                                    <a href="{{env('APP_URL').'/documents/website/'.$image_product->image}}"><img
-                                            class="notlazy bk-product-image"
-                                            src="{{env('APP_URL').'/documents/website/'.$image_product->image}}"></a>
-                                       @endif
-                                    @endforeach
-
-
-                            </div>
-                        </div>
-
-                        <div class="wrap_social">
-                            <label style="text-transform: uppercase; font-size: 16px;">Chia sẻ với bạn bè</label>
-                            <div class="social-sharing">
-                                <a target="_blank" class="face"
-                                   href="https://www.facebook.com/sharer/sharer.php?u={{env('APP_URL').'/chi-tiet-san-pham/'.$product->slug}}"><i
-                                        class="fa fa-facebook"></i>Share</a>
-                                <div style="float: right;" class="fb-like"
-                                     data-href="{{env('APP_URL').'/chi-tiet-san-pham/'.$product->slug}}" data-width=""
-                                     data-layout="button_count" data-action="like" data-size="small"
-                                     data-share="false"></div>
-                                <!--     <div class="fb-like" data-href="https://www.facebook.com/tapdoanxedien" data-layout="button_count"
-                                         data-action="like" data-size="small" data-show-faces="false"
-                                         data-share="false"></div> -->
-                                <div class="fb-send" data-href="{{env('APP_URL').'/chi-tiet-san-pham/'.$product->slug}}"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6 details-pro no-padding">
-                <div class="wrap_item">
-                    <div class="wrap_item_l2">
-                        <h1 class="product-name bk-product-name">{{$product->name}}</h1>
-                        <input type="hidden" value="1" class="bk-product-qty">
-
-                        <div class="price-box">
-
-
-                                    <span class="special-price"><span
-                                            class="price product-price bk-product-price"> {{$product->price}}</span> </span>
-
-
-                        </div>
-
-
-                        <div class="color-box">
-
-                            <h4>Có những màu</h4>
-
-                            <p>{{$product->color}}</p>
-
-                        </div>
-
-
-                        <style>
-                            .details-product .infopromotion ul li i.fa-gift {
-                                color: red !important
-                            }
-
-                            .details-product .infopromotion h4 {
-                                color: red !important
-                            }
-                        </style>
-
-
-                        <div class="infopromotion">
-
-                            <h4>Quà tặng khuyến mãi</h4>
-
-                            <ul>
-                                <li><i class="fa fa-gift"></i> Mũ bảo hiểm đạt chuẩn trị giá 250.000đ</li>
-                                <li><i class="fa fa-gift"></i> Áp dụng giao hàng toàn quốc</li>
-                            </ul>
-
-                        </div>
-                        <div class="comfortable_buy">
-
-                            <ul>
-
-                                <li>
-
-                                    <i class="grid grid-cog"></i>
-
-                                    <p>
-                                        Bảo hành xe 3 năm </p>
-
-                                </li>
-
-                                <li>
-
-                                    <i class="grid grid-car"></i>
-
-                                    <p>
-                                        Vận chuyển miễn phí 30km </p>
-
-                                </li>
-
-                                <li>
-
-                                    <i class="grid grid-star"></i>
-
-                                    <p>
-                                        Không chính hãng đền gấp 5 lần tiền </p>
-
-                                </li>
-
-                                <li>
-
-                                    <i class="grid grid-doi"></i>
-
-                                    <p>
-                                        Đổi hàng miễn phí trong 72 giờ </p>
-
-                                </li>
-
-                            </ul>
-                        </div>
-
-                        <div class="clearfix"></div>
-
-                        <!-- <div class="dathang text-center">
-                                <button class="bk-btn-paynow" type="button"></button>
-                                <button class="bk-btn-installment" type="button"
-                                        style="margin-left: 0px"></button>
-                            </div> -->
-                        <center>
-                            <style>
-                                .dathang button br {
-                                    display: none;
-                                }
-
-                                .dathang .bk-btn .bk-btn-box .bk-btn-paynow {
-                                    display: inline-flex !important;
-                                    color: black !important;
-                                    height: 76px !important;
-                                }
-
-                                .dathang .bk-btn .bk-btn-box .bk-btn-paynow strong {
-                                    color: black !important;
-                                }
-
-                                .dathang .bk-btn .bk-btn-box .bk-btn-paynow span {
-                                    color: black !important;
-                                }
-
-                                .dathang .bk-btn .bk-btn-box .bk-btn-installment {
-                                    display: inline-flex !important;
-                                    color: black !important;
-                                    height: 76px !important;
-                                }
-
-                                .dathang .bk-btn .bk-btn-box .bk-btn-installment strong {
-                                    color: black !important;
-                                }
-
-                                .dathang .bk-btn .bk-btn-box .bk-btn-installment span {
-                                    color: black !important;
-                                }
-
-                                .dathang .bk-btn .bk-btn-box .bk-btn-paynow:hover {
-                                    background: #f36e24;
-                                    border-color: #f36e24;
-                                }
-
-                                .dathang .bk-btn .bk-btn-box .bk-btn-installment:hover {
-                                    background: #f36e24;
-                                    border-color: #f36e24;
-                                }
-                            </style>
-                            <div class="dathang" style="display: flex;">
-                                <!-- BK BUTTON -->
-                                <div class='bk-btn'></div>
-                                <!-- <button class="bk-btn-paynow bk-btn" type="button" style="height: 76px"></button>
-                                <button class="bk-btn-installment bk-btn" type="button" style="height: 76px"></button> -->
-                                <!-- <button class="bk-btn-installment-amigo" type="button" style="display: none"></button> -->
-                                <!-- END BK BUTTON -->
-                            </div>
-                            <div class="dathang text-center" style="margin-top: 5px">
-                                <div class="cart w100" style="width: 100%; height: 76px">
-                                    <a id="cart267" href="#quick-buy" data-toggle="modal">
-                                        <p style="margin: 0px; font-size: 14px" class="p1"><span>Đặt hàng</span></p>
-                                        <!--                                <span style="font-size: 12px"> Tư vấn ngay</span>-->
-                                        <p style="font-size: 11px; margin: 0px">(Để lại thông tin để được tư vấn
-                                            ngay)</p>
-                                        <p style="font-size: 11px; margin: 0px">Hưởng nhiều ưu đãi</p>
-                                    </a>
-                                </div>
-                                <!-- <div class="tragop">
-                                        <a href="https://xedienvietthanh.com/tra-gop/?idp=14422" title="mua tra gop XE GA 50CC VALERIO">
-                                            <p class="p1"><span>Mua trả góp</span></p>
-                                            <p>(Thủ tục nhanh gọn, nhận xe ngay)</p>
-                                        </a>
-                                    </div> -->
-                            </div>
-                        </center>
-
-
-                        <div class="tuvan_hot +text-center">
-                            <!-- <div class="w100 text-center p" style="padding-left: 40px;">Hotline: <a class="cl_cam2" title="19002082" href="tel:19002082">19002082</a> &#8211; <a class="cl_cam2" title="0904.998899" href="tel:0904998899">0904.998899</a></div>
-<div class="w100 text-center p">Kinh Doanh: <a class="cl_cam2" title="0975.66.8386" href="tel:0975668386">0916.055588</a> &#8211; <a class="cl_cam2" title="0984.44.3388" href="tel:0984443388">0986.06.3888</a></div>
- -->
-                            <div class="w100 text-center p" style="padding-left: 40px;">Hotline: <a class="cl_cam2"
-                                                                                                    title="{{$shop_info->phone}}"
-                                                                                                    href="tel:{{$shop_info->phone}}">{{$shop_info->phone}}</a>
-                                </div>
-                            <div class="w100 text-center p"></div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+        <div class="title2">
+            <h1 class="tit">Kết quả tìm kiếm: {{$search}}</h1>
+            <span class="gach"></span>
         </div>
+        <div id="result_cate_page" class="cate-items-products row">
+
+            @foreach($list_product as $key => $product)
+
+                <!-- loop product -->
+                <div class="col-xs-12 col-lg-4 col-md-4 display-pt10 item">
+                    <div class="col-item">
+                        <div class="item-inner">
+                            <div class="product-wrapper transition">
+                                <a href="{{route('thong-tin-san-pham',$product->slug)}}"
+                                   title="{{$product->name}}">
+                                    <img width="367" height="248" alt="{{$product->name}}"
+                                         src="{{env('APP_URL') . '/documents/website/'.$product->imagemain}}"
+                                         data-src="{{env('APP_URL') . '/documents/website/'.$product->imagemain}}"
+                                         class="lazy lazyload transition">
+                                </a>
+                                <span class="icon ico-default ">Mặc định</span></div>
+                            <div class="item-info">
+                                <h5 class="item-title text-uppercase"><a class="bk-product-name"
+                                                                         href="{{route('thong-tin-san-pham',$product->slug)}}"
+                                                                         title="{{$product->name}}">{{$product->name}}</a></h5>
+                                <input type="hidden" value="1" class="bk-product-qty">
+                                <div class="item-price">
+                                    <span class="old-price"><span class="price ">{{$product->price}}</span></span>
+                                    <span class="regular-price"><span
+                                            class="price bk-product-price">{{$product->price}}</span></span>
+                                </div>
+                            </div>
+                            <div class="item-detail">
+                                <!-- case: choose gift on product -->
+                                <div class="item-offers">
+                                    - Quà tặng trị giá tới 500K <br/> - Áp dụng giao hàng toàn quốc<br/>
+                                </div>
+
+                                <!-- case: choose gift on parent taxonomy -->
 
 
-        <div id="thongso" class="wrbox">
-
-            <div class="col-xs-12 col-sm-12 col-lg-6 no-padding">
-
-
-
-                <div class="wrap_box">
-
-                    <div class="thongso">
-
-                        <h4 class="tit">{{$product->name}}</h4>
-
-
-                        <div class="abs">
-
-                            <div id="boxspecification" class="content-special" style="display: block;">
-
-                               {!!$product->description!!}
-
+                                <div class="item-link">
+                                    <button data-name="{{$product->name}}"
+                                            data-image="{{env('APP_URL') . '/documents/website/'.$product->imagemain}}"
+                                            data-price="{{$product->price}}"
+                                            class="btn btn-success bk-btn-paynow-list" id="" type="button"
+                                            style="width: 122px; height: 25px; margin-top: -3px; font-size: 11px;">MUA NGAY
+                                    </button>
+                                    <button data-name="{{$product->name}}"
+                                            data-image="{{env('APP_URL') . '/documents/website/'.$product->imagemain}}"
+                                            data-price="{{$product->price}}"
+                                            class="btn bk-btn-installment-list" id="" type="button"
+                                            style="width: 122px; height: 25px; margin-top: 5px; font-size: 11px; margin-left: 0px">
+                                        MUA
+                                        TRẢ GÓP
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-xs-12 col-sm-12 col-lg-6 no-padding">
-
-                <div id="about" class="pull-left">
-                    <h2 class="tit">Đặc điểm nổi bật</h2>
-                    <div id="slider2_container">
-
-                        <div class="owl-carousel owl-theme" id="slides_ddnb">
-
-                            @foreach($shop_image_product as $key => $image_product)
-                                @if($image_product->type==2)
+            @endforeach
+            <!-- loop product -->
 
 
-                            <div>
-                                <img
-                                    src="{{env('APP_URL').'/documents/website/'.$image_product->image}}"
-                                    alt="{{$image_product->title}}"
-                                    data-lazy-src="{{env('APP_URL').'/documents/website/'.$image_product->image}}"/>
-                                <noscript><img
-                                        src="{{env('APP_URL').'/documents/website/'.$image_product->image}}"
-                                        alt="{{$image_product->title}}"/></noscript>
-                                <div id="slide_about">
-                                    <h5>{{$image_product->title}}</h5>
-                                    <div class="intro"><p>{{$image_product->description}}</p>
-                                    </div>
-                                </div>
-                            </div>
-                                @endif
-                            @endforeach
+            <!-- loop product -->
 
-{{--                            <div>--}}
-{{--                                <img--}}
-{{--                                    src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"--}}
-{{--                                    alt="Màn hình LCD bắt mắt "--}}
-{{--                                    data-lazy-src="https://xedienvietthanh.com/wp-content/uploads/2020/03/chi-tiet-valerio-50cc-8.png"/>--}}
-{{--                                <noscript><img--}}
-{{--                                        src="https://xedienvietthanh.com/wp-content/uploads/2020/03/chi-tiet-valerio-50cc-8.png"--}}
-{{--                                        alt="Màn hình LCD bắt mắt "/></noscript>--}}
-{{--                                <div id="slide_about">--}}
-{{--                                    <h5>Màn hình LCD bắt mắt</h5>--}}
-{{--                                    <div class="intro"><p>Xe ga 50cc Valerio được trang bị màn hình đồng hồ LCD bắt mắt--}}
-{{--                                            giúp người dùng nắm bắt chính xác các thông số khi xe vận hành. Từ đó người--}}
-{{--                                            dùng luôn làm chủ được mỗi chuyến đi.</p>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
+            <!-- loop product -->
 
 
+            <!-- /article -->
 
-                        </div><!-- end #slides_ddnb -->
 
-                    </div><!-- end #slider2_container -->
-                </div><!--  end about -->
-
-            </div>
         </div>
-
-
-        <style>
-
-            .zoomContainer {
-                display: none !important;
-            }
-
-        </style>
-
-
-        <div class="content-products">
-
-            <div class="+row details-product wrbox" id="danhgia">
-
-                <div class="col-xs-12 col-md-8 col-lg-8 no-padding">
-                    <div class="danhgia wrap_box">
-                        <h3 class="head">Đánh giá chi tiết</h3>
-                        <style>
-
-                            .an {
-
-                                height: 890px;
-
-                                overflow: hidden;
-
-                            }
-
-                            .hien {
-
-                                height: auto
-
-                            }
-
-                            #hide {
-                                display: none;
-                            }
-
-                        </style>
-
-                        <div class="nddanhgia">
-
-                            <div class="l_nd">
-
-                                <div id="inline_content" class="thi an transition main_content">
-
-
-                                    {!! $product->review !!}
-
-                                </div>
-
-                                <div class="nutdg">
-                                    <button id="hide">Ẩn bớt chi tiết</button>
-                                    <button id="show">Xem thêm</button>
-                                </div>
-                                <div class="clearfix"></div>
-
-                                <style>
-                                    .dathang button br {
-                                        display: none;
-                                    }
-
-                                    .dathang .bk-btn .bk-btn-box .bk-btn-paynow {
-                                        display: inline-flex !important;
-                                        color: black !important;
-                                        height: 76px !important;
-                                    }
-
-                                    .dathang .bk-btn .bk-btn-box .bk-btn-paynow strong {
-                                        color: black !important;
-                                    }
-
-                                    .dathang .bk-btn .bk-btn-box .bk-btn-paynow span {
-                                        color: black !important;
-                                    }
-
-                                    .dathang .bk-btn .bk-btn-box .bk-btn-installment {
-                                        display: inline-flex !important;
-                                        color: black !important;
-                                        height: 76px !important;
-                                    }
-
-                                    .dathang .bk-btn .bk-btn-box .bk-btn-installment strong {
-                                        color: black !important;
-                                    }
-
-                                    .dathang .bk-btn .bk-btn-box .bk-btn-installment span {
-                                        color: black !important;
-                                    }
-
-                                    .dathang .bk-btn .bk-btn-box .bk-btn-paynow:hover {
-                                        background: #f36e24;
-                                        border-color: #f36e24;
-                                    }
-
-                                    .dathang .bk-btn .bk-btn-box .bk-btn-installment:hover {
-                                        background: #f36e24;
-                                        border-color: #f36e24;
-                                    }
-                                </style>
-
-                                <div class="dathang text-center">
-                                    <!-- BK BUTTON -->
-                                    <div class='bk-btn'></div>
-                                    <!-- <button class="bk-btn-paynow" type="button" style="height: 76px"></button>
-                                        <button class="bk-btn-installment" type="button" style="margin-left: 8px ;height: 76px"></button> -->
-                                    <!-- <button class="bk-btn-installment-amigo" type="button" style="margin-left: 0px; display: none"></button> -->
-                                    <!-- END BK BUTTON -->
-                                </div>
-                                <div class="dathang text-center" style="margin-top: 5px">
-                                    <div class="cart" style="width: 493px; height: 76px">
-                                        <a id="cart267" href="#quick-buy" data-toggle="modal">
-                                            <p style="margin: 0px; font-size: 14px" class="p1"><span>Đặt hàng</span></p>
-                                            <!--                                <span style="font-size: 12px"> Tư vấn ngay</span>-->
-                                            <p style="font-size: 11px; margin: 0px">(Để lại thông tin để được tư vấn
-                                                ngay)</p>
-                                            <p style="font-size: 11px; margin: 0px">Hưởng nhiều ưu đãi</p>
-                                        </a>
-                                    </div>
-                                    <!-- <div class="tragop">
-                                        <a href="https://xedienvietthanh.com/tra-gop/?idp=14422" title="mua tra gop XE GA 50CC VALERIO">
-                                            <p class="p1"><span>Mua trả góp</span></p>
-                                            <p>(Thủ tục nhanh gọn, nhận xe ngay)</p>
-                                        </a>
-                                    </div> -->
-                                </div>
-
-                                <div class="tuvan_hot text-center">
-                                    <!-- <div class="w100 text-center p" style="padding-left: 40px;">Hotline: <a class="cl_cam2" title="19002082" href="tel:19002082">19002082</a> &#8211; <a class="cl_cam2" title="0904.998899" href="tel:0904998899">0904.998899</a></div>
-<div class="w100 text-center p">Kinh Doanh: <a class="cl_cam2" title="0975.66.8386" href="tel:0975668386">0916.055588</a> &#8211; <a class="cl_cam2" title="0984.44.3388" href="tel:0984443388">0986.06.3888</a></div>
- -->
-                                    <div class="w100 text-center p" style="padding-left: 40px;">Hotline: <a
-                                            class="cl_cam2" title="{{$shop_info->phone}}" href="{{$shop_info->phone}}">{{$shop_info->phone}}</a> – <a
-                                             </a>
-                                    </div>
-                                    <div class="w100 text-center p"></div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-4 details-pro destop no-padding" id="sidebar-prod-2020" style="position: static;">
-                    <div class="product-mini-box bg_white">
-                        <div class="product-name">{{$product->name}}</div>
-                        <div class="price-box">
-
-                                    <span class="special-price"><span
-                                            class="price product-price">{{$product->price}}</span> </span>
-                        </div>
-
-                        <div class="infopromotion">
-                            <h4>Quà tặng khuyến mãi</h4>
-                            <ul>
-                                <li><i class="fa fa-gift"></i> Mũ bảo hiểm đạt chuẩn trị giá 250.000đ</li>
-                                <li><i class="fa fa-gift"></i> Áp dụng giao hàng toàn quốc</li>
-                            </ul>
-                        </div>
-                        <div class="ads_467_466" id="text-3">
-                            <a href="{{$banner_duoiphai->linkbanner}}" title="">
-                                <img class="img-responsive lazyload lazy"
-                                     src="{{env('APP_URL').'/documents/website/'.$banner_duoiphai->image}}"
-                                     data-src="{{env('APP_URL').'/documents/website/'.$banner_duoiphai->image}}"
-                                     alt=""/>
-                            </a>
-                        </div>
-                    </div>
-
-
-                    <style>
-                        .product-mini-box {
-                            padding: 15px;
-                        }
-
-                        .product-news-list {
-                            padding: 15px;
-                            margin-top: 15px
-                        }
-
-                        .product-news-item {
-                            display: flex;
-                            justify-content: space-between;
-                            padding: 15px;
-                        }
-
-                        .product-news-list .title {
-                            font-weight: 700;
-                            font-size: 22px;
-                            line-height: 1.6;
-                            margin-bottom: 30px;
-                            text-transform: uppercase;
-                        }
-
-                        .product-news-item .left-col {
-                            flex-basis: calc(50% - 16px);
-                            width: calc(50% - 16px);
-                        }
-
-                        .product-news-item .left-col img {
-                            width: 100%;
-                        }
-
-                        .product-news-item .right-col {
-                            flex-basis: calc(50% - 16px);
-                            width: calc(50% - 16px);
-                        }
-
-                        .product-news-item .right-col img {
-                            width: 100%;
-                        }
-
-                        .product-news-item .right-col .item-title {
-                            font-size: 16px;
-                            font-weight: 700;
-                            margin-bottom: 15px;
-                            line-height: 1.2
-                        }
-                    </style>
-
-                    <div class="product-news-list bg_white">
-                        <h3 class="title">
-                            Bài viết liên quan
-                        </h3>
-
-                        <a class="product-news-item"
-                           href="https://xedienvietthanh.com/tin-tuc/xe-may-dien-cho-hoc-sinh-cap-3/">
-                            <div class="left-col">
-                                <img
-                                    src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                                    alt=""
-                                    data-lazy-src="https://xedienvietthanh.com/wp-content/uploads/2023/02/xe-may-dien-yadea-odora-s1-1.jpg">
-                                <noscript><img
-                                        src="https://xedienvietthanh.com/wp-content/uploads/2023/02/xe-may-dien-yadea-odora-s1-1.jpg"
-                                        alt=""></noscript>
-                            </div>
-
-                            <div class="right-col">
-                                <h4 class="item-title">
-                                    Top 5 Xe Máy Điện Cho Học Sinh Cấp 3 Chất Lượng Nhất Hiện Nay </h4>
-
-                                <p class="item-date">
-                                    28/02/2023 </p>
-
-                                <p class="excerpt">
-                                    Xe ga 50cc Valerio full đèn Led Những đường cong hoàn hảo cùng những vết cắt thông
-                                    minh giúp xe [&hellip;] </p>
-                            </div>
-                        </a>
-                        <a class="product-news-item"
-                           href="https://xedienvietthanh.com/tin-tuc/3-mau-xe-dien-duoc-gioi-tre-san-lung/">
-                            <div class="left-col">
-                                <img
-                                    src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                                    alt=""
-                                    data-lazy-src="https://xedienvietthanh.com/wp-content/uploads/2020/02/xe-may-dien-vespa-valerio-gs-anbico-do.jpg">
-                                <noscript><img
-                                        src="https://xedienvietthanh.com/wp-content/uploads/2020/02/xe-may-dien-vespa-valerio-gs-anbico-do.jpg"
-                                        alt=""></noscript>
-                            </div>
-
-                            <div class="right-col">
-                                <h4 class="item-title">
-                                    Top 3 mẫu xe điện được giới trẻ săn lùng </h4>
-
-                                <p class="item-date">
-                                    01/04/2022 </p>
-
-                                <p class="excerpt">
-                                    Xe ga 50cc Valerio full đèn Led Những đường cong hoàn hảo cùng những vết cắt thông
-                                    minh giúp xe [&hellip;] </p>
-                            </div>
-                        </a>
-                        <a class="product-news-item"
-                           href="https://xedienvietthanh.com/tin-tuc/mua-xe-tay-ga-50cc-gia-re/">
-                            <div class="left-col">
-                                <img
-                                    src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                                    alt=""
-                                    data-lazy-src="https://xedienvietthanh.com/wp-content/uploads/2018/12/attila-50cc-sym-anh-mau-3.png">
-                                <noscript><img
-                                        src="https://xedienvietthanh.com/wp-content/uploads/2018/12/attila-50cc-sym-anh-mau-3.png"
-                                        alt=""></noscript>
-                            </div>
-
-                            <div class="right-col">
-                                <h4 class="item-title">
-                                    Nên hay không nên mua xe tay ga 50cc cũ giá rẻ? </h4>
-
-                                <p class="item-date">
-                                    18/06/2021 </p>
-
-                                <p class="excerpt">
-                                    Xe ga 50cc Valerio full đèn Led Những đường cong hoàn hảo cùng những vết cắt thông
-                                    minh giúp xe [&hellip;] </p>
-                            </div>
-                        </a>
-                    </div>
-                </div><!-- /.details-pro -->
-            </div>
+        <div class="clearfix"></div>
+        <div class="text-center">
+            {!!$list_product->appends(['search' => $search])->links("pagination::bootstrap-4")!!}
         </div>
-
-
-        @php
-            $current_url= Request::url();
-        @endphp
-
-
-        <div class="comment_danhgia wrbox" id="contact">
-            <div class="row">
-                <div class="col-xs-12 col-md-8 col-lg-8">
-                    <div class="fb-comments" data-href="{{$current_url}}" data-width="100%"  data-numposts="5"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="related-tour">
-            <div class="head-title text-uppercase h2">Sản phẩm tương tự</div>
-            <div class="owl-carousel owl-theme owl-3-items" id="owl-related-prod">
-                <div>
-                    <!-- loop product -->
-                    @foreach($related_product as $key =>$re_product)
-                    <style>
-                        .bk-btn-installment-list {
-                            background: #FF6A00;
-                            color: white;
-                            outline: none !important;
-                            padding: 0 !important;
-                        }
-
-                        .bk-btn-paynow-list {
-                            outline: none !important;
-                            padding: 0 !important;
-                        }
-                    </style>
-                    <div class="item">
-                        <div class="col-item">
-                            <div class="item-inner">
-                                <div class="product-wrapper transition">
-                                    <a href="{{route('thong-tin-san-pham',$re_product->slug)}}"
-                                       title="{{$re_product->name}}">
-                                        <img
-                                            src="{{env('APP_URL').'/documents/website/'.$re_product->imagemain}}"
-                                            class="lazy lazyload transition"
-                                            data-lazy-src="{{env('APP_URL').'/documents/website/'.$re_product->imagemain}}">
-                                        <noscript><img
-                                                src="{{env('APP_URL').'/documents/website/'.$re_product->imagemain}}"
-                                                class="lazy lazyload transition"></noscript>
-                                    </a>
-                                    <span class="icon ico-default ">Mặc định</span></div>
-                                <div class="item-info">
-                                    <h5 class="item-title text-uppercase"><a
-                                            href="{{route('thong-tin-san-pham',$re_product->slug)}}"
-                                            title="{{$re_product->name}}">{{$re_product->name}}</a></h5>
-                                    <div class="item-price">
-                                            <span class="old-price"><span
-                                                    class="price">{{$re_product->price}}</span></span>
-                                        <span class="regular-price"><span class="price">{{$re_product->price}}</span></span>
-                                    </div>
-                                </div>
-                                <div class="item-detail">
-                                    <div class="item-offers">
-                                        - Quà tặng trị giá tới 500K <br/> - Áp dụng giao hàng toàn quốc <br/></div>
-                                    <div class="item-link">
-                                        <button data-name="Xe ga 50cc Espero Diamond Pro"
-                                                data-image="https://xedienvietthanh.com/wp-content/uploads/2023/05/xe-ga-50cc-espero-diamond.jpg"
-                                                data-price="21900000"
-                                                class="btn btn-success bk-btn-paynow-list" id="" type="button"
-                                                style="width: 122px; height: 25px; margin-top: -3px; font-size: 11px">
-                                            MUA NGAY
-                                        </button>
-                                        <button data-name="Xe ga 50cc Espero Diamond Pro"
-                                                data-image="https://xedienvietthanh.com/wp-content/uploads/2023/05/xe-ga-50cc-espero-diamond.jpg"
-                                                data-price="21900000"
-                                                class="btn bk-btn-installment-list" id="" type="button"
-                                                style="width: 122px; height: 25px; margin-top: 5px; font-size: 11px; margin-left: 0px">
-                                            MUA
-                                            TRẢ GÓP
-                                        </button>
-                                    </div>
-                                    <!--                <div class="item-link">-->
-                                    <!--                    <a class="link-detail btn btn-warning" href="-->
-                                    <!--" title="Chi tiết --><!--">Chi tiết sản phẩm</a>-->
-                                    <!---->
-                                    <!--                    <a class="link-buy btn btn-success bold" href="-->
-                                    <!--" title="Mua trả góp">Mua trả góp</a>-->
-                                    <!--                    -->
-                                    <!--                        <a class="link-buy btn-success bold" href="-->
-                                    <!--" title="Đặt hàng nhanh">Đặt hàng nhanh</a>-->
-                                    <!--                    --><!--                </div>-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-
-                    @endforeach
-                    <!-- loop product -->
-
-                </div>
-            </div>
-        </div>
-
-    </div> <!-- /.container -->
+    </div>
 </section>
-
-
-<!-- BK MODAL -->
-<!-- <div id='bk-modal'></div> -->
-<!-- END BK MODAL -->
-
 <!-- /main-content -->
-<script type="rocketlazyloadscript">
-    function showVideo(id,url){
-        //alert('showVideo');
-        document.getElementById(id).removeAttribute('src');
-        document.getElementById(id).setAttribute('src',url);
-    }
-
-    function goToByScroll(id){
-        //alert(123);
-        id = id.replace("link", "");
-        jQuery('html,body').animate({
-            scrollTop: jQuery("#"+id).offset().top - 52},
-            'slow');
-    }
-
-    function change_paytype(val){
-        $('.compInfo, .bankInfo').hide();
-        if(val==3){
-            $('.bankInfo').show();
-            $('#pay_bank').attr('checked',true);
-        }
-
-        if(val==1){
-            $('.compInfo').show();
-            $('#pay_cod').attr('checked',true);
-        }
-    }
-window.onload = function() {
-}
-</script>
 <style>
     .overhiden {
         overflow: hidden
@@ -3671,14 +2751,13 @@ window.onload = function() {
 <section class="acquy_phutung_2019">
     <div class="container">
         <div class="row">
+
             <div class="col-xs-12 ">
                 <div class="head-title font30 text-uppercase h2"><a href="https://xedienvietthanh.com/ac-quy/">ắc quy
                         chính hãng</a>
                 </div>
-
                 <div class="owl-carousel overhiden" id="owl-acquy-2019">
                     <!-- loop product -->
-
                     @foreach($list_products_l2 as $key => $product_l2)
 
                         <div class="display-pt10 item-special">
@@ -3700,12 +2779,46 @@ window.onload = function() {
                         </div>
 
                     @endforeach
-
+                    <!-- loop product -->
                     <!-- loop product -->
 
                     <!-- loop product -->
                 </div>
             </div>
+
+            <div class="col-xs-12 ">
+                <div class="head-title font30 text-uppercase h2"><a
+                        href="https://xedienvietthanh.com/phu-tung-xe-dien/">phụ tùng chính hãng</a>
+                </div>
+                <div class="owl-carousel overhiden" id="owl-phutung-2019">
+                    <!-- loop product -->
+                    @foreach($list_products_l3 as $key => $product_l3)
+                        <div class="display-pt10 item-special">
+                            <div class="col-item">
+                                <div class="item-inner">
+                                    <div class="product-wrapper">
+                                        <a href="{{route('thong-tin-san-pham',$product_l3->slug)}}" title="{{$product_l3->name}}">
+                                            <img src="{{env('APP_URL').'/documents/website/'.$product_l3->imagemain}}" data-src="{{env('APP_URL').'/documents/website/'.$product_l3->imagemain}}" class="lazyload img-full transition lazy lazyload wp-post-image" alt="" loading="lazy" /></a>
+                                    </div>
+                                    <div class="item-info">
+                                        <h5 class="item-title text-uppercase"><a href="{{route('thong-tin-san-pham',$product_l3->slug)}}" title="{{$product_l3->name}}">{{$product_l3->name}}</a></h5>
+                                        <div class="item-price">
+                                            <span class="old-price"><span class="price">{{$product_l3->price}}</span></span>
+                                            <span class="regular-price"><span class="price">{{$product_l3->price}}</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    @endforeach
+                    <!-- loop product -->
+
+                    <!-- loop product -->
+                </div>
+            </div>
+
+
         </div>
     </div>
 </section>
@@ -4180,7 +3293,6 @@ window.onload = function() {
         {{--            </a></li>--}}
     </ul>
 </div>
-
 </body>
 </html>
 
@@ -5094,42 +4206,31 @@ window.onload = function() {
         src="https://xedienvietthanh.com/wp-content/themes/auto/bxslider/jquery.bxslider.min.js" defer></script>
 
 <script type="rocketlazyloadscript" data-minify="1"
-        src="https://xedienvietthanh.com/wp-content/cache/min/1/wp-content/themes/auto/fotorama/fotorama.js?ver=1694882061"
-        data-rocket-type="text/javascript" defer></script>
-
-<script type="rocketlazyloadscript" data-minify="1"
-        src="https://xedienvietthanh.com/wp-content/cache/min/1/wp-content/themes/auto/js/jquery_tdxd.js?ver=1694882061"
-        defer></script>
-<script type="rocketlazyloadscript" data-minify="1"
-        src="https://xedienvietthanh.com/wp-content/cache/min/1/wp-content/themes/auto/js/detail-prod.js?ver=1694882061"
-        defer></script>
-<script type="rocketlazyloadscript" data-minify="1"
         src="https://xedienvietthanh.com/wp-content/cache/min/1/wp-content/themes/auto/js/scripts.js?ver=1694882037"
         defer></script>
 <script type="rocketlazyloadscript" data-rocket-type="text/javascript">
     window.addEventListener("load", function (event) {
-    lazyload();
-});
+        lazyload();
+    });
 
-  window.onload = function() {
+      window.onload = function() {
 
 
-    function goToByScroll(id){
-          id = id.replace("link", "");
-        jQuery('html,body').animate({
-            scrollTop: jQuery("#"+id).offset().top - 52},'slow');
-    }
+        function goToByScroll(id){
+              id = id.replace("link", "");
+            jQuery('html,body').animate({
+                scrollTop: jQuery("#"+id).offset().top - 52},'slow');
+        }
 
-  }
-    function showVideo(id,url){
-      document.getElementById(id).removeAttribute('src');
-      document.getElementById(id).setAttribute('src',url);
-    }
-    function formatNumber(num) {
-        return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.")
-    }
+      }
+        function showVideo(id,url){
+          document.getElementById(id).removeAttribute('src');
+          document.getElementById(id).setAttribute('src',url);
+        }
+        function formatNumber(num) {
+            return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.")
+        }
 </script>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script type='text/javascript' src='https://xedienvietthanh.com/wp-content/plugins/ccodon-optimizer/lab.min.js'
         id='ccodon-lab-js'></script>
 <script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript'
@@ -5146,6 +4247,26 @@ window.onload = function() {
 <script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript'
         src='https://xedienvietthanh.com/wp-content/cache/min/1/wp-content/plugins/contact-form-7/includes/js/index.js?ver=1694882034'
         id='contact-form-7-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript'
+        src='https://xedienvietthanh.com/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript'
+        src='https://xedienvietthanh.com/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'
+        defer></script>
+<script type='text/javascript' id='loadmore-js-extra'>
+    /* <![CDATA[ */
+    var loadmore_params = {
+        "ajaxurl": "https:\/\/xedienvietthanh.com\/wp-admin\/admin-ajax.php",
+        "term_id": "189",
+        "current_page": "1",
+        "max_page": "1",
+        "num_per_page": "12",
+        "post_type": "products"
+    };
+    /* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript'
+        src='https://xedienvietthanh.com/wp-content/cache/min/1/wp-content/themes/auto/js/loadmore.js?ver=1694882037'
+        id='loadmore-js' defer></script>
 <script>window.lazyLoadOptions = {
         elements_selector: "img[data-lazy-src],.rocket-lazyload",
         data_src: "lazy-src",
@@ -5208,21 +4329,6 @@ window.onload = function() {
     }, !1)</script>
 <script data-no-minify="1" async
         src="https://xedienvietthanh.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.5/lazyload.min.js"></script>
-<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
-    window.onload = function() {
-    $( "#qb_quantity" ).blur(function() {
-
-        qualty = $('#qb_quantity').val();
-
-        tongtien = qualty *  ;
-
-        $('#tongtien, #qb_thanh_tien').html(formatNumber(tongtien));
-
-      });
-
-  }
-</script>
-
 <!-- Google Tag Manager 23-4-2020 -->
 <!-- <script type="rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||f[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -5255,40 +4361,53 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </style>
 
 <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v18.0&appId=428076886095768&autoLogAppEvents=1" nonce="l86L83YV"></script>
+<script type="rocketlazyloadscript" async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v5.0"></script>
 
 <script type="rocketlazyloadscript" data-minify="1"
         src="https://xedienvietthanh.com/wp-content/cache/min/1/js/bk_plus_v2.popup.js?ver=1694882034" defer></script>
 <script type="rocketlazyloadscript">
     window.onload = function() {
-        // $('.bk-btn-paynow').html('');
-        // $('.bk-btn-installment').html('');
-        // $('.bk-btn-paynow').html('<strong>Mua ngay</strong>' +'<br>' + '<span>(Thanh toán qua Bảo Kim giảm 500k)</span>' + '<br>' +'<span>Giao hàng miễn phí</span>');
-        // $('.bk-btn-installment').html('<strong>Mua trả góp 0%</strong>' + '<br>'+ '<span> Thủ tục đơn giản</span>' +' <br> '+'<span>Qua thẻ: Visa, Master, JCB</span>');
+       // $('.bk-btn-paynow').html('');
+       // $('.bk-btn-installment').html('');
+       // $('.bk-btn-paynow').html('<strong>Mua ngay</strong>' +'<br>' + '<span>(Thanh toán qua Bảo Kim giảm 500k)</span>' + '<br>' +'<span>Giao hàng miễn phí</span>');
+       // $('.bk-btn-installment').html('<strong>Mua trả góp 0%</strong>' + '<br>'+ '<span> Thủ tục đơn giản</span>' +' <br> '+'<span>Qua thẻ: Visa, Master, JCB</span>');
 
-        // $('.item-link .bk-btn-paynow').html('');
-        // $('.item-link .bk-btn-installment').html('');
-        // $('.item-link .bk-btn-paynow').html('<strong>Mua ngay</strong>');
-        // $('.item-link .bk-btn-installment').html('<strong>Mua trả góp 0%</strong>');
+       // $('.item-link .bk-btn-paynow').html('');
+       // $('.item-link .bk-btn-installment').html('');
+       // $('.item-link .bk-btn-paynow').html('<strong>Mua ngay</strong>');
+       // $('.item-link .bk-btn-installment').html('<strong>Mua trả góp 0%</strong>');
 
-        var base_url = 'https://xedienvietthanh.com' ;
-        function modal_video(that, id, id_youtube){
+       var base_url = 'https://xedienvietthanh.com' ;
+       function modal_video(that, id, id_youtube){
 
-          jQuery.ajax({
-              method: "POST",
-              url: base_url+'/ajax-video' ,
-              data: { id_prod : id, id_youtube: id_youtube }
-            })
+         jQuery.ajax({
+             method: "POST",
+             url: base_url+'/ajax-video' ,
+             data: { id_prod : id, id_youtube: id_youtube }
+           })
 
-          .done(function( data ) {
-              jQuery("#modalVideo").html(data);
-            });
-        }
-    }
+         .done(function( data ) {
+             jQuery("#modalVideo").html(data);
+           });
+       }
+   }
 </script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
 <!-- BK MODAL -->
 <!-- <div id='bk-modal'></div> -->
 <!-- END BK MODAL -->
 
-<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1694930292 -->
+
+<script type="rocketlazyloadscript" data-minify="1"
+        src="https://xedienvietthanh.com/wp-content/cache/min/1/jquery-3.5.1.min.js?ver=1694882034"
+        crossorigin="anonymous" defer></script>
+<script>
+    <!-- This
+    website
+    is
+    like
+    a
+    Rocket, isn
+    't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1695610034 -->

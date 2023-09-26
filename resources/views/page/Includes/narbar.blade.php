@@ -3,7 +3,7 @@
         <div class="+row ">
             <div class="no-padding col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <div class="service-th service-th-1">
-                    <a href="#" class="service-th-div">
+                    <a href="{{env('APP_URL')}}/chinh-sach/cam-ket-chat-luong-hang-chinh-hang" class="service-th-div">
                         <div class="service-th-div-mask"><p>CAM KẾT CHẤT LƯỢNG<br />
                                 CHÍNH HÃNG</p>
                         </div>
@@ -12,7 +12,7 @@
             </div>
             <div class="no-padding col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <div class="service-th service-th-2">
-                    <a href="#" class="service-th-div">
+                    <a href="{{env('APP_URL')}}/chinh-sach/giao-hang-mien-phi-nhanh-uy-tin" class="service-th-div">
                         <div class="service-th-div-mask"><p>GIAO HÀNG MIỄN PHÍ<br />
                                 NHANH &#8211; UY TÍN</p>
                         </div>
@@ -21,7 +21,7 @@
             </div>
             <div class="no-padding col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <div class="service-th service-th-3">
-                    <a href="#" class="service-th-div">
+                    <a href="{{env('APP_URL')}}/chinh-sach/mua-hang-tra-gop-thu-tuc-nhanh-gon" class="service-th-div">
                         <div class="service-th-div-mask"><p>MUA HÀNG TRẢ GÓP<br />
                                 THỦ TỤC NHANH GỌN</p>
                         </div>
@@ -30,7 +30,7 @@
             </div>
             <div class="no-padding col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <div class="service-th service-th-4">
-                    <a href="#" class="service-th-div">
+                    <a href="{{env('APP_URL')}}/chinh-sach/sua-chua-tan-noi-cuu-ho-khan-cap" class="service-th-div">
                         <div class="service-th-div-mask"><p>SỬA CHỮA TẬN NƠI<br />
                                 CỨU HỘ KHẨN CẤP</p>
                         </div>

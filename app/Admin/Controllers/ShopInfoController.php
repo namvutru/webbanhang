@@ -33,6 +33,9 @@ class ShopInfoController extends AdminController
         $grid->column('slogan', __('Slogan'));
         $grid->column('slogan2', __('Slogan2'));
         $grid->column('phone', __('Phone'));
+        $grid->column('linkzalo', __('Link zalo'));
+        $grid->column('linkfacebook', __('Link FaceBook'));
+        $grid->column('footer', __('Thông tin cuối trang'));
 
 
         return $grid;
@@ -72,6 +75,10 @@ class ShopInfoController extends AdminController
         $form->text('slogan', __('Slogan'));
         $form->text('slogan2', __('Slogan2'));
         $form->text('phone', __('Phone'));
+        $form->text('linkzalo', __('Link zalo'));
+        $form->text('linkfacebook', __('Link facebook'));
+        $form->ckeditor('footer', __('Thông tin cuối trang'));
+
 
         return $form;
     }

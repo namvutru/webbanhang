@@ -10,27 +10,39 @@
             <div class="carousel-inner" role="listbox" aria-label="carousel">
 
                 @foreach($banner_trangchu as $key => $ban_trachu)
-                    <div class="item active" style="padding: 0 !important;">
-                        <a href="#" title="{{$ban_trachu->title}}">
-                            <img class="img-full" width="1540" height="407"
-                                 src="{{env('APP_URL') . '/documents/website/'.$ban_trachu->image}}"
-                                 alt=" {{$ban_trachu->title}}">
-{{--                                 data-lazy-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/xe-dien-xe-may-50cc-khuyen-mai-gia-tot-PC-scaled.jpg">--}}
-{{--                            <noscript><img class="img-full" width="1540" height="407"--}}
-{{--                                           src="https://xedienvietthanh.com/wp-content/uploads/2020/04/xe-dien-xe-may-50cc-khuyen-mai-gia-tot-PC-scaled.jpg"--}}
-{{--                                           alt=" Banner 0"></noscript>--}}
-                        </a>
-                    </div>
+                    @if($key == 0)
+                        <div class="item active" style="padding: 0 !important;">
+                            <a href="#" title="{{$ban_trachu->title}}">
+                                <img class="img-full" width="1540" height="407"
+                                     src="{{env('APP_URL') . '/documents/website/'.$ban_trachu->image}}"
+                                     alt=" {{$ban_trachu->title}}">
+                                {{--                                 data-lazy-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/xe-dien-xe-may-50cc-khuyen-mai-gia-tot-PC-scaled.jpg">--}}
+                                {{--                            <noscript><img class="img-full" width="1540" height="407"--}}
+                                {{--                                           src="https://xedienvietthanh.com/wp-content/uploads/2020/04/xe-dien-xe-may-50cc-khuyen-mai-gia-tot-PC-scaled.jpg"--}}
+                                {{--                                           alt=" Banner 0"></noscript>--}}
+                            </a>
+                        </div>
+
+                    @else
+                        <div class="item" style="padding: 0 !important;">
+                            <a href="#" title="{{$ban_trachu->title}}">
+                                <img class="img-full" width="1540" height="407"
+                                     src="{{env('APP_URL') . '/documents/website/'.$ban_trachu->image}}"
+                                     alt=" {{$ban_trachu->title}}">
+                                {{--                                 data-lazy-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/xe-dien-xe-may-50cc-khuyen-mai-gia-tot-PC-scaled.jpg">--}}
+                                {{--                            <noscript><img class="img-full" width="1540" height="407"--}}
+                                {{--                                           src="https://xedienvietthanh.com/wp-content/uploads/2020/04/xe-dien-xe-may-50cc-khuyen-mai-gia-tot-PC-scaled.jpg"--}}
+                                {{--                                           alt=" Banner 0"></noscript>--}}
+                            </a>
+                        </div>
+
+                    @endif
+
+
 
                 @endforeach
 
-                <div class="item " style="padding: 0 !important;">
-                    <a href="#" title="banner 1">
-                        <img class="img-full" width="1540" height="407"
-                             data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/xe-dien-xe-50cc-cho-hoc-sinh-new-min.jpg"
-                             alt=" Banner 1">
-                    </a>
-                </div>
+
 
 
             </div>
@@ -312,53 +324,20 @@
                                 <div class="col-item">
                                     <div class="item-inner">
                                         <div class="product-wrapper">
-                                            <a href="https://xedienvietthanh.com/ac-quy-yadea-60v-22ah-ttfar/" title="ẮC QUY XE ĐIỆN YADEA 60V &#8211; 22AH TTFAR">
-                                                <img src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif" data-src="https://xedienvietthanh.com/wp-content/uploads/2023/04/ac-quy-xe-dien-yadea-60v-22ah.jpg" class="lazyload img-full transition lazy lazyload wp-post-image" alt="" loading="lazy" /></a>
+                                            <a href="{{route('thong-tin-san-pham',$product_l2->slug)}}" title="{{$product_l2->name}}">
+                                                <img src="{{env('APP_URL').'/documents/website/'.$product_l2->imagemain}}" data-src="{{env('APP_URL').'/documents/website/'.$product_l2->imagemain}}" class="lazyload img-full transition lazy lazyload wp-post-image" alt="" loading="lazy" /></a>
                                         </div>
                                         <div class="item-info">
-                                            <h5 class="item-title text-uppercase"><a href="https://xedienvietthanh.com/ac-quy-yadea-60v-22ah-ttfar/" title="ẮC QUY XE ĐIỆN YADEA 60V &#8211; 22AH TTFAR">ẮC QUY XE ĐIỆN YADEA 60V &#8211; 22AH TTFAR</a></h5>
+                                            <h5 class="item-title text-uppercase"><a href="{{route('thong-tin-san-pham',$product_l2->slug)}}" title="{{$product_l2->name}}">{{$product_l2->name}}</a></h5>
                                             <div class="item-price">
-                                                <span class="old-price"><span class="price">4.600.000 đ</span></span>
-                                                <span class="regular-price"><span class="price">4.000.000 đ</span></span>
+                                                <span class="old-price"><span class="price">{{$product_l2->price}}</span></span>
+                                                <span class="regular-price"><span class="price">{{$product_l2->price}}</span></span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="display-pt10 item-special">
-                                <div class="col-item">
-                                    <div class="item-inner">
-                                        <div class="product-wrapper">
-                                            <a href="https://xedienvietthanh.com/ac-quy-yadea-60v-22ah-ttfar/" title="ẮC QUY XE ĐIỆN YADEA 60V &#8211; 22AH TTFAR">
-                                                <img src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif" data-src="https://xedienvietthanh.com/wp-content/uploads/2023/04/ac-quy-xe-dien-yadea-60v-22ah.jpg" class="lazyload img-full transition lazy lazyload wp-post-image" alt="" loading="lazy" /></a>
-                                        </div>
-                                        <div class="item-info">
-                                            <h5 class="item-title text-uppercase"><a href="https://xedienvietthanh.com/ac-quy-yadea-60v-22ah-ttfar/" title="ẮC QUY XE ĐIỆN YADEA 60V &#8211; 22AH TTFAR">ẮC QUY XE ĐIỆN YADEA 60V &#8211; 22AH TTFAR</a></h5>
-                                            <div class="item-price">
-                                                <span class="old-price"><span class="price">4.600.000 đ</span></span>
-                                                <span class="regular-price"><span class="price">4.000.000 đ</span></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="display-pt10 item-special">
-                                <div class="col-item">
-                                    <div class="item-inner">
-                                        <div class="product-wrapper">
-                                            <a href="https://xedienvietthanh.com/ac-quy-yadea-60v-22ah-ttfar/" title="ẮC QUY XE ĐIỆN YADEA 60V &#8211; 22AH TTFAR">
-                                                <img src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif" data-src="https://xedienvietthanh.com/wp-content/uploads/2023/04/ac-quy-xe-dien-yadea-60v-22ah.jpg" class="lazyload img-full transition lazy lazyload wp-post-image" alt="" loading="lazy" /></a>
-                                        </div>
-                                        <div class="item-info">
-                                            <h5 class="item-title text-uppercase"><a href="https://xedienvietthanh.com/ac-quy-yadea-60v-22ah-ttfar/" title="ẮC QUY XE ĐIỆN YADEA 60V &#8211; 22AH TTFAR">ẮC QUY XE ĐIỆN YADEA 60V &#8211; 22AH TTFAR</a></h5>
-                                            <div class="item-price">
-                                                <span class="old-price"><span class="price">4.600.000 đ</span></span>
-                                                <span class="regular-price"><span class="price">4.000.000 đ</span></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
                         @endforeach
 
                         <!-- loop product -->
@@ -378,14 +357,14 @@
                                 <div class="col-item">
                                     <div class="item-inner">
                                         <div class="product-wrapper">
-                                            <a href="https://xedienvietthanh.com/ac-quy-yadea-60v-22ah-ttfar/" title="ẮC QUY XE ĐIỆN YADEA 60V &#8211; 22AH TTFAR">
-                                                <img src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif" data-src="https://xedienvietthanh.com/wp-content/uploads/2023/04/ac-quy-xe-dien-yadea-60v-22ah.jpg" class="lazyload img-full transition lazy lazyload wp-post-image" alt="" loading="lazy" /></a>
+                                            <a href="{{route('thong-tin-san-pham',$product_l3->slug)}}" title="{{$product_l3->name}}">
+                                                <img src="{{env('APP_URL').'/documents/website/'.$product_l3->imagemain}}" data-src="{{env('APP_URL').'/documents/website/'.$product_l3->imagemain}}" class="lazyload img-full transition lazy lazyload wp-post-image" alt="" loading="lazy" /></a>
                                         </div>
                                         <div class="item-info">
-                                            <h5 class="item-title text-uppercase"><a href="https://xedienvietthanh.com/ac-quy-yadea-60v-22ah-ttfar/" title="ẮC QUY XE ĐIỆN YADEA 60V &#8211; 22AH TTFAR">ẮC QUY XE ĐIỆN YADEA 60V &#8211; 22AH TTFAR</a></h5>
+                                            <h5 class="item-title text-uppercase"><a href="{{route('thong-tin-san-pham',$product_l3->slug)}}" title="{{$product_l3->name}}">{{$product_l3->name}}</a></h5>
                                             <div class="item-price">
-                                                <span class="old-price"><span class="price">4.600.000 đ</span></span>
-                                                <span class="regular-price"><span class="price">4.000.000 đ</span></span>
+                                                <span class="old-price"><span class="price">{{$product_l3->price}}</span></span>
+                                                <span class="regular-price"><span class="price">{{$product_l3->price}}</span></span>
                                             </div>
                                         </div>
                                     </div>

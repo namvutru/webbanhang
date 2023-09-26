@@ -2570,9 +2570,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
                     <div class="row">
 
                         <form class="search col-md-4 no-border form-inline" method="get"
-                              action="https://xedienvietthanh.com" role="search">
+                              action="{{route('tim-kiem')}}" role="search">
 
-                            <input class="search-input form-control" type="search" name="s"
+                            <input class="search-input form-control" type="search" name="search"
                                    placeholder="Tên sản phẩm bạn muốn tìm" style="width: 210px;">
 
                             <button class="search-submit fa fa-search btn cl_2cc332" type="submit"
@@ -2684,49 +2684,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
         </div>
     </div>
 </section>
-<div class="table-service destop ipad-mini wrap-camket">
-    <div class="container service">
-        <div class="+row ">
-            <div class="no-padding col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <div class="service-th service-th-1">
-                    <a href="https://xedienvietthanh.com/cam-ket-chat-luong-hang-chinh-hang/" class="service-th-div">
-                        <div class="service-th-div-mask"><p>CAM KẾT CHẤT LƯỢNG<br/>
-                                CHÍNH HÃNG</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="no-padding col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <div class="service-th service-th-2">
-                    <a href="https://xedienvietthanh.com/giao-hang-mien-phi-nhanh-uy-tin/" class="service-th-div">
-                        <div class="service-th-div-mask"><p>GIAO HÀNG MIỄN PHÍ<br/>
-                                NHANH &#8211; UY TÍN</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="no-padding col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <div class="service-th service-th-3">
-                    <a href="https://xedienvietthanh.com/mua-hang-tra-gop-thu-tuc-nhanh-gon/" class="service-th-div">
-                        <div class="service-th-div-mask"><p>MUA HÀNG TRẢ GÓP<br/>
-                                THỦ TỤC NHANH GỌN</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="no-padding col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <div class="service-th service-th-4">
-                    <a href="https://xedienvietthanh.com/sua-chua/" class="service-th-div">
-                        <div class="service-th-div-mask"><p>SỬA CHỮA TẬN NƠI<br/>
-                                CỨU HỘ KHẨN CẤP</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
+@include('page.includes.narbar')
 
 <style>
     #quick-buy .none {
@@ -3135,36 +3094,74 @@ window.onload = function() {
 <section class="acquy_phutung_2019">
     <div class="container">
         <div class="row">
+
             <div class="col-xs-12 ">
                 <div class="head-title font30 text-uppercase h2"><a href="https://xedienvietthanh.com/ac-quy/">ắc quy
                         chính hãng</a>
                 </div>
                 <div class="owl-carousel overhiden" id="owl-acquy-2019">
                     <!-- loop product -->
-                    <div class="owl-item active" style="width: 257.5px; margin-right: 10px;"><div class="display-pt10 item-special">
+                    @foreach($list_products_l2 as $key => $product_l2)
+
+                        <div class="display-pt10 item-special">
                             <div class="col-item">
                                 <div class="item-inner">
                                     <div class="product-wrapper">
-                                        <a href="https://xedienvietthanh.com/ac-quy-yadea-60v-22ah-ttfar/" title="ẮC QUY XE ĐIỆN YADEA 60V – 22AH TTFAR">
-                                            <img src="https://xedienvietthanh.com/wp-content/uploads/2023/04/ac-quy-xe-dien-yadea-60v-22ah.jpg" data-src="https://xedienvietthanh.com/wp-content/uploads/2023/04/ac-quy-xe-dien-yadea-60v-22ah.jpg" class="lazyload img-full transition lazy lazyload wp-post-image" alt="" loading="lazy"></a>
+                                        <a href="{{route('thong-tin-san-pham',$product_l2->slug)}}" title="{{$product_l2->name}}">
+                                            <img src="{{env('APP_URL').'/documents/website/'.$product_l2->imagemain}}" data-src="{{env('APP_URL').'/documents/website/'.$product_l2->imagemain}}" class="lazyload img-full transition lazy lazyload wp-post-image" alt="" loading="lazy" /></a>
                                     </div>
                                     <div class="item-info">
-                                        <h5 class="item-title text-uppercase"><a href="https://xedienvietthanh.com/ac-quy-yadea-60v-22ah-ttfar/" title="ẮC QUY XE ĐIỆN YADEA 60V – 22AH TTFAR">ẮC QUY XE ĐIỆN YADEA 60V – 22AH TTFAR</a></h5>
+                                        <h5 class="item-title text-uppercase"><a href="{{route('thong-tin-san-pham',$product_l2->slug)}}" title="{{$product_l2->name}}">{{$product_l2->name}}</a></h5>
                                         <div class="item-price">
-                                            <span class="old-price"><span class="price">4.600.000 đ</span></span>
-                                            <span class="regular-price"><span class="price">4.000.000 đ</span></span>
+                                            <span class="old-price"><span class="price">{{$product_l2->price}}</span></span>
+                                            <span class="regular-price"><span class="price">{{$product_l2->price}}</span></span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+
+                    @endforeach
                     <!-- loop product -->
                     <!-- loop product -->
 
                     <!-- loop product -->
                 </div>
             </div>
+
+            <div class="col-xs-12 ">
+                <div class="head-title font30 text-uppercase h2"><a
+                        href="https://xedienvietthanh.com/phu-tung-xe-dien/">phụ tùng chính hãng</a>
+                </div>
+                <div class="owl-carousel overhiden" id="owl-phutung-2019">
+                    <!-- loop product -->
+                    @foreach($list_products_l3 as $key => $product_l3)
+                        <div class="display-pt10 item-special">
+                            <div class="col-item">
+                                <div class="item-inner">
+                                    <div class="product-wrapper">
+                                        <a href="{{route('thong-tin-san-pham',$product_l3->slug)}}" title="{{$product_l3->name}}">
+                                            <img src="{{env('APP_URL').'/documents/website/'.$product_l3->imagemain}}" data-src="{{env('APP_URL').'/documents/website/'.$product_l3->imagemain}}" class="lazyload img-full transition lazy lazyload wp-post-image" alt="" loading="lazy" /></a>
+                                    </div>
+                                    <div class="item-info">
+                                        <h5 class="item-title text-uppercase"><a href="{{route('thong-tin-san-pham',$product_l3->slug)}}" title="{{$product_l3->name}}">{{$product_l3->name}}</a></h5>
+                                        <div class="item-price">
+                                            <span class="old-price"><span class="price">{{$product_l3->price}}</span></span>
+                                            <span class="regular-price"><span class="price">{{$product_l3->price}}</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    @endforeach
+                    <!-- loop product -->
+
+                    <!-- loop product -->
+                </div>
+            </div>
+
+
         </div>
     </div>
 </section>
@@ -3207,44 +3204,15 @@ window.onload = function() {
             <div class="row">
                 <div class="col-xs-12 col-lg-4 col-md-4 widget">
                     <div class="head_widget">
-                        <b>Về chúng tôi<b>
+                        <b>Về chúng tôi</b>
                     </div>
                     <ul id="menu-footer" class="list-unstyled">
-                        <li id="menu-item-25685"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25685"><a
-                                href="https://xedienvietthanh.com/chinh-sach-thanh-toan/">Chính sách thanh toán</a></li>
-                        <li id="menu-item-25680"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25680"><a
-                                href="https://xedienvietthanh.com/chinh-sach-kiem-hang/">Chính sách kiểm hàng</a></li>
-                        <li id="menu-item-32849"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32849"><a
-                                href="https://xedienvietthanh.com/chinh-sach-bao-hanh/">Chính sách bảo hành</a></li>
-                        <li id="menu-item-25682"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25682"><a
-                                href="https://xedienvietthanh.com/chinh-sach-doi-tra-hoan-tien/">Chính sách đổi trả hoàn
-                                tiền</a></li>
-                        <li id="menu-item-25683"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25683"><a
-                                href="https://xedienvietthanh.com/chinh-sach-van-chuyen-va-giao-nhan/">Chính sách vận
-                                chuyển và giao nhận</a></li>
-                        <li id="menu-item-25684"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25684"><a
-                                href="https://xedienvietthanh.com/chinh-sach-xu-ly-khieu-nai/">Chính sách xử lý khiếu
-                                nại</a></li>
-                        <li id="menu-item-25679"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25679"><a
-                                href="https://xedienvietthanh.com/chinh-sach-bao-mat-thong-tin/">Chính sách bảo mật
-                                thông tin</a></li>
-                        <li id="menu-item-3963"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3963"><a
-                                href="https://xedienvietthanh.com/gioi-thieu/">Giới thiệu</a></li>
-                        <li id="menu-item-4002"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4002"><a
-                                href="https://xedienvietthanh.com/xe-dien-viet-thanh-tuyen-dung-nhan-su/">Tuyển dụng</a>
-                        </li>
-                        <li id="menu-item-290"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-290"><a
-                                href="https://xedienvietthanh.com/tu-van-mien-phi-247/">Tư vấn miễn phí 24/7</a></li>
+
+                        @foreach($shop_policy as $key => $shop_poli)
+                            <li id="menu-item-25685"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25685"><a
+                                    href="{{route('chinh-sach',$shop_poli->slug)}}">{{$shop_poli->title}}</a></li>
+                        @endforeach
                     </ul>
                     <div class="subcribe_box">
                         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
@@ -3279,1025 +3247,60 @@ window.onload = function() {
                             <div class="panel-heading relative">
                                 <div class="panel-title active transition">
                                     <a data-toggle="collapse" data-parent="#map-footer" href="#collapse-0"
-                                       class="relative w100 font16 bold">Hà Nội</a>
+                                       class="relative w100 font16 bold"></a>
                                 </div>
                             </div>
                             <div id="collapse-0" class="panel-collapse collapse in">
                                 <div class="panel-body">
                                     <ul class="tab-map-bottom abs list-unstyled">
+                                        @foreach($shop_address as $key => $shop_add)
+                                            <li class="bold" data-target="tab-00">
+                                                <!-- <p class="mar0">Showroom 1: 76-78 Ô Chợ Dừa, Đống Đa, Hà Nội.</p> -->
+                                                <p class="mar0"><img alt="{{$shop_add->address}}" width="22"
+                                                                     height="22"
+                                                                     src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2022%2022'%3E%3C/svg%3E"
+                                                                     data-lazy-src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
+                                                    <noscript><img alt="{{$shop_add->address}}" width="22"
+                                                                   height="22"
+                                                                   src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
+                                                    </noscript>
+                                                    {{$shop_add->address}}
+                                                </p>
+                                                <p class="mar0" style="padding-left: 22px;">Tư vấn : <a
+                                                        href="tel:{{$shop_add->phone}}">{{$shop_add->phone}}</a> <a
+                                                        href="{{$shop_add->linkmap}}" target="_blank"
+                                                        class="pull-right" rel="nofollow">Xem bản đồ <i
+                                                            class="fa fa-external-link"></i></a></p>
+                                            </li>
+                                        @endforeach
 
-                                        <li class="bold" data-target="tab-00">
-                                            <!-- <p class="mar0">Showroom 1: 76-78 Ô Chợ Dừa, Đống Đa, Hà Nội.</p> -->
-                                            <p class="mar0"><img alt="76-78 Ô Chợ Dừa, Đống Đa, Hà Nội." width="22"
-                                                                 height="22"
-                                                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2022%2022'%3E%3C/svg%3E"
-                                                                 data-lazy-src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                <noscript><img alt="76-78 Ô Chợ Dừa, Đống Đa, Hà Nội." width="22"
-                                                               height="22"
-                                                               src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                </noscript>
-                                                76-78 Ô Chợ Dừa, Đống Đa, Hà Nội.
-                                            </p>
-                                            <p class="mar0" style="padding-left: 22px;">Tư vấn : <a
-                                                    href="tel:0904.998899">0904.998899</a> <a
-                                                    href="https://goo.gl/maps/ckzibfjdjZbzsrHD6" target="_blank"
-                                                    class="pull-right" rel="nofollow">Xem bản đồ <i
-                                                        class="fa fa-external-link"></i></a></p>
-                                        </li>
 
-                                        <li class="bold" data-target="tab-01">
-                                            <!-- <p class="mar0">Showroom 2: 196 Cầu Giấy, Cầu Giấy, Hà Nội</p> -->
-                                            <p class="mar0"><img alt="196 Cầu Giấy, Cầu Giấy, Hà Nội" width="22"
-                                                                 height="22"
-                                                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2022%2022'%3E%3C/svg%3E"
-                                                                 data-lazy-src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                <noscript><img alt="196 Cầu Giấy, Cầu Giấy, Hà Nội" width="22"
-                                                               height="22"
-                                                               src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                </noscript>
-                                                196 Cầu Giấy, Cầu Giấy, Hà Nội
-                                            </p>
-                                            <p class="mar0" style="padding-left: 22px;">Tư vấn : <a
-                                                    href="tel:0986.06.3888">0986.06.3888</a> <a
-                                                    href="https://goo.gl/maps/BRJktbNWEvDqcgFR8" target="_blank"
-                                                    class="pull-right" rel="nofollow">Xem bản đồ <i
-                                                        class="fa fa-external-link"></i></a></p>
-                                        </li>
-
-                                        <li class="bold" data-target="tab-02">
-                                            <!-- <p class="mar0">Showroom 3: 165 Xuân Thuỷ, Cầu Giấy, Hà Nội</p> -->
-                                            <p class="mar0"><img alt="165 Xuân Thuỷ, Cầu Giấy, Hà Nội" width="22"
-                                                                 height="22"
-                                                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2022%2022'%3E%3C/svg%3E"
-                                                                 data-lazy-src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                <noscript><img alt="165 Xuân Thuỷ, Cầu Giấy, Hà Nội" width="22"
-                                                               height="22"
-                                                               src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                </noscript>
-                                                165 Xuân Thuỷ, Cầu Giấy, Hà Nội
-                                            </p>
-                                            <p class="mar0" style="padding-left: 22px;">Tư vấn : <a
-                                                    href="tel:0988.47.6336">0988.47.6336</a> <a
-                                                    href="https://goo.gl/maps/9FrmYaLatV2zwog17" target="_blank"
-                                                    class="pull-right" rel="nofollow">Xem bản đồ <i
-                                                        class="fa fa-external-link"></i></a></p>
-                                        </li>
-
-                                        <li class="bold" data-target="tab-03">
-                                            <!-- <p class="mar0">Showroom 4: 127 Phạm Văn Đồng, Cầu Giấy, Hà Nội.</p> -->
-                                            <p class="mar0"><img alt="127 Phạm Văn Đồng, Cầu Giấy, Hà Nội." width="22"
-                                                                 height="22"
-                                                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2022%2022'%3E%3C/svg%3E"
-                                                                 data-lazy-src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                <noscript><img alt="127 Phạm Văn Đồng, Cầu Giấy, Hà Nội." width="22"
-                                                               height="22"
-                                                               src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                </noscript>
-                                                127 Phạm Văn Đồng, Cầu Giấy, Hà Nội.
-                                            </p>
-                                            <p class="mar0" style="padding-left: 22px;">Tư vấn : <a
-                                                    href="tel:0986.91.5959">0986.91.5959</a> <a
-                                                    href="https://goo.gl/maps/jNo7hQCtWzGWvYEw5" target="_blank"
-                                                    class="pull-right" rel="nofollow">Xem bản đồ <i
-                                                        class="fa fa-external-link"></i></a></p>
-                                        </li>
-
-                                        <li class="bold" data-target="tab-04">
-                                            <!-- <p class="mar0">Showroom 5: 521 Nguyễn Trãi, Thanh Xuân, Hà Nội</p> -->
-                                            <p class="mar0"><img alt="521 Nguyễn Trãi, Thanh Xuân, Hà Nội" width="22"
-                                                                 height="22"
-                                                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2022%2022'%3E%3C/svg%3E"
-                                                                 data-lazy-src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                <noscript><img alt="521 Nguyễn Trãi, Thanh Xuân, Hà Nội" width="22"
-                                                               height="22"
-                                                               src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                </noscript>
-                                                521 Nguyễn Trãi, Thanh Xuân, Hà Nội
-                                            </p>
-                                            <p class="mar0" style="padding-left: 22px;">Tư vấn : <a
-                                                    href="tel:0916.87.2266">0916.87.2266</a> <a
-                                                    href="https://goo.gl/maps/rDQmp7rbWe1qYZRF6" target="_blank"
-                                                    class="pull-right" rel="nofollow">Xem bản đồ <i
-                                                        class="fa fa-external-link"></i></a></p>
-                                        </li>
-
-                                        <li class="bold" data-target="tab-05">
-                                            <!-- <p class="mar0">Showroom 6: 603 Nguyễn Trãi, Thanh Xuân, Hà Nội</p> -->
-                                            <p class="mar0"><img alt="603 Nguyễn Trãi, Thanh Xuân, Hà Nội" width="22"
-                                                                 height="22"
-                                                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2022%2022'%3E%3C/svg%3E"
-                                                                 data-lazy-src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                <noscript><img alt="603 Nguyễn Trãi, Thanh Xuân, Hà Nội" width="22"
-                                                               height="22"
-                                                               src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                </noscript>
-                                                603 Nguyễn Trãi, Thanh Xuân, Hà Nội
-                                            </p>
-                                            <p class="mar0" style="padding-left: 22px;">Tư vấn : <a
-                                                    href="tel:0984.44.3388">0984.44.3388</a> <a
-                                                    href="https://goo.gl/maps/NWD8pj4mYfdDkvBS8" target="_blank"
-                                                    class="pull-right" rel="nofollow">Xem bản đồ <i
-                                                        class="fa fa-external-link"></i></a></p>
-                                        </li>
-
-                                        <li class="bold" data-target="tab-06">
-                                            <!-- <p class="mar0">Showroom 7: 150 Phạm Văn Đồng, Cầu Giấy, Hà Nội.</p> -->
-                                            <p class="mar0"><img alt="150 Phạm Văn Đồng, Cầu Giấy, Hà Nội." width="22"
-                                                                 height="22"
-                                                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2022%2022'%3E%3C/svg%3E"
-                                                                 data-lazy-src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                <noscript><img alt="150 Phạm Văn Đồng, Cầu Giấy, Hà Nội." width="22"
-                                                               height="22"
-                                                               src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                </noscript>
-                                                150 Phạm Văn Đồng, Cầu Giấy, Hà Nội.
-                                            </p>
-                                            <p class="mar0" style="padding-left: 22px;">Tư vấn : <a
-                                                    href="tel:091.162.3388">091.162.3388</a> <a
-                                                    href="https://goo.gl/maps/K13pV7NhgbmgYaVU8" target="_blank"
-                                                    class="pull-right" rel="nofollow">Xem bản đồ <i
-                                                        class="fa fa-external-link"></i></a></p>
-                                        </li>
-
-                                        <li class="bold" data-target="tab-07">
-                                            <!-- <p class="mar0">Showroom 8: 75 Đại Cồ Việt, Hai Bà Trưng, Hà Nội</p> -->
-                                            <p class="mar0"><img alt="75 Đại Cồ Việt, Hai Bà Trưng, Hà Nội" width="22"
-                                                                 height="22"
-                                                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2022%2022'%3E%3C/svg%3E"
-                                                                 data-lazy-src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                <noscript><img alt="75 Đại Cồ Việt, Hai Bà Trưng, Hà Nội" width="22"
-                                                               height="22"
-                                                               src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                </noscript>
-                                                75 Đại Cồ Việt, Hai Bà Trưng, Hà Nội
-                                            </p>
-                                            <p class="mar0" style="padding-left: 22px;">Tư vấn : <a
-                                                    href="tel:0981319559">0981319559</a> <a
-                                                    href="https://goo.gl/maps/pe4zyJAwsbXZSeTd8" target="_blank"
-                                                    class="pull-right" rel="nofollow">Xem bản đồ <i
-                                                        class="fa fa-external-link"></i></a></p>
-                                        </li>
-
-                                        <li class="bold" data-target="tab-08">
-                                            <!-- <p class="mar0">Showroom 9: 252R Minh Khai, Hai Bà Trưng, Hà Nội</p> -->
-                                            <p class="mar0"><img alt="252R Minh Khai, Hai Bà Trưng, Hà Nội" width="22"
-                                                                 height="22"
-                                                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2022%2022'%3E%3C/svg%3E"
-                                                                 data-lazy-src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                <noscript><img alt="252R Minh Khai, Hai Bà Trưng, Hà Nội" width="22"
-                                                               height="22"
-                                                               src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                </noscript>
-                                                252R Minh Khai, Hai Bà Trưng, Hà Nội
-                                            </p>
-                                            <p class="mar0" style="padding-left: 22px;">Tư vấn : <a
-                                                    href="tel:0973572233">0973572233</a> <a
-                                                    href="https://goo.gl/maps/ZkWzhntrTvX7vKxF9" target="_blank"
-                                                    class="pull-right" rel="nofollow">Xem bản đồ <i
-                                                        class="fa fa-external-link"></i></a></p>
-                                        </li>
-
-                                        <li class="bold" data-target="tab-09">
-                                            <!-- <p class="mar0">Showroom 10: 4B, Tân Mai, Hoàng Mai, HN</p> -->
-                                            <p class="mar0"><img alt="4B, Tân Mai, Hoàng Mai, HN" width="22" height="22"
-                                                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2022%2022'%3E%3C/svg%3E"
-                                                                 data-lazy-src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                <noscript><img alt="4B, Tân Mai, Hoàng Mai, HN" width="22" height="22"
-                                                               src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                </noscript>
-                                                4B, Tân Mai, Hoàng Mai, HN
-                                            </p>
-                                            <p class="mar0" style="padding-left: 22px;">Tư vấn : <a
-                                                    href="tel:0931824888">0931824888</a> <a
-                                                    href="https://goo.gl/maps/r7Gjo5fK2Aquk6NB7" target="_blank"
-                                                    class="pull-right" rel="nofollow">Xem bản đồ <i
-                                                        class="fa fa-external-link"></i></a></p>
-                                        </li>
-
-                                        <li class="bold" data-target="tab-010">
-                                            <!-- <p class="mar0">Showroom 11: 665 Nguyễn Văn Cừ, Long Biên, Hà Nội.</p> -->
-                                            <p class="mar0"><img alt="665 Nguyễn Văn Cừ, Long Biên, Hà Nội." width="22"
-                                                                 height="22"
-                                                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2022%2022'%3E%3C/svg%3E"
-                                                                 data-lazy-src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                <noscript><img alt="665 Nguyễn Văn Cừ, Long Biên, Hà Nội." width="22"
-                                                               height="22"
-                                                               src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                </noscript>
-                                                665 Nguyễn Văn Cừ, Long Biên, Hà Nội.
-                                            </p>
-                                            <p class="mar0" style="padding-left: 22px;">Tư vấn : <a
-                                                    href="tel:0916.05.5588">0916.05.5588</a> <a
-                                                    href="https://goo.gl/maps/RD8aQjg3XLyqdVvq8" target="_blank"
-                                                    class="pull-right" rel="nofollow">Xem bản đồ <i
-                                                        class="fa fa-external-link"></i></a></p>
-                                        </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="panel">
-                            <div class="panel-heading relative">
-                                <div class="panel-title  transition">
-                                    <a data-toggle="collapse" data-parent="#map-footer" href="#collapse-1"
-                                       class="relative w100 font16 bold">Bắc Ninh</a>
-                                </div>
-                            </div>
-                            <div id="collapse-1" class="panel-collapse collapse ">
-                                <div class="panel-body">
-                                    <ul class="tab-map-bottom  list-unstyled">
 
-                                        <li class="bold" data-target="tab-10">
-                                            <!-- <p class="mar0">Showroom 1: 1A Nguyễn Trãi, Ninh Xá, TP Bắc Ninh, Bắc Ninh</p> -->
-                                            <p class="mar0"><img alt="1A Nguyễn Trãi, Ninh Xá, TP Bắc Ninh, Bắc Ninh"
-                                                                 width="22" height="22"
-                                                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2022%2022'%3E%3C/svg%3E"
-                                                                 data-lazy-src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                <noscript><img alt="1A Nguyễn Trãi, Ninh Xá, TP Bắc Ninh, Bắc Ninh"
-                                                               width="22" height="22"
-                                                               src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                </noscript>
-                                                1A Nguyễn Trãi, Ninh Xá, TP Bắc Ninh, Bắc Ninh
-                                            </p>
-                                            <p class="mar0" style="padding-left: 22px;">Tư vấn : <a
-                                                    href="tel:0987.97.2299">0987.97.2299</a> <a
-                                                    href="https://goo.gl/maps/oNp6WBFCk13mmaUS7" target="_blank"
-                                                    class="pull-right" rel="nofollow">Xem bản đồ <i
-                                                        class="fa fa-external-link"></i></a></p>
-                                        </li>
-
-                                        <li class="bold" data-target="tab-11">
-                                            <!-- <p class="mar0">Showroom 2: Phố Mới, Trần Phú, Đình Bảng, Từ Sơn, Bắc Ninh</p> -->
-                                            <p class="mar0"><img alt="Phố Mới, Trần Phú, Đình Bảng, Từ Sơn, Bắc Ninh"
-                                                                 width="22" height="22"
-                                                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2022%2022'%3E%3C/svg%3E"
-                                                                 data-lazy-src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                <noscript><img alt="Phố Mới, Trần Phú, Đình Bảng, Từ Sơn, Bắc Ninh"
-                                                               width="22" height="22"
-                                                               src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                </noscript>
-                                                Phố Mới, Trần Phú, Đình Bảng, Từ Sơn, Bắc Ninh
-                                            </p>
-                                            <p class="mar0" style="padding-left: 22px;">Tư vấn : <a
-                                                    href="tel:0985.79.2299">0985.79.2299</a> <a
-                                                    href="https://goo.gl/maps/8oNq9HLHsiEkZ3n69" target="_blank"
-                                                    class="pull-right" rel="nofollow">Xem bản đồ <i
-                                                        class="fa fa-external-link"></i></a></p>
-                                        </li>
-
-                                        <li class="bold" data-target="tab-12">
-                                            <!-- <p class="mar0">Showroom 3: 713 Ngô Gia Tự, Ninh Xá, TP Bắc Ninh, Bắc Ninh</p> -->
-                                            <p class="mar0"><img alt="713 Ngô Gia Tự, Ninh Xá, TP Bắc Ninh, Bắc Ninh"
-                                                                 width="22" height="22"
-                                                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2022%2022'%3E%3C/svg%3E"
-                                                                 data-lazy-src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                <noscript><img alt="713 Ngô Gia Tự, Ninh Xá, TP Bắc Ninh, Bắc Ninh"
-                                                               width="22" height="22"
-                                                               src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                </noscript>
-                                                713 Ngô Gia Tự, Ninh Xá, TP Bắc Ninh, Bắc Ninh
-                                            </p>
-                                            <p class="mar0" style="padding-left: 22px;">Tư vấn : <a
-                                                    href="tel:0982.51.3399">0982.51.3399</a> <a
-                                                    href="https://goo.gl/maps/2WZ8ksRASWdzoPAz6" target="_blank"
-                                                    class="pull-right" rel="nofollow">Xem bản đồ <i
-                                                        class="fa fa-external-link"></i></a></p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel">
-                            <div class="panel-heading relative">
-                                <div class="panel-title  transition">
-                                    <a data-toggle="collapse" data-parent="#map-footer" href="#collapse-2"
-                                       class="relative w100 font16 bold">Bắc Giang</a>
-                                </div>
-                            </div>
-                            <div id="collapse-2" class="panel-collapse collapse ">
-                                <div class="panel-body">
-                                    <ul class="tab-map-bottom abs list-unstyled">
-
-                                        <li class="bold" data-target="tab-20">
-                                            <!-- <p class="mar0">Showroom 1: Lô 01-02 Đại Hoàng Sơn, Xương Giang, Bắc Giang</p> -->
-                                            <p class="mar0"><img alt="Lô 01-02 Đại Hoàng Sơn, Xương Giang, Bắc Giang"
-                                                                 width="22" height="22"
-                                                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2022%2022'%3E%3C/svg%3E"
-                                                                 data-lazy-src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                <noscript><img alt="Lô 01-02 Đại Hoàng Sơn, Xương Giang, Bắc Giang"
-                                                               width="22" height="22"
-                                                               src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                </noscript>
-                                                Lô 01-02 Đại Hoàng Sơn, Xương Giang, Bắc Giang
-                                            </p>
-                                            <p class="mar0" style="padding-left: 22px;">Tư vấn : <a
-                                                    href="tel:0985.95.9339">0985.95.9339</a> <a
-                                                    href="https://goo.gl/maps/o3ChYRy1kFU6wsXg7" target="_blank"
-                                                    class="pull-right" rel="nofollow">Xem bản đồ <i
-                                                        class="fa fa-external-link"></i></a></p>
-                                        </li>
-
-                                        <li class="bold" data-target="tab-21">
-                                            <!-- <p class="mar0">Showroom 2: Lô G6.1-G6.2 KĐT Rùa Vàng, TT Vôi - Lạng Giang - Bắc Giang</p> -->
-                                            <p class="mar0"><img
-                                                    alt="Lô G6.1-G6.2 KĐT Rùa Vàng, TT Vôi - Lạng Giang - Bắc Giang"
-                                                    width="22" height="22"
-                                                    src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2022%2022'%3E%3C/svg%3E"
-                                                    data-lazy-src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                <noscript><img
-                                                        alt="Lô G6.1-G6.2 KĐT Rùa Vàng, TT Vôi - Lạng Giang - Bắc Giang"
-                                                        width="22" height="22"
-                                                        src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                </noscript>
-                                                Lô G6.1-G6.2 KĐT Rùa Vàng, TT Vôi - Lạng Giang - Bắc Giang
-                                            </p>
-                                            <p class="mar0" style="padding-left: 22px;">Tư vấn : <a
-                                                    href="tel:0967.07.9898">0967.07.9898</a> <a
-                                                    href="https://goo.gl/maps/iVSbT9GFFowuBEe49" target="_blank"
-                                                    class="pull-right" rel="nofollow">Xem bản đồ <i
-                                                        class="fa fa-external-link"></i></a></p>
-                                        </li>
-
-                                        <li class="bold" data-target="tab-22">
-                                            <!-- <p class="mar0">Showroom 3: 372 Thân Nhân Trung, Việt Yên, Bắc Giang</p> -->
-                                            <p class="mar0"><img alt="372 Thân Nhân Trung, Việt Yên, Bắc Giang"
-                                                                 width="22" height="22"
-                                                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2022%2022'%3E%3C/svg%3E"
-                                                                 data-lazy-src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                <noscript><img alt="372 Thân Nhân Trung, Việt Yên, Bắc Giang" width="22"
-                                                               height="22"
-                                                               src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                </noscript>
-                                                372 Thân Nhân Trung, Việt Yên, Bắc Giang
-                                            </p>
-                                            <p class="mar0" style="padding-left: 22px;">Tư vấn : <a
-                                                    href="tel:0966.888.372">0966.888.372</a> <a
-                                                    href="https://goo.gl/maps/JtEAFJe5vfasqBDv8" target="_blank"
-                                                    class="pull-right" rel="nofollow">Xem bản đồ <i
-                                                        class="fa fa-external-link"></i></a></p>
-                                        </li>
-
-                                        <li class="bold" data-target="tab-23">
-                                            <!-- <p class="mar0">Showroom 4: Ngã Tư Cầu Lường, Quang Thịnh, Lạng Giang, Bắc Giang</p> -->
-                                            <p class="mar0"><img
-                                                    alt="Ngã Tư Cầu Lường, Quang Thịnh, Lạng Giang, Bắc Giang"
-                                                    width="22" height="22"
-                                                    src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2022%2022'%3E%3C/svg%3E"
-                                                    data-lazy-src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                <noscript><img
-                                                        alt="Ngã Tư Cầu Lường, Quang Thịnh, Lạng Giang, Bắc Giang"
-                                                        width="22" height="22"
-                                                        src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                </noscript>
-                                                Ngã Tư Cầu Lường, Quang Thịnh, Lạng Giang, Bắc Giang
-                                            </p>
-                                            <p class="mar0" style="padding-left: 22px;">Tư vấn : <a
-                                                    href="tel:0979.550.668">0979.550.668</a> <a
-                                                    href="https://goo.gl/maps/aStCBQvCJrAGfFy28" target="_blank"
-                                                    class="pull-right" rel="nofollow">Xem bản đồ <i
-                                                        class="fa fa-external-link"></i></a></p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel">
-                            <div class="panel-heading relative">
-                                <div class="panel-title  transition">
-                                    <a data-toggle="collapse" data-parent="#map-footer" href="#collapse-3"
-                                       class="relative w100 font16 bold">TP. Hồ Chí Minh</a>
-                                </div>
-                            </div>
-                            <div id="collapse-3" class="panel-collapse collapse ">
-                                <div class="panel-body">
-                                    <ul class="tab-map-bottom abs list-unstyled">
-
-                                        <li class="bold" data-target="tab-30">
-                                            <!-- <p class="mar0">Showroom 1: 660 Âu Cơ, Tân Bình, TP. HCM</p> -->
-                                            <p class="mar0"><img alt="660 Âu Cơ, Tân Bình, TP. HCM" width="22"
-                                                                 height="22"
-                                                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2022%2022'%3E%3C/svg%3E"
-                                                                 data-lazy-src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                <noscript><img alt="660 Âu Cơ, Tân Bình, TP. HCM" width="22" height="22"
-                                                               src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                </noscript>
-                                                660 Âu Cơ, Tân Bình, TP. HCM
-                                            </p>
-                                            <p class="mar0" style="padding-left: 22px;">Tư vấn : <a
-                                                    href="tel:093.843.5959">093.843.5959</a> <a
-                                                    href="https://goo.gl/maps/gzMzVdQ2BxbcV3pg6" target="_blank"
-                                                    class="pull-right" rel="nofollow">Xem bản đồ <i
-                                                        class="fa fa-external-link"></i></a></p>
-                                        </li>
-
-                                        <li class="bold" data-target="tab-31">
-                                            <!-- <p class="mar0">Showroom 2: 920-922 Kha Vạn Cân, TP.Thủ Đức - TP.HCM</p> -->
-                                            <p class="mar0"><img alt="920-922 Kha Vạn Cân, TP.Thủ Đức - TP.HCM"
-                                                                 width="22" height="22"
-                                                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2022%2022'%3E%3C/svg%3E"
-                                                                 data-lazy-src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                <noscript><img alt="920-922 Kha Vạn Cân, TP.Thủ Đức - TP.HCM" width="22"
-                                                               height="22"
-                                                               src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                </noscript>
-                                                920-922 Kha Vạn Cân, TP.Thủ Đức - TP.HCM
-                                            </p>
-                                            <p class="mar0" style="padding-left: 22px;">Tư vấn : <a
-                                                    href="tel:090.429.3399">090.429.3399</a> <a
-                                                    href="https://goo.gl/maps/ybW5qgyWkaQQExVE9" target="_blank"
-                                                    class="pull-right" rel="nofollow">Xem bản đồ <i
-                                                        class="fa fa-external-link"></i></a></p>
-                                        </li>
-
-                                        <li class="bold" data-target="tab-32">
-                                            <!-- <p class="mar0">Showroom 3: 222 Phạm Hùng, H. Bình Chánh, TP.HCM</p> -->
-                                            <p class="mar0"><img alt="222 Phạm Hùng, H. Bình Chánh, TP.HCM" width="22"
-                                                                 height="22"
-                                                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2022%2022'%3E%3C/svg%3E"
-                                                                 data-lazy-src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                <noscript><img alt="222 Phạm Hùng, H. Bình Chánh, TP.HCM" width="22"
-                                                               height="22"
-                                                               src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                </noscript>
-                                                222 Phạm Hùng, H. Bình Chánh, TP.HCM
-                                            </p>
-                                            <p class="mar0" style="padding-left: 22px;">Tư vấn : <a
-                                                    href="tel:0919.86.2929">0919.86.2929</a> <a
-                                                    href="https://goo.gl/maps/jZ5XPMjjvszFLrw98" target="_blank"
-                                                    class="pull-right" rel="nofollow">Xem bản đồ <i
-                                                        class="fa fa-external-link"></i></a></p>
-                                        </li>
-
-                                        <li class="bold" data-target="tab-33">
-                                            <!-- <p class="mar0">Showroom 4: 968 Quang Trung, Gò Vấp, HCM</p> -->
-                                            <p class="mar0"><img alt="968 Quang Trung, Gò Vấp, HCM" width="22"
-                                                                 height="22"
-                                                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2022%2022'%3E%3C/svg%3E"
-                                                                 data-lazy-src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                <noscript><img alt="968 Quang Trung, Gò Vấp, HCM" width="22" height="22"
-                                                               src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                </noscript>
-                                                968 Quang Trung, Gò Vấp, HCM
-                                            </p>
-                                            <p class="mar0" style="padding-left: 22px;">Tư vấn : <a
-                                                    href="tel:091.454.8338">091.454.8338</a> <a
-                                                    href="https://goo.gl/maps/QZtDjhVeK9PNuEXe9" target="_blank"
-                                                    class="pull-right" rel="nofollow">Xem bản đồ <i
-                                                        class="fa fa-external-link"></i></a></p>
-                                        </li>
-
-                                        <li class="bold" data-target="tab-34">
-                                            <!-- <p class="mar0">Showroom 5: 489-491 Lê Trọng Tấn, Sơn Kỳ, Tân Phú, TP.HCM</p> -->
-                                            <p class="mar0"><img alt="489-491 Lê Trọng Tấn, Sơn Kỳ, Tân Phú, TP.HCM"
-                                                                 width="22" height="22"
-                                                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2022%2022'%3E%3C/svg%3E"
-                                                                 data-lazy-src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                <noscript><img alt="489-491 Lê Trọng Tấn, Sơn Kỳ, Tân Phú, TP.HCM"
-                                                               width="22" height="22"
-                                                               src="https://xedienvietthanh.com/wp-content/themes/auto/home.png"/>
-                                                </noscript>
-                                                489-491 Lê Trọng Tấn, Sơn Kỳ, Tân Phú, TP.HCM
-                                            </p>
-                                            <p class="mar0" style="padding-left: 22px;">Tư vấn : <a
-                                                    href="tel:0915.36.9229">0915.36.9229</a> <a
-                                                    href="https://maps.app.goo.gl/Did6k2rojdD3PW5H6" target="_blank"
-                                                    class="pull-right" rel="nofollow">Xem bản đồ <i
-                                                        class="fa fa-external-link"></i></a></p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
                 </div>
-                <div class="col-xs-12 col-lg-4 col-md-4 widget">
-                    <div class="tab-content-map-bottom tab-content">
-                        <div class="tab-pane fade active in" id="tab-00">
-                            <div class="album-gallery">
-                                <a href="https://goo.gl/maps/ckzibfjdjZbzsrHD6" target="_blank"
-                                   title="76-78 Ô Chợ Dừa, Đống Đa, Hà Nội.">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/01/xe-dien-viet-thanh-80-o-cho-dua-dong-da-ha-noi-394x222.jpg"
-                                         alt="76-78 Ô Chợ Dừa, Đống Đa, Hà Nội."/>
-                                </a>
-                            </div>
-                            <div class="company-map">
-                                <a href="https://goo.gl/maps/ckzibfjdjZbzsrHD6" target="_blank"
-                                   title="76-78 Ô Chợ Dừa, Đống Đa, Hà Nội.">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/xe-dien-viet-thanh-78ocd-394x222.jpg"
-                                         alt="76-78 Ô Chợ Dừa, Đống Đa, Hà Nội."/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade " id="tab-01">
-                            <div class="album-gallery">
-                                <a href="https://goo.gl/maps/BRJktbNWEvDqcgFR8" target="_blank"
-                                   title="196 Cầu Giấy, Cầu Giấy, Hà Nội">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/330287320_2192728344233383_7828883219350771513_n-min-394x222.jpg"
-                                         alt="196 Cầu Giấy, Cầu Giấy, Hà Nội"/>
-                                </a>
-                            </div>
-                            <div class="company-map">
-                                <a href="https://goo.gl/maps/BRJktbNWEvDqcgFR8" target="_blank"
-                                   title="196 Cầu Giấy, Cầu Giấy, Hà Nội">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2017/02/ban-do-cau-giay--394x222.jpg"
-                                         alt="196 Cầu Giấy, Cầu Giấy, Hà Nội"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade " id="tab-02">
-                            <div class="album-gallery">
-                                <a href="https://goo.gl/maps/9FrmYaLatV2zwog17" target="_blank"
-                                   title="165 Xuân Thuỷ, Cầu Giấy, Hà Nội">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/Vinfast-Xuan-Thuy-394x222.png"
-                                         alt="165 Xuân Thuỷ, Cầu Giấy, Hà Nội"/>
-                                </a>
-                            </div>
-                            <div class="company-map">
-                                <a href="https://goo.gl/maps/9FrmYaLatV2zwog17" target="_blank"
-                                   title="165 Xuân Thuỷ, Cầu Giấy, Hà Nội">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/vinfast-viet-thanh-xuan-thuy-cau-giay-ha-noi-394x222.jpg"
-                                         alt="165 Xuân Thuỷ, Cầu Giấy, Hà Nội"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade " id="tab-03">
-                            <div class="album-gallery">
-                                <a href="https://goo.gl/maps/jNo7hQCtWzGWvYEw5" target="_blank"
-                                   title="127 Phạm Văn Đồng, Cầu Giấy, Hà Nội.">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/125-127-pham-van-dong-1-394x222.jpg"
-                                         alt="127 Phạm Văn Đồng, Cầu Giấy, Hà Nội."/>
-                                </a>
-                            </div>
-                            <div class="company-map">
-                                <a href="https://goo.gl/maps/jNo7hQCtWzGWvYEw5" target="_blank"
-                                   title="127 Phạm Văn Đồng, Cầu Giấy, Hà Nội.">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/xe-dien-viet-thanh-127-pham-van-dong-394x222.jpg"
-                                         alt="127 Phạm Văn Đồng, Cầu Giấy, Hà Nội."/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade " id="tab-04">
-                            <div class="album-gallery">
-                                <a href="https://goo.gl/maps/rDQmp7rbWe1qYZRF6" target="_blank"
-                                   title="521 Nguyễn Trãi, Thanh Xuân, Hà Nội">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/brandshop-yadea-nguyen-trai-394x222.jpg"
-                                         alt="521 Nguyễn Trãi, Thanh Xuân, Hà Nội"/>
-                                </a>
-                            </div>
-                            <div class="company-map">
-                                <a href="https://goo.gl/maps/rDQmp7rbWe1qYZRF6" target="_blank"
-                                   title="521 Nguyễn Trãi, Thanh Xuân, Hà Nội">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/yadea-viet-thanh-nguyen-trai-ha-noi-394x222.jpg"
-                                         alt="521 Nguyễn Trãi, Thanh Xuân, Hà Nội"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade " id="tab-05">
-                            <div class="album-gallery">
-                                <a href="https://goo.gl/maps/NWD8pj4mYfdDkvBS8" target="_blank"
-                                   title="603 Nguyễn Trãi, Thanh Xuân, Hà Nội">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/xe-dien-viet-thanh-603-nguyen-trai-ha-noi-394x222.jpg"
-                                         alt="603 Nguyễn Trãi, Thanh Xuân, Hà Nội"/>
-                                </a>
-                            </div>
-                            <div class="company-map">
-                                <a href="https://goo.gl/maps/NWD8pj4mYfdDkvBS8" target="_blank"
-                                   title="603 Nguyễn Trãi, Thanh Xuân, Hà Nội">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/xe-dien-viet-thanh-nguyen-trai-394x222.jpg"
-                                         alt="603 Nguyễn Trãi, Thanh Xuân, Hà Nội"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade " id="tab-06">
-                            <div class="album-gallery">
-                                <a href="https://goo.gl/maps/K13pV7NhgbmgYaVU8" target="_blank"
-                                   title="150 Phạm Văn Đồng, Cầu Giấy, Hà Nội.">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/125-127-pham-van-dong-394x222.jpg"
-                                         alt="150 Phạm Văn Đồng, Cầu Giấy, Hà Nội."/>
-                                </a>
-                            </div>
-                            <div class="company-map">
-                                <a href="https://goo.gl/maps/K13pV7NhgbmgYaVU8" target="_blank"
-                                   title="150 Phạm Văn Đồng, Cầu Giấy, Hà Nội.">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/xe-dien-viet-thanh-150-pham-van-dong-394x222.jpg"
-                                         alt="150 Phạm Văn Đồng, Cầu Giấy, Hà Nội."/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade " id="tab-07">
-                            <div class="album-gallery">
-                                <a href="https://goo.gl/maps/pe4zyJAwsbXZSeTd8" target="_blank"
-                                   title="75 Đại Cồ Việt, Hai Bà Trưng, Hà Nội">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/xe-dien-viet-thanh-75-dai-co-viet-394x222.jpg"
-                                         alt="75 Đại Cồ Việt, Hai Bà Trưng, Hà Nội"/>
-                                </a>
-                            </div>
-                            <div class="company-map">
-                                <a href="https://goo.gl/maps/pe4zyJAwsbXZSeTd8" target="_blank"
-                                   title="75 Đại Cồ Việt, Hai Bà Trưng, Hà Nội">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/xe-dien-viet-thanh-75-dai-co-viet-ban-do-394x222.jpg"
-                                         alt="75 Đại Cồ Việt, Hai Bà Trưng, Hà Nội"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade " id="tab-08">
-                            <div class="album-gallery">
-                                <a href="https://goo.gl/maps/ZkWzhntrTvX7vKxF9" target="_blank"
-                                   title="252R Minh Khai, Hai Bà Trưng, Hà Nội">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2022/11/xe-dien-viet-thanh-252R-Minh-Khai-Hai-Ba-Trung-Ha-Noi-394x222.jpg"
-                                         alt="252R Minh Khai, Hai Bà Trưng, Hà Nội"/>
-                                </a>
-                            </div>
-                            <div class="company-map">
-                                <a href="https://goo.gl/maps/ZkWzhntrTvX7vKxF9" target="_blank"
-                                   title="252R Minh Khai, Hai Bà Trưng, Hà Nội">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/xe-dien-viet-thanh-252-minh-khai-ha-noi-394x222.jpg"
-                                         alt="252R Minh Khai, Hai Bà Trưng, Hà Nội"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade " id="tab-09">
-                            <div class="album-gallery">
-                                <a href="https://goo.gl/maps/r7Gjo5fK2Aquk6NB7" target="_blank"
-                                   title="4B, Tân Mai, Hoàng Mai, HN">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/4b-tan-mai-xe-dien-viet-thanh-394x222.jpg"
-                                         alt="4B, Tân Mai, Hoàng Mai, HN"/>
-                                </a>
-                            </div>
-                            <div class="company-map">
-                                <a href="https://goo.gl/maps/r7Gjo5fK2Aquk6NB7" target="_blank"
-                                   title="4B, Tân Mai, Hoàng Mai, HN">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2017/02/4b-tanmai-394x222.png"
-                                         alt="4B, Tân Mai, Hoàng Mai, HN"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade " id="tab-010">
-                            <div class="album-gallery">
-                                <a href="https://goo.gl/maps/RD8aQjg3XLyqdVvq8" target="_blank"
-                                   title="665 Nguyễn Văn Cừ, Long Biên, Hà Nội.">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/665-nguyen-van-cu-21-394x222.jpg"
-                                         alt="665 Nguyễn Văn Cừ, Long Biên, Hà Nội."/>
-                                </a>
-                            </div>
-                            <div class="company-map">
-                                <a href="https://goo.gl/maps/RD8aQjg3XLyqdVvq8" target="_blank"
-                                   title="665 Nguyễn Văn Cừ, Long Biên, Hà Nội.">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/xe-dien-viet-thanh-665-nguyen-van-cu-long-bien-394x222.jpg"
-                                         alt="665 Nguyễn Văn Cừ, Long Biên, Hà Nội."/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade " id="tab-10">
-                            <div class="album-gallery">
-                                <a href="https://goo.gl/maps/oNp6WBFCk13mmaUS7" target="_blank"
-                                   title="1A Nguyễn Trãi, Ninh Xá, TP Bắc Ninh, Bắc Ninh">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/xe-dien-viet-thanh-bac-ninh-3-394x222.jpg"
-                                         alt="1A Nguyễn Trãi, Ninh Xá, TP Bắc Ninh, Bắc Ninh"/>
-                                </a>
-                            </div>
-                            <div class="company-map">
-                                <a href="https://goo.gl/maps/oNp6WBFCk13mmaUS7" target="_blank"
-                                   title="1A Nguyễn Trãi, Ninh Xá, TP Bắc Ninh, Bắc Ninh">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/xe-dien-viet-thanh-1a-nguyen-trai-ninh-xa-bac-ninh-394x222.jpg"
-                                         alt="1A Nguyễn Trãi, Ninh Xá, TP Bắc Ninh, Bắc Ninh"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade " id="tab-11">
-                            <div class="album-gallery">
-                                <a href="https://goo.gl/maps/8oNq9HLHsiEkZ3n69" target="_blank"
-                                   title="Phố Mới, Trần Phú, Đình Bảng, Từ Sơn, Bắc Ninh">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/xe-dien-viet-thanh-tu-son-5-394x222.jpg"
-                                         alt="Phố Mới, Trần Phú, Đình Bảng, Từ Sơn, Bắc Ninh"/>
-                                </a>
-                            </div>
-                            <div class="company-map">
-                                <a href="https://goo.gl/maps/8oNq9HLHsiEkZ3n69" target="_blank"
-                                   title="Phố Mới, Trần Phú, Đình Bảng, Từ Sơn, Bắc Ninh">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/xe-dien-viet-thanh-tu-son-bac-ninh-394x222.jpg"
-                                         alt="Phố Mới, Trần Phú, Đình Bảng, Từ Sơn, Bắc Ninh"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade " id="tab-12">
-                            <div class="album-gallery">
-                                <a href="https://goo.gl/maps/2WZ8ksRASWdzoPAz6" target="_blank"
-                                   title="713 Ngô Gia Tự, Ninh Xá, TP Bắc Ninh, Bắc Ninh">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/yadea-bac-ninh-2-394x222.jpg"
-                                         alt="713 Ngô Gia Tự, Ninh Xá, TP Bắc Ninh, Bắc Ninh"/>
-                                </a>
-                            </div>
-                            <div class="company-map">
-                                <a href="https://goo.gl/maps/2WZ8ksRASWdzoPAz6" target="_blank"
-                                   title="713 Ngô Gia Tự, Ninh Xá, TP Bắc Ninh, Bắc Ninh">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/xe-dien-viet-thanh-713-ngo-gia-tu-ninh-xa-bac-ninh-394x222.jpg"
-                                         alt="713 Ngô Gia Tự, Ninh Xá, TP Bắc Ninh, Bắc Ninh"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade " id="tab-20">
-                            <div class="album-gallery">
-                                <a href="https://goo.gl/maps/o3ChYRy1kFU6wsXg7" target="_blank"
-                                   title="Lô 01-02 Đại Hoàng Sơn, Xương Giang, Bắc Giang">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/dai-hoang-son-xuong-giang-394x222.jpg"
-                                         alt="Lô 01-02 Đại Hoàng Sơn, Xương Giang, Bắc Giang"/>
-                                </a>
-                            </div>
-                            <div class="company-map">
-                                <a href="https://goo.gl/maps/o3ChYRy1kFU6wsXg7" target="_blank"
-                                   title="Lô 01-02 Đại Hoàng Sơn, Xương Giang, Bắc Giang">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/xe-dien-viet-thanh-xuong-giang-bac-giang-394x222.jpg"
-                                         alt="Lô 01-02 Đại Hoàng Sơn, Xương Giang, Bắc Giang"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade " id="tab-21">
-                            <div class="album-gallery">
-                                <a href="https://goo.gl/maps/iVSbT9GFFowuBEe49" target="_blank"
-                                   title="Lô G6.1-G6.2 KĐT Rùa Vàng, TT Vôi - Lạng Giang - Bắc Giang">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/tt-voi-bac-giang-394x222.jpg"
-                                         alt="Lô G6.1-G6.2 KĐT Rùa Vàng, TT Vôi - Lạng Giang - Bắc Giang"/>
-                                </a>
-                            </div>
-                            <div class="company-map">
-                                <a href="https://goo.gl/maps/iVSbT9GFFowuBEe49" target="_blank"
-                                   title="Lô G6.1-G6.2 KĐT Rùa Vàng, TT Vôi - Lạng Giang - Bắc Giang">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/xe-dien-viet-thanh-voi-lang-giang-bac-giang-394x222.jpg"
-                                         alt="Lô G6.1-G6.2 KĐT Rùa Vàng, TT Vôi - Lạng Giang - Bắc Giang"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade " id="tab-22">
-                            <div class="album-gallery">
-                                <a href="https://goo.gl/maps/JtEAFJe5vfasqBDv8" target="_blank"
-                                   title="372 Thân Nhân Trung, Việt Yên, Bắc Giang">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/372-than-nhan-trung-bich-dong-viet-yen-bac-giang-2-394x222.jpg"
-                                         alt="372 Thân Nhân Trung, Việt Yên, Bắc Giang"/>
-                                </a>
-                            </div>
-                            <div class="company-map">
-                                <a href="https://goo.gl/maps/JtEAFJe5vfasqBDv8" target="_blank"
-                                   title="372 Thân Nhân Trung, Việt Yên, Bắc Giang">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/xe-dien-viet-thanh-viet-yen-bac-giang-394x222.jpg"
-                                         alt="372 Thân Nhân Trung, Việt Yên, Bắc Giang"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade " id="tab-23">
-                            <div class="album-gallery">
-                                <a href="https://goo.gl/maps/aStCBQvCJrAGfFy28" target="_blank"
-                                   title="Ngã Tư Cầu Lường, Quang Thịnh, Lạng Giang, Bắc Giang">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif" data-src=""
-                                         alt="Ngã Tư Cầu Lường, Quang Thịnh, Lạng Giang, Bắc Giang"/>
-                                </a>
-                            </div>
-                            <div class="company-map">
-                                <a href="https://goo.gl/maps/aStCBQvCJrAGfFy28" target="_blank"
-                                   title="Ngã Tư Cầu Lường, Quang Thịnh, Lạng Giang, Bắc Giang">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif" data-src=""
-                                         alt="Ngã Tư Cầu Lường, Quang Thịnh, Lạng Giang, Bắc Giang"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade " id="tab-30">
-                            <div class="album-gallery">
-                                <a href="https://goo.gl/maps/gzMzVdQ2BxbcV3pg6" target="_blank"
-                                   title="660 Âu Cơ, Tân Bình, TP. HCM">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/xe-dien-viet-thanh-sai-gon-394x222.jpg"
-                                         alt="660 Âu Cơ, Tân Bình, TP. HCM"/>
-                                </a>
-                            </div>
-                            <div class="company-map">
-                                <a href="https://goo.gl/maps/gzMzVdQ2BxbcV3pg6" target="_blank"
-                                   title="660 Âu Cơ, Tân Bình, TP. HCM">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/yadea-viet-thanh-sai-gon-394x222.png"
-                                         alt="660 Âu Cơ, Tân Bình, TP. HCM"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade " id="tab-31">
-                            <div class="album-gallery">
-                                <a href="https://goo.gl/maps/ybW5qgyWkaQQExVE9" target="_blank"
-                                   title="920-922 Kha Vạn Cân, TP.Thủ Đức - TP.HCM">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/920-kha-van-can-51-394x222.jpg"
-                                         alt="920-922 Kha Vạn Cân, TP.Thủ Đức - TP.HCM"/>
-                                </a>
-                            </div>
-                            <div class="company-map">
-                                <a href="https://goo.gl/maps/ybW5qgyWkaQQExVE9" target="_blank"
-                                   title="920-922 Kha Vạn Cân, TP.Thủ Đức - TP.HCM">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/920-kha-van-can-394x222.jpg"
-                                         alt="920-922 Kha Vạn Cân, TP.Thủ Đức - TP.HCM"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade " id="tab-32">
-                            <div class="album-gallery">
-                                <a href="https://goo.gl/maps/jZ5XPMjjvszFLrw98" target="_blank"
-                                   title="222 Phạm Hùng, H. Bình Chánh, TP.HCM">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/xe-dien-viet-thanh-222-pham-hung-394x222.jpg"
-                                         alt="222 Phạm Hùng, H. Bình Chánh, TP.HCM"/>
-                                </a>
-                            </div>
-                            <div class="company-map">
-                                <a href="https://goo.gl/maps/jZ5XPMjjvszFLrw98" target="_blank"
-                                   title="222 Phạm Hùng, H. Bình Chánh, TP.HCM">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/xe-dien-viet-thanh-222-pham-hung-binh-chanh-hcm-394x222.jpg"
-                                         alt="222 Phạm Hùng, H. Bình Chánh, TP.HCM"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade " id="tab-33">
-                            <div class="album-gallery">
-                                <a href="https://goo.gl/maps/QZtDjhVeK9PNuEXe9" target="_blank"
-                                   title="968 Quang Trung, Gò Vấp, HCM">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif" data-src=""
-                                         alt="968 Quang Trung, Gò Vấp, HCM"/>
-                                </a>
-                            </div>
-                            <div class="company-map">
-                                <a href="https://goo.gl/maps/QZtDjhVeK9PNuEXe9" target="_blank"
-                                   title="968 Quang Trung, Gò Vấp, HCM">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/968-quang-trung-go-vap-hcm-394x222.jpg"
-                                         alt="968 Quang Trung, Gò Vấp, HCM"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade " id="tab-34">
-                            <div class="album-gallery">
-                                <a href="https://maps.app.goo.gl/Did6k2rojdD3PW5H6" target="_blank"
-                                   title="489-491 Lê Trọng Tấn, Sơn Kỳ, Tân Phú, TP.HCM">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/489-le-trong-tan-son-ky-tan-phu-hcm-394x222.jpg"
-                                         alt="489-491 Lê Trọng Tấn, Sơn Kỳ, Tân Phú, TP.HCM"/>
-                                </a>
-                            </div>
-                            <div class="company-map">
-                                <a href="https://maps.app.goo.gl/Did6k2rojdD3PW5H6" target="_blank"
-                                   title="489-491 Lê Trọng Tấn, Sơn Kỳ, Tân Phú, TP.HCM">
-                                    <img width="394" height="222" class="lazyload"
-                                         src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                         data-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/xe-dien-viet-thanh-489-le-trong-tan-tan-phu-hcm-394x222.jpg"
-                                         alt="489-491 Lê Trọng Tấn, Sơn Kỳ, Tân Phú, TP.HCM"/>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="company_line">
-            <span class="footer_hotline font20" style="display : flex">
-              Hotline: <a href="tel:1900 2082" title="Hotline"><b style="color:red">1900 2082</b></a> -
-                                                        <a class="tab-pane fade active in" id="phone-tab-00"
-                                                           href="tel:0904.998899" title="Hotline 2"><b
-                                                                style="color:red">0904.998899</b></a>
-                                          <a class="tab-pane fade " id="phone-tab-01" href="tel:0986.06.3888"
-                                             title="Hotline 2"><b style="color:red">0986.06.3888</b></a>
-                                          <a class="tab-pane fade " id="phone-tab-02" href="tel:0988.47.6336"
-                                             title="Hotline 2"><b style="color:red">0988.47.6336</b></a>
-                                          <a class="tab-pane fade " id="phone-tab-03" href="tel:0986.91.5959"
-                                             title="Hotline 2"><b style="color:red">0986.91.5959</b></a>
-                                          <a class="tab-pane fade " id="phone-tab-04" href="tel:0916.87.2266"
-                                             title="Hotline 2"><b style="color:red">0916.87.2266</b></a>
-                                          <a class="tab-pane fade " id="phone-tab-05" href="tel:0984.44.3388"
-                                             title="Hotline 2"><b style="color:red">0984.44.3388</b></a>
-                                          <a class="tab-pane fade " id="phone-tab-06" href="tel:091.162.3388"
-                                             title="Hotline 2"><b style="color:red">091.162.3388</b></a>
-                                          <a class="tab-pane fade " id="phone-tab-07" href="tel:0981319559"
-                                             title="Hotline 2"><b style="color:red">0981319559</b></a>
-                                          <a class="tab-pane fade " id="phone-tab-08" href="tel:0973572233"
-                                             title="Hotline 2"><b style="color:red">0973572233</b></a>
-                                          <a class="tab-pane fade " id="phone-tab-09" href="tel:0931824888"
-                                             title="Hotline 2"><b style="color:red">0931824888</b></a>
-                                          <a class="tab-pane fade " id="phone-tab-010" href="tel:0916.05.5588"
-                                             title="Hotline 2"><b style="color:red">0916.05.5588</b></a>
-                                                        <a class="tab-pane fade " id="phone-tab-10"
-                                                           href="tel:0987.97.2299" title="Hotline 2"><b
-                                                                style="color:red">0987.97.2299</b></a>
-                                          <a class="tab-pane fade " id="phone-tab-11" href="tel:0985.79.2299"
-                                             title="Hotline 2"><b style="color:red">0985.79.2299</b></a>
-                                          <a class="tab-pane fade " id="phone-tab-12" href="tel:0982.51.3399"
-                                             title="Hotline 2"><b style="color:red">0982.51.3399</b></a>
-                                                        <a class="tab-pane fade " id="phone-tab-20"
-                                                           href="tel:0985.95.9339" title="Hotline 2"><b
-                                                                style="color:red">0985.95.9339</b></a>
-                                          <a class="tab-pane fade " id="phone-tab-21" href="tel:0967.07.9898"
-                                             title="Hotline 2"><b style="color:red">0967.07.9898</b></a>
-                                          <a class="tab-pane fade " id="phone-tab-22" href="tel:0966.888.372"
-                                             title="Hotline 2"><b style="color:red">0966.888.372</b></a>
-                                          <a class="tab-pane fade " id="phone-tab-23" href="tel:0979.550.668"
-                                             title="Hotline 2"><b style="color:red">0979.550.668</b></a>
-                                                        <a class="tab-pane fade " id="phone-tab-30"
-                                                           href="tel:093.843.5959" title="Hotline 2"><b
-                                                                style="color:red">093.843.5959</b></a>
-                                          <a class="tab-pane fade " id="phone-tab-31" href="tel:090.429.3399"
-                                             title="Hotline 2"><b style="color:red">090.429.3399</b></a>
-                                          <a class="tab-pane fade " id="phone-tab-32" href="tel:0919.86.2929"
-                                             title="Hotline 2"><b style="color:red">0919.86.2929</b></a>
-                                          <a class="tab-pane fade " id="phone-tab-33" href="tel:091.454.8338"
-                                             title="Hotline 2"><b style="color:red">091.454.8338</b></a>
-                                          <a class="tab-pane fade " id="phone-tab-34" href="tel:0915.36.9229"
-                                             title="Hotline 2"><b style="color:red">0915.36.9229</b></a>
+
+                <span class="footer_hotline font20" style="display : flex">
+              Hotline: <a href="tel:{{$shop_info->phone}}" title="Hotline"><b style="color:red">{{$shop_info->phone}}</b></a>
+
                           </span>
-                        <div class="clear"></div>
-                        <img class="dcma lazyload" width="100" height="32" alt="DCMA"
-                             src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                             data-src="https://xedienvietthanh.com/wp-content/themes/auto/images/dmca.png"/> <a
-                            target="_blank" rel="nofollow" href="http://online.gov.vn/Home/WebDetails/105086"
-                            rel="nofollow"><img width="105" height="39" class="dcma lazyload" alt="bo-cong-thuong"
-                                                src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                                data-src="https://xedienvietthanh.com/wp-content/themes/auto/images/bo-cong-thuong.png"/></a>
-                    </div>
-                </div>
-
+                <div class="clear"></div>
+                <img class="dcma lazyload" width="100" height="32" alt="DCMA"
+                     src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
+                     data-src="https://xedienvietthanh.com/wp-content/themes/auto/images/dmca.png"/> <a
+                    target="_blank" rel="nofollow" href="http://online.gov.vn/Home/WebDetails/105086"
+                    rel="nofollow"><img width="105" height="39" class="dcma lazyload" alt="bo-cong-thuong"
+                                        src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
+                                        data-src="https://xedienvietthanh.com/wp-content/themes/auto/images/bo-cong-thuong.png"/></a>
             </div>
         </div>
+
+    </div>
+    </div>
     </div>
     <div class="payment_method hidden-xs hidden-sm">
         <label>Nhận thanh toán</label>
@@ -4309,37 +3312,10 @@ window.onload = function() {
         <div class="z_container">
             <div class="row">
                 <div class="col-xs-12 col-lg-6 col-md-6">
-                    <p class="head text-uppercase">Công ty TNHH Xe Máy Xe Điện Việt Thanh</p>
-                    <p>GPKD số 0110285252 do Sở KH và ĐT TP Hà Nội cấp ngày 23/09/2022</p>
-                    <p>Địa chỉ: 127 Phạm Văn Đồng, P. Mai Dịch, Q. Cầu Giấy, Tp. Hà Nội</p>
-                    <p>Hotline: 0904998899</p>
-                    <p>Email: xedienvietthanh@gmail.com </p>
+                    {!!$shop_info->footer!!}
                     <!-- <p><a href="http://online.gov.vn/Home/WebDetails/100389" rel="nofollow" target= "_blank"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="da thong bao bo cong thuong" data-lazy-src="http://xedienvietthanh.com/wp-content/themes/auto/images/da-thong-bao-bo-cong-thuong-xedienvietthanh.png"><noscript><img src="http://xedienvietthanh.com/wp-content/themes/auto/images/da-thong-bao-bo-cong-thuong-xedienvietthanh.png" alt="da thong bao bo cong thuong"></noscript></a></p> -->
                 </div>
-                <div class="col-xs-12 col-lg-6 col-md-6 ">
-                    <div class="form-check-bao-hanh hidden-xs hidden-sm">
-                        <p class="head">KIỂM TRA THỜI HẠN BẢO HÀNH</p>
-                        <div class="wrap">
-                            <form method="post" action="">
-                                <input type="text" name="motor" id="motor" placeholder="Nhập thông tin motor ..."/>
-                                <input type="submit" value="Kiểm tra"/>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="statistic">
-                        <div class="pull-left"><span><i class="fa fa-rss"></i>&nbsp; Đã truy câp: 595792</span>
-                            <span><i class="fa fa-users"></i>&nbsp;283 Đang online</span>
-                        </div>
-                        <div class="share_link">
-                            <a class="fb" href="https://www.facebook.com/tapdoanxedien" rel="nofollow" title="associal"
-                               target="_blank"></a>
-                            <a class="google" href="https://plus.google.com/+xedienvietthanh" rel="nofollow"
-                               title="associal" target="_blank"></a>
-                            <a class="youtube" href="https://www.youtube.com/xedienvietthanh" rel="nofollow"
-                               title="associal" target="_blank"></a>
-                        </div>
-                    </div>
-                </div>
+                <div class="col-xs-12 col-lg-6 col-md-6 "></div>
             </div>
         </div>
     </div>
@@ -4621,12 +3597,12 @@ window.onload = function() {
                      data-lazy-src="https://xedienvietthanh.com/wp-content/themes/auto/images/2022/telephone.png">
                 <noscript><img width="30" height="30"
                                src="https://xedienvietthanh.com/wp-content/themes/auto/images/2022/telephone.png"
-                               alt="19002082"></noscript>
+                               alt="{{$shop_info->phone}}"></noscript>
                 <span class="d-flex flex-column "><span>Gọi miễn phí</span><span
-                        class="cl_yellow animated infinite tada">19002082</span></span>
+                        class="cl_yellow animated infinite tada">{{$shop_info->phone}}</span></span>
             </p>
         </li>
-        <li><a target="_blank" href="https://m.me/tapdoanxedien" rel="nofollow" class="cfb d-flex align-items-center">
+        <li><a target="_blank" href="{{$shop_info->linkfacebook}}" rel="nofollow" class="cfb d-flex align-items-center">
                 <img width="30" height="30"
                      src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2030%2030'%3E%3C/svg%3E"
                      alt="Chat FB"
@@ -4636,7 +3612,7 @@ window.onload = function() {
                                alt="Chat FB"></noscript>
                 <span>Chat FB</span>
             </a></li>
-        <li><a target="_blank" href="https://zalo.me/4331786281350876766" rel="nofollow"
+        <li><a target="_blank" href="{{$shop_info->linkzalo}}" rel="nofollow"
                class="czalo d-flex align-items-center">
                 <img width="30" height="30"
                      src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2030%2030'%3E%3C/svg%3E"
@@ -4647,97 +3623,18 @@ window.onload = function() {
                                alt="Chat Zalo"></noscript>
                 <span>Chat Zalo</span>
             </a></li>
-        <li><a href="https://xedienvietthanh.com/he-thong-mua-hang/" rel="nofollow"
-               class="cmap d-flex align-items-center">
-                <img width="30" height="30"
-                     src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2030%2030'%3E%3C/svg%3E"
-                     alt="Chỉ đường"
-                     data-lazy-src="https://xedienvietthanh.com/wp-content/themes/auto/images/2022/google-maps.png">
-                <noscript><img width="30" height="30"
-                               src="https://xedienvietthanh.com/wp-content/themes/auto/images/2022/google-maps.png"
-                               alt="Chỉ đường"></noscript>
-                <span>Chỉ đường</span>
-            </a></li>
+        {{--        <li><a href="https://xedienvietthanh.com/he-thong-mua-hang/" rel="nofollow"--}}
+        {{--               class="cmap d-flex align-items-center">--}}
+        {{--                <img width="30" height="30"--}}
+        {{--                     src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2030%2030'%3E%3C/svg%3E"--}}
+        {{--                     alt="Chỉ đường"--}}
+        {{--                     data-lazy-src="https://xedienvietthanh.com/wp-content/themes/auto/images/2022/google-maps.png">--}}
+        {{--                <noscript><img width="30" height="30"--}}
+        {{--                               src="https://xedienvietthanh.com/wp-content/themes/auto/images/2022/google-maps.png"--}}
+        {{--                               alt="Chỉ đường"></noscript>--}}
+        {{--                <span>Chỉ đường</span>--}}
+        {{--            </a></li>--}}
     </ul>
-</div>
-
-<!-- The modal -->
-<div class="modal fade" id="flipFlop" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <h4 class="modal-title" id="modalLabel">Nhập số điện thoại để được gọi lại ngay</h4>
-            </div>
-            <div class="modal-body text-center">
-                <div role="form" class="wpcf7" id="wpcf7-f19666-o1" lang="vi" dir="ltr">
-                    <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p>
-                        <ul></ul>
-                    </div>
-                    <form action="/ac-quy-yadea-60v-22ah-ttfar/#wpcf7-f19666-o1" method="post" class="wpcf7-form init"
-                          novalidate="novalidate" data-status="init">
-                        <div style="display: none;">
-                            <input type="hidden" name="_wpcf7" value="19666"/>
-                            <input type="hidden" name="_wpcf7_version" value="5.6.4"/>
-                            <input type="hidden" name="_wpcf7_locale" value="vi"/>
-                            <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f19666-o1"/>
-                            <input type="hidden" name="_wpcf7_container_post" value="0"/>
-                            <input type="hidden" name="_wpcf7_posted_data_hash" value=""/>
-                        </div>
-                        <div class="form-group">
-                            <span class="wpcf7-form-control-wrap" data-name="sdt"><input type="text" name="sdt" value=""
-                                                                                         size="40"
-                                                                                         class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control text-center"
-                                                                                         aria-required="true"
-                                                                                         aria-invalid="false"
-                                                                                         placeholder="Nhập số điện thoại"/></span>
-                        </div>
-                        <div class="form-group text-center justify-content-between">
-                            <span class="wpcf7-form-control-wrap" data-name="chon_ho_tro"><span
-                                    class="wpcf7-form-control wpcf7-radio"><span
-                                        class="wpcf7-list-item first"><label><input type="radio" name="chon_ho_tro"
-                                                                                    value="Hỗ trợ mua hàng"
-                                                                                    checked="checked"/><span
-                                                class="wpcf7-list-item-label">Hỗ trợ mua hàng</span></label></span><span
-                                        class="wpcf7-list-item"><label><input type="radio" name="chon_ho_tro"
-                                                                              value="Hỗ trợ kỹ thuật"/><span
-                                                class="wpcf7-list-item-label">Hỗ trợ kỹ thuật</span></label></span><span
-                                        class="wpcf7-list-item last"><label><input type="radio" name="chon_ho_tro"
-                                                                                   value="Hỗ trợ bảo hành"/><span
-                                                class="wpcf7-list-item-label">Hỗ trợ bảo hành</span></label></span></span></span>
-                        </div>
-                        <div class="form-group text-center d-flex flex-column justify-content-center">
-                            <input type="submit" value="Gửi yêu cầu"
-                                   class="wpcf7-form-control has-spinner wpcf7-submit btn-save-phone"/>
-                        </div>
-                        <div class="wpcf7-response-output" aria-hidden="true"></div>
-                    </form>
-                </div>
-                <p class="line-hoac text-center"><span>Hoặc</span></p>
-                <p class=" text-center">Gọi ngay với chúng tôi qua hotline</p>
-                <ul class="list-hotline abs">
-                    <li><a rel="nofollow" href="tel:19002082"><span class="hotline-title">Miễn phí cước gọi</span><span>1900.2082</span></a>
-                    </li>
-                    <li><a rel="nofollow" href="tel:0904.998.899"><span
-                                class="hotline-title">Mua hàng miền bắc</span><span>0904.998.899</span></a></li>
-                    <li><a rel="nofollow" href="tel:0919.862.929"><span
-                                class="hotline-title">Mua hàng miền nam</span><span>0919.862.929</span></a></li>
-                    <li><a rel="nofollow" href="tel:0988.862.386"><span class="hotline-title">Bảo hành</span><span>0988.862.386</span></a>
-                    </li>
-                    <li><a rel="nofollow" href="tel:0988.862.386"><span class="hotline-title">Kỹ thuật</span><span>0988.862.386</span></a>
-                    </li>
-                    <li><a rel="nofollow" href="tel:0986.915.959"><span class="hotline-title">Zalo</span><span>0986.915.959</span></a>
-                    </li>
-                    <li><a rel="nofollow" href="tel:0903.043.333"><span class="hotline-title">Khiếu nại</span><span>0903.043.333</span></a>
-                    </li>
-
-                    <!-- <li><a rel="nofollow" href="0904.998899"><span class="hotline-title">Mua hàng miền Bắc</span><span>0904.998899</span></a></li><li><a rel="nofollow" href="0919.86.2929"><span class="hotline-title">Mua hàng miền Nam</span><span>0919.86.2929</span></a></li><li><a rel="nofollow" href="0988.862386"><span class="hotline-title">Bảo hành</span><span>0988.862386</span></a></li><li><a rel="nofollow" href="098.131.9559"><span class="hotline-title">Kỹ Thuật</span><span>098.131.9559</span></a></li><li><a rel="nofollow" href="0986.91.5959"><span class="hotline-title">Zalo</span><span>0986.91.5959</span></a></li><li><a rel="nofollow" href="0903.04.3333"><span class="hotline-title">Khiếu nại </span><span>0903.04.3333</span></a></li> -->
-                </ul>
-            </div>
-        </div>
-    </div>
 </div>
 
 </body>

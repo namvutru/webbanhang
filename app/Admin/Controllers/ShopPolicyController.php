@@ -28,6 +28,7 @@ class ShopPolicyController extends AdminController
 
         $grid->column('id', __('Id'));
         $grid->column('title', __('Title'));
+        $grid->status('status',__('Status'))->switch();
         $grid->column('description', __('Description'))->expand(function () {
             $html = '<br><span>';
             $html.=$this->description;
@@ -51,6 +52,7 @@ class ShopPolicyController extends AdminController
 
         $show->field('id', __('Id'));
         $show->field('title', __('Title'));
+
         $show->field('description', __('Description'));
         $show->field('slug', __('Slug'));
 
@@ -67,6 +69,7 @@ class ShopPolicyController extends AdminController
         $form = new Form(new ShopPolicy());
 
         $form->text('title', __('Title'));
+        $form->switch('status',__('Status'));
         $form->text('slug', __('Slug'));
         $form->ckeditor('description', __('Description'));
 

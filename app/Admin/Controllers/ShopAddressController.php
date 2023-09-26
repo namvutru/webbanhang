@@ -28,6 +28,8 @@ class ShopAddressController extends AdminController
 
         $grid->column('id', __('Id'));
         $grid->column('address', __('Address'));
+        $grid->status('status', __('Status'))->switch();
+
         $grid->column('linkmap', __('Linkmap'));
         $grid->column('phone', __('Phone'));
 
@@ -62,6 +64,7 @@ class ShopAddressController extends AdminController
         $form = new Form(new ShopAddress());
 
         $form->text('address', __('Address'));
+        $form->switch('status',__('Status'));
         $form->text('linkmap', __('Linkmap'));
         $form->mobile('phone', __('Phone'));
 

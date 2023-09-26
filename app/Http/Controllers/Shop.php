@@ -5,11 +5,13 @@ namespace App\Http\Controllers;
 use App\Models\CmsCategory;
 use App\Models\CmsContent;
 use App\Models\CmsNews;
+use App\Models\ShopAddress;
 use App\Models\ShopBanner;
 use App\Models\ShopCategory;
 use App\Models\ShopCategoryCustom;
 use App\Models\ShopImageProduct;
 use App\Models\ShopInfo;
+use App\Models\ShopPolicy;
 use App\Models\ShopProduct;
 use App\Models\ShopVideo;
 use Illuminate\Http\Request;
@@ -25,10 +27,14 @@ class Shop extends Controller
         $banner_lon =ShopBanner::where('status',1)->where('typebanner',2)->first();
         $bannber_nho =ShopBanner::where('status',1)->where('typebanner',3)->orderBy('id', 'desc')->orderBy('sort','desc')->get();
         $banner_duoiphai = ShopBanner::where('status',1)->where('typebanner',4)->orderBy('id', 'desc')->orderBy('sort','desc')->first();
+        $shop_policy = ShopPolicy::where('status',1)->get();
+        $shop_address = ShopAddress::where('status',1)->get();
+
 
         $shop_categorys = ShopCategory::where('status',1)->orderBy('id','asc')->get();
         $shop_category_custom =  ShopCategoryCustom::where('status',1)->get();
         $cms_category = CmsCategory::where('status',1)->get();
+
 
         $list_products_l1= ShopProduct::where('status',1)->where('type',1)->orderBy('id', 'desc')->paginate(20);
         $list_products_l2= ShopProduct::where('status',1)->where('type',2)->orderBy('id', 'desc')->take(10)->get();
@@ -48,6 +54,9 @@ class Shop extends Controller
                 'shop_categorys' => $shop_categorys,
                 'shop_category_custom' => $shop_category_custom,
                 'cms_category'=>$cms_category,
+
+                'shop_policy'=>$shop_policy,
+                'shop_address'=>$shop_address,
 
                 'list_products'=> $list_products_l1,
                 'list_products_l2'=> $list_products_l2,
@@ -72,6 +81,9 @@ class Shop extends Controller
     public function detail($slug){
         $shop_info = ShopInfo::first();
 
+        $shop_policy = ShopPolicy::where('status',1)->get();
+        $shop_address = ShopAddress::where('status',1)->get();
+
         $banner_duoiphai = ShopBanner::where('status',1)->where('typebanner',4)->orderBy('id', 'desc')->orderBy('sort','desc')->first();
 
         $shop_categorys  = ShopCategory::where('status',1)->orderBy('id','asc')->get();
@@ -82,11 +94,18 @@ class Shop extends Controller
         $shop_image_product = ShopImageProduct::where('status',1)->where('shop_product_id',$product->id)->get();
 
 
+
         if($product->type==1){
+
+            $related_product = ShopProduct::where('status',1)->where('type',1)->where('shop_category_custom_id',$product->shop_category_custom_id)->orderby(DB::raw('RAND()'))->whereNotIn('slug',[$product->slug])->take(12)->get();
+            $list_products_l2= ShopProduct::where('status',1)->where('type',2)->orderBy('id', 'desc')->take(10)->get();
             return view('page.detail.detail',
                 array(
                     'shop_info'=>$shop_info,
 
+                    'shop_policy'=>$shop_policy,
+                    'shop_address'=>$shop_address,
+
                     'banner_duoiphai'=>$banner_duoiphai,
 
                     'shop_categorys' => $shop_categorys,
@@ -95,13 +114,22 @@ class Shop extends Controller
 
                     'product'=>$product,
                     'shop_image_product'=>$shop_image_product,
+
+                    'related_product'=>$related_product,
+                    'list_products_l2'=>$list_products_l2,
 
                 )
             );
         }else{
+
+            $list_products_l2= ShopProduct::where('status',1)->where('type',2)->orderBy('id', 'desc')->take(10)->get();
+            $list_products_l3= ShopProduct::where('status',1)->where('type',3)->orderBy('id', 'desc')->take(10)->get();
             return view('page.detail.detail_l2',
                 array(
                     'shop_info'=>$shop_info,
+
+                    'shop_policy'=>$shop_policy,
+                    'shop_address'=>$shop_address,
 
                     'banner_duoiphai'=>$banner_duoiphai,
 
@@ -112,6 +140,9 @@ class Shop extends Controller
 
                     'product'=>$product,
                     'shop_image_product'=>$shop_image_product,
+
+                    'list_products_l2'=> $list_products_l2,
+                    'list_products_l3'=> $list_products_l3,
 
                 )
             );
@@ -124,9 +155,15 @@ class Shop extends Controller
     public function category($slug){
         $shop_info = ShopInfo::first();
 
+        $shop_policy = ShopPolicy::where('status',1)->get();
+        $shop_address = ShopAddress::where('status',1)->get();
+
         $shop_categorys = ShopCategory::where('status',1)->orderBy('id','asc')->get();
         $shop_category_custom =  ShopCategoryCustom::where('status',1)->get();
         $cms_category = CmsCategory::where('status',1)->get();
+
+        $list_products_l2= ShopProduct::where('status',1)->where('type',2)->orderBy('id', 'desc')->take(10)->get();
+        $list_products_l3= ShopProduct::where('status',1)->where('type',3)->orderBy('id', 'desc')->take(10)->get();
 
         $category = ShopCategory::where('slug',$slug)->first();
 
@@ -137,9 +174,15 @@ class Shop extends Controller
             array(
                 'shop_info'=>$shop_info,
 
+                'shop_policy'=>$shop_policy,
+                'shop_address'=>$shop_address,
+
                 'shop_categorys' => $shop_categorys,
                 'shop_category_custom' => $shop_category_custom,
                 'cms_category'=>$cms_category,
+
+                'list_products_l2'=> $list_products_l2,
+                'list_products_l3'=> $list_products_l3,
 
                 'category'=>$category,
                 'list_product'=>$list_product,
@@ -150,9 +193,15 @@ class Shop extends Controller
                 array(
                     'shop_info'=>$shop_info,
 
+                    'shop_policy'=>$shop_policy,
+                    'shop_address'=>$shop_address,
+
                     'shop_categorys' => $shop_categorys,
                     'shop_category_custom' => $shop_category_custom,
                     'cms_category'=>$cms_category,
+
+                    'list_products_l2'=> $list_products_l2,
+                    'list_products_l3'=> $list_products_l3,
 
                     'category'=>$category,
                     'list_product'=>$list_product,
@@ -167,9 +216,15 @@ class Shop extends Controller
     public function categorycustom($slug){
         $shop_info = ShopInfo::first();
 
+        $shop_policy = ShopPolicy::where('status',1)->get();
+        $shop_address = ShopAddress::where('status',1)->get();
+
         $shop_categorys = ShopCategory::where('status',1)->orderBy('id','asc')->get();
         $shop_category_custom =  ShopCategoryCustom::where('status',1)->get();
         $cms_category = CmsCategory::where('status',1)->get();
+
+        $list_products_l2= ShopProduct::where('status',1)->where('type',2)->orderBy('id', 'desc')->take(10)->get();
+        $list_products_l3= ShopProduct::where('status',1)->where('type',3)->orderBy('id', 'desc')->take(10)->get();
 
         $category = ShopCategoryCustom::where('slug',$slug)->first();
 
@@ -180,9 +235,15 @@ class Shop extends Controller
                 array(
                     'shop_info'=>$shop_info,
 
+                    'shop_policy'=>$shop_policy,
+                    'shop_address'=>$shop_address,
+
                     'shop_categorys' => $shop_categorys,
                     'shop_category_custom' => $shop_category_custom,
                     'cms_category'=>$cms_category,
+
+                    'list_products_l2'=> $list_products_l2,
+                    'list_products_l3'=> $list_products_l3,
 
                     'category'=>$category,
                     'list_product'=>$list_product,
@@ -193,9 +254,15 @@ class Shop extends Controller
                 array(
                     'shop_info'=>$shop_info,
 
+                    'shop_policy'=>$shop_policy,
+                    'shop_address'=>$shop_address,
+
                     'shop_categorys' => $shop_categorys,
                     'shop_category_custom' => $shop_category_custom,
                     'cms_category'=>$cms_category,
+
+                    'list_products_l2'=> $list_products_l2,
+                    'list_products_l3'=> $list_products_l3,
 
                     'category'=>$category,
                     'list_product'=>$list_product,
@@ -212,9 +279,15 @@ class Shop extends Controller
 
         $shop_info = ShopInfo::first();
 
+        $shop_policy = ShopPolicy::where('status',1)->get();
+        $shop_address = ShopAddress::where('status',1)->get();
+
         $shop_categorys = ShopCategory::where('status',1)->orderBy('id','asc')->get();
         $shop_category_custom =  ShopCategoryCustom::where('status',1)->get();
         $cms_category = CmsCategory::where('status',1)->get();
+
+        $list_products_l2= ShopProduct::where('status',1)->where('type',2)->orderBy('id', 'desc')->take(10)->get();
+        $list_products_l3= ShopProduct::where('status',1)->where('type',3)->orderBy('id', 'desc')->take(10)->get();
 
         $cms_content = CmsContent::where('status',1)->orderBy('updated_at','desc')->paginate(10);
 
@@ -223,9 +296,15 @@ class Shop extends Controller
             array(
                 'shop_info'=>$shop_info,
 
+                'shop_policy'=>$shop_policy,
+                'shop_address'=>$shop_address,
+
                 'shop_categorys' => $shop_categorys,
                 'shop_category_custom' => $shop_category_custom,
                 'cms_category'=>$cms_category,
+
+                'list_products_l2'=> $list_products_l2,
+                'list_products_l3'=> $list_products_l3,
 
                 'cms_content'=>$cms_content,
 
@@ -240,9 +319,15 @@ class Shop extends Controller
     public function category_news($slug){
         $shop_info = ShopInfo::first();
 
+        $shop_policy = ShopPolicy::where('status',1)->get();
+        $shop_address = ShopAddress::where('status',1)->get();
+
         $shop_categorys = ShopCategory::where('status',1)->orderBy('id','asc')->get();
         $shop_category_custom =  ShopCategoryCustom::where('status',1)->get();
         $cms_category = CmsCategory::where('status',1)->get();
+
+        $list_products_l2= ShopProduct::where('status',1)->where('type',2)->orderBy('id', 'desc')->take(10)->get();
+        $list_products_l3= ShopProduct::where('status',1)->where('type',3)->orderBy('id', 'desc')->take(10)->get();
 
         $category_news =  CmsCategory::where('uniquekey',$slug)->first();
 
@@ -253,9 +338,15 @@ class Shop extends Controller
             array(
                 'shop_info'=>$shop_info,
 
+                'shop_policy'=>$shop_policy,
+                'shop_address'=>$shop_address,
+
                 'shop_categorys' => $shop_categorys,
                 'shop_category_custom' => $shop_category_custom,
                 'cms_category'=>$cms_category,
+
+                'list_products_l2'=> $list_products_l2,
+                'list_products_l3'=> $list_products_l3,
 
                 'category_news'=>$category_news,
 
@@ -270,11 +361,17 @@ class Shop extends Controller
     public function news($slug){
         $shop_info = ShopInfo::first();
 
+        $shop_policy = ShopPolicy::where('status',1)->get();
+        $shop_address = ShopAddress::where('status',1)->get();
+
         $banner_duoiphai = ShopBanner::where('status',1)->where('typebanner',4)->orderBy('id', 'desc')->orderBy('sort','desc')->first();
 
         $shop_categorys = ShopCategory::where('status',1)->orderBy('id','asc')->get();
         $shop_category_custom =  ShopCategoryCustom::where('status',1)->get();
         $cms_category = CmsCategory::where('status',1)->get();
+
+        $list_products_l2= ShopProduct::where('status',1)->where('type',2)->orderBy('id', 'desc')->take(10)->get();
+        $list_products_l3= ShopProduct::where('status',1)->where('type',3)->orderBy('id', 'desc')->take(10)->get();
 
         $news = CmsContent::where('status',1)->where('slug',$slug)->first();
         $related_news =  CmsContent::where('category_id',$news->category_id)->where('status',1)->orderby(DB::raw('RAND()'))->whereNotIn('slug',[$slug])->take(5)->get();
@@ -283,11 +380,17 @@ class Shop extends Controller
             array(
                 'shop_info'=>$shop_info,
 
+                'shop_policy'=>$shop_policy,
+                'shop_address'=>$shop_address,
+
                 'banner_duoiphai'=>$banner_duoiphai,
 
                 'shop_categorys' => $shop_categorys,
                 'shop_category_custom' => $shop_category_custom,
                 'cms_category'=>$cms_category,
+
+                'list_products_l2'=> $list_products_l2,
+                'list_products_l3'=> $list_products_l3,
 
                 'news'=>$news,
                 'related_news'=>$related_news,
@@ -298,6 +401,93 @@ class Shop extends Controller
         );
 
 
+    }
+
+    public function policy($slug){
+        $shop_info = ShopInfo::first();
+
+        $shop_policy = ShopPolicy::where('status',1)->get();
+        $shop_address = ShopAddress::where('status',1)->get();
+
+        $banner_duoiphai = ShopBanner::where('status',1)->where('typebanner',4)->orderBy('id', 'desc')->orderBy('sort','desc')->first();
+
+        $shop_categorys = ShopCategory::where('status',1)->orderBy('id','asc')->get();
+        $shop_category_custom =  ShopCategoryCustom::where('status',1)->get();
+        $cms_category = CmsCategory::where('status',1)->get();
+
+        $list_products_l2= ShopProduct::where('status',1)->where('type',2)->orderBy('id', 'desc')->take(10)->get();
+        $list_products_l3= ShopProduct::where('status',1)->where('type',3)->orderBy('id', 'desc')->take(10)->get();
+
+        $policy = ShopPolicy::where('slug',$slug)->first();
+
+        $related_news =  CmsContent::where('status',1)->orderby(DB::raw('RAND()'))->take(10)->get();
+
+        return view('page.policy.policy',
+            array(
+                'shop_info'=>$shop_info,
+
+                'shop_policy'=>$shop_policy,
+                'shop_address'=>$shop_address,
+
+                'banner_duoiphai'=>$banner_duoiphai,
+
+                'shop_categorys' => $shop_categorys,
+                'shop_category_custom' => $shop_category_custom,
+                'cms_category'=>$cms_category,
+
+                'list_products_l2'=> $list_products_l2,
+                'list_products_l3'=> $list_products_l3,
+
+                'policy'=>$policy,
+
+                'related_news'=>$related_news,
+
+            )
+        );
+
+
+    }
+
+    public function search(Request $request){
+
+        $shop_info = ShopInfo::first();
+
+        $shop_policy = ShopPolicy::where('status',1)->get();
+        $shop_address = ShopAddress::where('status',1)->get();
+
+        $shop_categorys = ShopCategory::where('status',1)->orderBy('id','asc')->get();
+        $shop_category_custom =  ShopCategoryCustom::where('status',1)->get();
+        $cms_category = CmsCategory::where('status',1)->get();
+
+        $list_products_l2= ShopProduct::where('status',1)->where('type',2)->orderBy('id', 'desc')->take(10)->get();
+        $list_products_l3= ShopProduct::where('status',1)->where('type',3)->orderBy('id', 'desc')->take(10)->get();
+
+
+        $data= $request->all();
+        $search = $data['search'];
+
+        $list_product = ShopProduct::where('name','LIKE','%'.$search.'%')->orderBy('updated_at','DESC')->where('status',1)->paginate(12);
+
+        return view('page.search.search',
+            array(
+                'shop_info'=>$shop_info,
+
+                'shop_policy'=>$shop_policy,
+                'shop_address'=>$shop_address,
+
+                'shop_categorys' => $shop_categorys,
+                'shop_category_custom' => $shop_category_custom,
+                'cms_category'=>$cms_category,
+
+                'list_products_l2'=> $list_products_l2,
+                'list_products_l3'=> $list_products_l3,
+
+                'list_product'=>$list_product,
+
+                'search'=> $search,
+
+            )
+        );
     }
 
 

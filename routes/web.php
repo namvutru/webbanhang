@@ -19,4 +19,5 @@ Route::get('/danh-muc-san-pham-con/{slug}', [Shop::class, 'categorycustom'])->na
 Route::get('/danh-sach-bai-viet', [Shop::class, 'list_news'])->name('danh-sach-bai-viet');
 Route::get('/danh-muc-bai-viet/{slug}', [Shop::class, 'category_news'])->name('danh-muc-bai-viet');
 Route::get('/bai-viet/{slug}', [Shop::class, 'news'])->name('bai-viet');
-
+Route::get('/chinh-sach/{slug}', [Shop::class, 'policy'])->name('chinh-sach');
+Route::get('/tim-kiem',[Shop::class, 'search'])->name('tim-kiem');
