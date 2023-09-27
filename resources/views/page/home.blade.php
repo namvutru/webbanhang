@@ -77,7 +77,15 @@
                                              src="{{env('APP_URL') . '/documents/website/'.$product->imagemain}}"
                                              class="notlazy transition">
                                     </a>
-                                    <span class="icon ico-default ">Mặc định</span></div>
+                                    @if($product->hot ==0)
+                                        <span class="icon ico-default ">Mặc định</span>
+                                    @elseif($product->hot ==1)
+                                        <span class="icon ico-moi ">Mới</span>
+                                    @else
+                                        <span class="icon ico-hot ">Hot</span>
+                                    @endif
+
+                                    </div>
                                 <div class="item-info">
                                     <h5 class="item-title text-uppercase"><a
                                             href="{{route('thong-tin-san-pham',$product->slug)}}"
@@ -144,7 +152,7 @@
             <div class="+row">
                 <div class="col-xs-12 col-lg-8 col-sm-8 no-padding banner900x600 relative">
                     <a href="{{$banner_lon->linkbanner}}" title="{{$banner_lon->title}}">
-                        <img width=320 height=100 alt="banner" class="lazyload"
+                        <img width=320 height=400 alt="banner" class="lazyload"
                              src="{{env('APP_URL') . '/documents/website/'.$banner_lon->image}}"
                              data-src="{{env('APP_URL') . '/documents/website/'.$banner_lon->image}}"
                              style="width:100%"/>
@@ -174,7 +182,7 @@
                         @foreach($banner_nho as $key => $ban_nho)
 
                             <li><a href="{{$ban_nho->linkbanner}}"
-                                   title="banner nho"><img width=323 height=85 alt="banner nho"
+                                   title="banner nho"><img width=323 height=85 alt="{{$ban_nho->title}}"
                                                            src="{{env('APP_URL') . '/documents/website/'.$ban_nho->image}}">
 {{--                                                           data-lazy-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/diem-manh-xe-dien-viet-thanh-1.png"/>--}}
                                     <noscript><img width=323 height=85 alt="{{$ban_nho->title}}"
@@ -200,22 +208,22 @@
     </div>
 
     <section class="section-news">
-        <div class="table-news-menu container hidden-xs hidden-sm">
-            <table class="table-news" width="100%">
-                <tr>
-                    <td><a href="https://xedienvietthanh.com/loi-khuyen-chuyen-gia/" title="Lời khuyên chuyên gia"
-                           class="bold">Lời khuyên chuyên gia</a></td>
-                    <td><a href="https://xedienvietthanh.com/loi-khuyen-chuyen-gia/thu-xe-cu-doi-xe-moi/"
-                           title="Thu xe cũ đổi xe mới" class="bold">Thu xe cũ đổi xe mới</a></td>
-                    <td><a href="https://xedienvietthanh.com/tu-van-mien-phi-247/" title="Tư vấn miễn phí 24/7"
-                           class="bold">Tư vấn miễn phí 24/7</a></td>
-                    <td><a href="https://xedienvietthanh.com/doi-xe-trong-vong-72h/" title="Đổi xe trong vòng 72H"
-                           class="bold">Đổi xe trong vòng 72H</a></td>
-                    <td><a href="https://xedienvietthanh.com/chinh-sach-bao-hanh/" title="Chính sách bảo hành" class="bold">Chính
-                            sách bảo hành</a></td>
-                </tr>
-            </table>
-        </div>
+{{--        <div class="table-news-menu container hidden-xs hidden-sm">--}}
+{{--            <table class="table-news" width="100%">--}}
+{{--                <tr>--}}
+{{--                    <td><a href="https://xedienvietthanh.com/loi-khuyen-chuyen-gia/" title="Lời khuyên chuyên gia"--}}
+{{--                           class="bold">Lời khuyên chuyên gia</a></td>--}}
+{{--                    <td><a href="https://xedienvietthanh.com/loi-khuyen-chuyen-gia/thu-xe-cu-doi-xe-moi/"--}}
+{{--                           title="Thu xe cũ đổi xe mới" class="bold">Thu xe cũ đổi xe mới</a></td>--}}
+{{--                    <td><a href="https://xedienvietthanh.com/tu-van-mien-phi-247/" title="Tư vấn miễn phí 24/7"--}}
+{{--                           class="bold">Tư vấn miễn phí 24/7</a></td>--}}
+{{--                    <td><a href="https://xedienvietthanh.com/doi-xe-trong-vong-72h/" title="Đổi xe trong vòng 72H"--}}
+{{--                           class="bold">Đổi xe trong vòng 72H</a></td>--}}
+{{--                    <td><a href="https://xedienvietthanh.com/chinh-sach-bao-hanh/" title="Chính sách bảo hành" class="bold">Chính--}}
+{{--                            sách bảo hành</a></td>--}}
+{{--                </tr>--}}
+{{--            </table>--}}
+{{--        </div>--}}
         <div class="box_news_home">
             <div class="container">
                 <div class="col-xs-12 col-lg-6 col-md-6 no-padding">
@@ -261,7 +269,7 @@
                 </div>
                 <div class="col-xs-12 col-lg-6 col-md-6 no-padding">
                     <div class="col-ext col-ext-right">
-                        <div class="heading_box"><a href="https://xedienvietthanh.com/videos/" title="Video Clips"><span
+                        <div class="heading_box"><a href="{{route('danh-sach-videos')}}" title="Video Clips"><span
                                     class="title2">Video Clips</span></a></div>
                         <ul class="lst_item_ext">
 
@@ -313,7 +321,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 ">
-                    <div class="head-title font30 text-uppercase h2"><a href="https://xedienvietthanh.com/ac-quy/">ắc quy
+                    <div class="head-title font30 text-uppercase h2"><a href="{{route('danh-muc-san-pham','ac-quy')}}">ắc quy
                             chính hãng</a>
                     </div>
                     <div class="owl-carousel overhiden" id="owl-acquy-2019">
@@ -348,7 +356,7 @@
                 </div>
                 <div class="col-xs-12 ">
                     <div class="head-title font30 text-uppercase h2"><a
-                            href="https://xedienvietthanh.com/phu-tung-xe-dien/">phụ tùng chính hãng</a>
+                            href="{{route('danh-muc-san-pham','phu-tung')}}">phụ tùng chính hãng</a>
                     </div>
                     <div class="owl-carousel overhiden" id="owl-phutung-2019">
                         <!-- loop product -->

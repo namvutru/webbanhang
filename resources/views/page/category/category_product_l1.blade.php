@@ -2756,7 +2756,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
         <div class="row">
 
             <div class="col-xs-12 ">
-                <div class="head-title font30 text-uppercase h2"><a href="https://xedienvietthanh.com/ac-quy/">ắc quy
+                <div class="head-title font30 text-uppercase h2"><a href="{{route('danh-muc-san-pham','ac-quy')}}">ắc quy
                         chính hãng</a>
                 </div>
                 <div class="owl-carousel overhiden" id="owl-acquy-2019">
@@ -2791,7 +2791,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
 
             <div class="col-xs-12 ">
                 <div class="head-title font30 text-uppercase h2"><a
-                        href="https://xedienvietthanh.com/phu-tung-xe-dien/">phụ tùng chính hãng</a>
+                        href="{{route('danh-muc-san-pham','phu-tung')}}">phụ tùng chính hãng</a>
                 </div>
                 <div class="owl-carousel overhiden" id="owl-phutung-2019">
                     <!-- loop product -->

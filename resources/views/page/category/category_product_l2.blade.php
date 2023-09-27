@@ -2639,7 +2639,7 @@ fbq('track', 'PageView');
 
                         <li id="menu-item-28385"
                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28385">
-                            <a href="{{route('danh-muc-san-pham-con',$cms_cate->uniquekey)}}">{{$cms_cate->title}}</a></li>
+                            <a href="{{route('danh-muc-bai-viet',$cms_cate->uniquekey)}}">{{$cms_cate->title}}</a></li>
 
                     @endforeach
                 </ul>
@@ -2717,7 +2717,7 @@ fbq('track', 'PageView');
         <div class="row">
 
             <div class="col-xs-12 ">
-                <div class="head-title font30 text-uppercase h2"><a href="https://xedienvietthanh.com/ac-quy/">ắc quy
+                <div class="head-title font30 text-uppercase h2"><a href="{{route('danh-muc-san-pham','ac-quy')}}">ắc quy
                         chính hãng</a>
                 </div>
                 <div class="owl-carousel overhiden" id="owl-acquy-2019">
@@ -2752,7 +2752,7 @@ fbq('track', 'PageView');
 
             <div class="col-xs-12 ">
                 <div class="head-title font30 text-uppercase h2"><a
-                        href="https://xedienvietthanh.com/phu-tung-xe-dien/">phụ tùng chính hãng</a>
+                        href="{{route('danh-muc-san-pham','phu-tung')}}">phụ tùng chính hãng</a>
                 </div>
                 <div class="owl-carousel overhiden" id="owl-phutung-2019">
                     <!-- loop product -->
@@ -2797,7 +2797,7 @@ fbq('track', 'PageView');
                         @if($shop_cate_cus->shop_category_id == $shop_cate->id)
                             <li id="menu-item-28385"
                                 class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28385">
-                                <a href="{{route('danh-muc-san-pham-con',$shop_cate_cus->slug)}}">{{$shop_cate_cus->title}}</a></li>
+                                <a href="{{route('danh-muc-bai-viet',$shop_cate_cus->slug)}}">{{$shop_cate_cus->title}}</a></li>
                         @endif
                     @endforeach
                 </ul>

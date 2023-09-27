@@ -9,7 +9,7 @@ class ShopProduct extends Model
 {
     use HasFactory;
     protected $table='shop_product';
-    public $fillable =['name','price','type',  'description', 'review'];
+    public $fillable =['name','price','type',  'description', 'review','hot'];
 
     public function shop_image_product()
     {

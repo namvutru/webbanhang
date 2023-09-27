@@ -202,7 +202,7 @@
     <link href="//www.google-analytics.com" rel="dns-prefetch">
     <!-- <link href="https://xedienvietthanh.com/favicon.png" rel="shortcut icon"> -->
     <meta name="description"
-          content="Xe Điện Việt Thanh - Bán xe máy điện, xe đạp điện, xe điện chính hãng, xe điện nhập khẩu chất lượng hàng đầu Nijia, Giant, Xmen, Aima,...Bán trả góp xe đạp điện">
+          content="{{$shop_info->description}}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <meta name="robots" content="noindex"/> -->
     <!-- <link rel="stylesheet" href="https://pc.baokim.vn/css/bk.css"> -->
@@ -2574,7 +2574,7 @@ fbq('track', 'PageView');
 
                         <div class="col-md-4 text-center">
 
-                            <a href="https://xedienvietthanh.com/mau-xe-dien-xe-may-50cc-ban-chay-nhat-cho-hoc-sinh/"
+                            <a href="#"
                                title="{{$shop_info->slogan}}"><span>{{$shop_info->slogan}}</span></a>
 
                         </div>
@@ -2588,14 +2588,14 @@ fbq('track', 'PageView');
 
                         <div class="col-md-4 text-left" id="kinhnghiemhay">
 
-                            <span class="bold">Kinh nghiệm hay</span><br>
+
 
 
                             <ul class="slider-kinhnghiemhay">
 
 
                                 <li>
-                                    <a href="https://xedienvietthanh.com/mau-xe-dien-xe-may-50cc-ban-chay-nhat-cho-hoc-sinh/"
+                                    <a href="#"
                                        title="{{$shop_info->slogan2}}"><span>{{$shop_info->slogan2}}</span></a>
                                 </li>
 

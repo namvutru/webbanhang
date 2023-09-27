@@ -2524,7 +2524,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
 
             <div class="sup-online">
 
-                <a href="tel:{{$shop_info->phone}}" title="Tổng Đài 19002082">Tổng Đài hỗ trợ {{$shop_info->phone}}</a>
+                <a href="tel:{{$shop_info->phone}}" title="Tổng Đài {{$shop_info->phone}}">Tổng Đài hỗ trợ {{$shop_info->phone}}</a>
 
             </div>
         </div>
@@ -2583,7 +2583,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
 
                         <div class="col-md-4 text-center">
 
-                            <a href="https://xedienvietthanh.com/mau-xe-dien-xe-may-50cc-ban-chay-nhat-cho-hoc-sinh/"
+                            <a href="#"
                                title="{{$shop_info->slogan}}"><span>{{$shop_info->slogan}}</span></a>
 
                         </div>
@@ -2597,14 +2597,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
 
                         <div class="col-md-4 text-left" id="kinhnghiemhay">
 
-                            <span class="bold">Kinh nghiệm hay</span><br>
+
 
 
                             <ul class="slider-kinhnghiemhay">
 
 
                                 <li>
-                                    <a href="https://xedienvietthanh.com/mau-xe-dien-xe-may-50cc-ban-chay-nhat-cho-hoc-sinh/"
+                                    <a href="#"
                                        title="{{$shop_info->slogan2}}"><span>{{$shop_info->slogan2}}</span></a>
                                 </li>
 
@@ -2637,7 +2637,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
                             @if($shop_cate_cus->shop_category_id == $shop_cate->id)
                                 <li id="menu-item-28385"
                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28385">
-                                    <a href="{{route('danh-muc-san-pham-con',$shop_cate_cus->slug)}}">{{$shop_cate_cus->title}}</a></li>
+                                    <a href="{{route('danh-muc-bai-viet',$shop_cate_cus->slug)}}">{{$shop_cate_cus->title}}</a></li>
                             @endif
                         @endforeach
                     </ul>
@@ -2742,10 +2742,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
                             </td>
                             <td id="qb_don_gia">{{$product->price}}</td>
                             <td>
+                                <input type="hidden" value="{{$product->price}}" id ="don_gia">
                                 <input id="qb_quantity" type="number" step="1" min="1" max="" name="po_quantity"
-                                       value="1" size="4" pattern="[0-9]*" inputmode="numeric">
+                                       value="1" size="4" pattern="[0-9]*" onkeyup="subtotal()" inputmode="numeric">
                             </td>
-                            <td class="hidden-xs hidden-sm" id="qb_thanh_tien">{{$product->price}}</td>
+                            <td class="hidden-xs hidden-sm" id="qb_thanh_tien"></td>
                             <td><span class="del" data-dismiss="modal">Hủy</span></td>
                         </tr>
                         <tr>
@@ -2869,6 +2870,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+    // function subtotal(){
+    //
+    //     var price =document.getElementById("don_gia").value;
+    //     var count = document.getElementById("qb_quantity").value;
+    //     alert(price);
+    //     document.getElementById('qb_thanh_tien').value = price * count;
+    //     document.getElementById('tongtien').value = price * count;
+    //
+    //
+    // }
+
+</script>
 <style>
     .khach-hang table {
         line-height: 20px
@@ -3096,7 +3111,7 @@ window.onload = function() {
         <div class="row">
 
             <div class="col-xs-12 ">
-                <div class="head-title font30 text-uppercase h2"><a href="https://xedienvietthanh.com/ac-quy/">ắc quy
+                <div class="head-title font30 text-uppercase h2"><a href="{{route('danh-muc-san-pham','ac-quy')}}">ắc quy
                         chính hãng</a>
                 </div>
                 <div class="owl-carousel overhiden" id="owl-acquy-2019">
@@ -3131,7 +3146,7 @@ window.onload = function() {
 
             <div class="col-xs-12 ">
                 <div class="head-title font30 text-uppercase h2"><a
-                        href="https://xedienvietthanh.com/phu-tung-xe-dien/">phụ tùng chính hãng</a>
+                        href="{{route('danh-muc-san-pham','phu-tung')}}">phụ tùng chính hãng</a>
                 </div>
                 <div class="owl-carousel overhiden" id="owl-phutung-2019">
                     <!-- loop product -->

@@ -99,6 +99,9 @@ class Shop extends Controller
 
             $related_product = ShopProduct::where('status',1)->where('type',1)->where('shop_category_custom_id',$product->shop_category_custom_id)->orderby(DB::raw('RAND()'))->whereNotIn('slug',[$product->slug])->take(12)->get();
             $list_products_l2= ShopProduct::where('status',1)->where('type',2)->orderBy('id', 'desc')->take(10)->get();
+
+            $related_news =  CmsContent::where('status',1)->orderby(DB::raw('RAND()'))->take(3)->get();
+
             return view('page.detail.detail',
                 array(
                     'shop_info'=>$shop_info,
@@ -117,6 +120,8 @@ class Shop extends Controller
 
                     'related_product'=>$related_product,
                     'list_products_l2'=>$list_products_l2,
+
+                    'related_news'=>$related_news,
 
                 )
             );
@@ -492,8 +497,8 @@ class Shop extends Controller
 
 
 
-    public function test(){
-        return view('index');
+    public function videos(){
+
     }
 
 

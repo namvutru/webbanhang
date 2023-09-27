@@ -2581,7 +2581,7 @@ fbq('track', 'PageView');
 
                         <div class="col-md-4 text-center">
 
-                            <a href="https://xedienvietthanh.com/mau-xe-dien-xe-may-50cc-ban-chay-nhat-cho-hoc-sinh/"
+                            <a href="#"
                                title="{{$shop_info->slogan}}"><span>{{$shop_info->slogan}}</span></a>
 
                         </div>
@@ -2595,14 +2595,13 @@ fbq('track', 'PageView');
 
                         <div class="col-md-4 text-left" id="kinhnghiemhay">
 
-                            <span class="bold">Kinh nghiệm hay</span><br>
 
 
                             <ul class="slider-kinhnghiemhay">
 
 
                                 <li>
-                                    <a href="https://xedienvietthanh.com/mau-xe-dien-xe-may-50cc-ban-chay-nhat-cho-hoc-sinh/"
+                                    <a href="#"
                                        title="{{$shop_info->slogan2}}"><span>{{$shop_info->slogan2}}</span></a>
                                 </li>
 
@@ -3445,78 +3444,34 @@ fbq('track', 'PageView');
                             Bài viết liên quan
                         </h3>
 
+                        @foreach($related_news as $key => $news)
                         <a class="product-news-item"
-                           href="https://xedienvietthanh.com/tin-tuc/xe-may-dien-cho-hoc-sinh-cap-3/">
+                           href="{{route('bai-viet',$news->slug)}}">
                             <div class="left-col">
                                 <img
-                                    src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                                    src="{{env('APP_URL').'/documents/website/'.$news->image}}"
                                     alt=""
-                                    data-lazy-src="https://xedienvietthanh.com/wp-content/uploads/2023/02/xe-may-dien-yadea-odora-s1-1.jpg">
+                                    data-lazy-src="{{env('APP_URL').'/documents/website/'.$news->image}}">
                                 <noscript><img
-                                        src="https://xedienvietthanh.com/wp-content/uploads/2023/02/xe-may-dien-yadea-odora-s1-1.jpg"
+                                        src="{{env('APP_URL').'/documents/website/'.$news->image}}"
                                         alt=""></noscript>
                             </div>
 
                             <div class="right-col">
                                 <h4 class="item-title">
-                                    Top 5 Xe Máy Điện Cho Học Sinh Cấp 3 Chất Lượng Nhất Hiện Nay </h4>
+                                    {{$news ->title}} </h4>
 
                                 <p class="item-date">
-                                    28/02/2023 </p>
+                                    {{$news ->updated_at}} </p>
 
                                 <p class="excerpt">
-                                    Xe ga 50cc Valerio full đèn Led Những đường cong hoàn hảo cùng những vết cắt thông
-                                    minh giúp xe [&hellip;] </p>
+                                    {{$news ->summary_content}} </p>
                             </div>
                         </a>
-                        <a class="product-news-item"
-                           href="https://xedienvietthanh.com/tin-tuc/3-mau-xe-dien-duoc-gioi-tre-san-lung/">
-                            <div class="left-col">
-                                <img
-                                    src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                                    alt=""
-                                    data-lazy-src="https://xedienvietthanh.com/wp-content/uploads/2020/02/xe-may-dien-vespa-valerio-gs-anbico-do.jpg">
-                                <noscript><img
-                                        src="https://xedienvietthanh.com/wp-content/uploads/2020/02/xe-may-dien-vespa-valerio-gs-anbico-do.jpg"
-                                        alt=""></noscript>
-                            </div>
 
-                            <div class="right-col">
-                                <h4 class="item-title">
-                                    Top 3 mẫu xe điện được giới trẻ săn lùng </h4>
+                        @endforeach
 
-                                <p class="item-date">
-                                    01/04/2022 </p>
 
-                                <p class="excerpt">
-                                    Xe ga 50cc Valerio full đèn Led Những đường cong hoàn hảo cùng những vết cắt thông
-                                    minh giúp xe [&hellip;] </p>
-                            </div>
-                        </a>
-                        <a class="product-news-item"
-                           href="https://xedienvietthanh.com/tin-tuc/mua-xe-tay-ga-50cc-gia-re/">
-                            <div class="left-col">
-                                <img
-                                    src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                                    alt=""
-                                    data-lazy-src="https://xedienvietthanh.com/wp-content/uploads/2018/12/attila-50cc-sym-anh-mau-3.png">
-                                <noscript><img
-                                        src="https://xedienvietthanh.com/wp-content/uploads/2018/12/attila-50cc-sym-anh-mau-3.png"
-                                        alt=""></noscript>
-                            </div>
-
-                            <div class="right-col">
-                                <h4 class="item-title">
-                                    Nên hay không nên mua xe tay ga 50cc cũ giá rẻ? </h4>
-
-                                <p class="item-date">
-                                    18/06/2021 </p>
-
-                                <p class="excerpt">
-                                    Xe ga 50cc Valerio full đèn Led Những đường cong hoàn hảo cùng những vết cắt thông
-                                    minh giúp xe [&hellip;] </p>
-                            </div>
-                        </a>
                     </div>
                 </div><!-- /.details-pro -->
             </div>
@@ -3672,7 +3627,7 @@ window.onload = function() {
     <div class="container">
         <div class="row">
             <div class="col-xs-12 ">
-                <div class="head-title font30 text-uppercase h2"><a href="https://xedienvietthanh.com/ac-quy/">ắc quy
+                <div class="head-title font30 text-uppercase h2"><a href="{{route('danh-muc-san-pham','ac-quy')}}">ắc quy
                         chính hãng</a>
                 </div>
 

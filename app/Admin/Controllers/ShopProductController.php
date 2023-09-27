@@ -21,6 +21,8 @@ class ShopProductController extends AdminController
     public $typeimage= ['1' => 'Ảnh sản phẩm theo màu', '2' => 'Ảnh mô tả sản phẩm', '3' => 'Ảnh khác'];
 
     public $typeproduct= ['1' => 'Xe điện', '2' => 'Ác quy', '3' => 'Phụ tùng'];
+
+    public $hot= ['0' => 'Mặc định', '1' => 'Mới', '2' => 'Hot'];
     /**
      * Make a grid builder.
      *
@@ -41,6 +43,11 @@ class ShopProductController extends AdminController
             else if($type ==2) return 'Ác quy';
             else return 'Phụ tùng';
     });
+        $grid->column('hot', __('Hot'))->display(function ($type) {
+            if($type == 0) return 'Mặc định';
+            else if($type ==1) return 'Mới';
+            else return 'Hot';
+        });
         $grid->column('status', __('Status'))->switch();
         $grid->column('description', __('Description'))->expand(function () {
             $html = '<br><span>';
@@ -104,6 +111,7 @@ class ShopProductController extends AdminController
             $form->text('price', __('Price'));
             $form->text('color', __('Color'));
             $form->select('type', __('Type'))->options($this->typeproduct);
+            $form->select('hot', __('Hot'))->options($this->hot);
             $form->image('imagemain',__('Image Main'))->removable();
             $form->switch('status',__('Status'))->default(1);
             $listcateCus= (new ShopCategoryCustom())->listCateCustom();
