@@ -1973,27 +1973,23 @@
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'/>
 
     <!-- This site is optimized with the Yoast SEO plugin v19.11 - https://yoast.com/wordpress/plugins/seo/ -->
-    <title>ẮC QUY XE ĐIỆN YADEA 60V - 22AH TTFAR - Chính hãng</title>
+    <title>{{$shop_info->name}}</title>
     <link rel="stylesheet"
-          href="https://xedienvietthanh.com/wp-content/cache/min/1/7b6c40c842192a3528da105e3f8af942.css" media="all"
+          href="https://xedienvietthanh.com/wp-content/cache/min/1/6cf9e88bd4569045586feeecd42b1539.css" media="all"
           data-minify="1"/>
-    <link rel="canonical" href="https://xedienvietthanh.com/ac-quy-yadea-60v-22ah-ttfar/"/>
+    <link rel="canonical" href="{{env('APP_URL')}}"/>
+    <link rel="next" href="{{env('APP_URL')}}"/>
     <meta property="og:locale" content="vi_VN"/>
-    <meta property="og:type" content="article"/>
-    <meta property="og:title" content="ẮC QUY XE ĐIỆN YADEA 60V - 22AH TTFAR - Chính hãng"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title"
+          content="{{$shop_info->name}}"/>
     <meta property="og:description"
-          content="Ắc quy xe máy điện Yadea 60V - 22Ah được sản xuất và phân phối bởi hãng Yadea, được nhập khẩu chính hãng và phân phối tại hệ thống xe điện Việt Thanh."/>
-    <meta property="og:url" content="https://xedienvietthanh.com/ac-quy-yadea-60v-22ah-ttfar/"/>
+          content="{{env('APP_URL')}}"/>
+    <meta property="og:url" content="{{env('APP_URL')}}"/>
     <meta property="og:site_name"
-          content="Hệ Thống Xe Điện Việt Thanh - Bán xe máy 50cc - Xe đạp điện - Xe máy điện chính hãng, nhập khẩu"/>
-    <meta property="article:publisher" content="https://www.facebook.com/tapdoanxedien"/>
-    <meta property="article:modified_time" content="2023-08-29T03:35:22+00:00"/>
-    <meta property="og:image"
-          content="https://xedienvietthanh.com/wp-content/uploads/2023/04/ac-quy-xe-dien-yadea-60v-22ah.jpg"/>
-    <meta property="og:image:width" content="370"/>
-    <meta property="og:image:height" content="240"/>
-    <meta property="og:image:type" content="image/jpeg"/>
+          content="{{env('APP_URL')}}"/>
     <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="google-site-verification" content="3nJMXEBYrR81OSurixmj5UuDl5wqdic8Tbq79DhoNMg"/>
     <!-- / Yoast SEO plugin. -->
 
 
@@ -2779,14 +2775,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
                                     </label>
                                     <br>
                                     <div class="bankInfo" style="padding-top: 5px;display: none; ">
-                                        <p><strong>Ngân hàng Techcombank</strong>
-                                            <br>Chủ tài khoản LE HONG THANH
-                                            <br>STK: 19132176668886
-                                            <br>SĐT: 0903043333
-                                            <br>Ngân hàng techcombank chi nhánh cầu giấy, Hà Nội</p>
-                                        Sau khi chuyển khoản, để việc gửi hàng được tiến hành nhanh chóng, Quý khách vui
-                                        lòng mail hóa đơn đã chuyển tiền hoặc điện thoại 090 304 3333. Xin cảm ơn Quý
-                                        khách.
+                                        {!! $shop_info->bankinfo !!}
                                     </div>
                                 </td>
                             </tr>
@@ -4678,6 +4667,8 @@ window.onload = function() {
     }, !1)</script>
 <script data-no-minify="1" async
         src="https://xedienvietthanh.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.5/lazyload.min.js"></script>
+
+
 <script type="text/javascript">
     window.onload = function() {
         $( "#qb_quantity" ).blur(function() {

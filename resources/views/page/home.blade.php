@@ -109,6 +109,7 @@
 
                                                 data-image="{{env('APP_URL') . '/documents/website/'.$product->imagemain}}"
                                                 data-price="{{$product->price}}"
+                                                data-imagedb="{{$product->imagemain}}"
                                                 class="btn btn-success bk-btn-paynow-list" id="openModalButton" type="button"
                                                 style="width: 122px; height: 25px; margin-top: -3px; font-size: 11px">MUA
                                             NGAY
@@ -400,7 +401,7 @@
                 <form method="post" id="ss-form" action="{{route('dat-hang')}}" class="form-quickbuy">
                     @csrf
                     <div class="modal-header">
-                        <h4 class="row text-center title_form text-uppercase">{{$product->name}}</h4>
+                        <h4 class="row text-center title_form text-uppercase" id ="dialog_name"></h4>
                     </div>
                     <div class="modal-body">
                         <table class="table bold">
@@ -416,14 +417,16 @@
                             <tbody>
                             <tr>
                                 <td class="hidden-xs hidden-sm">
-                                    <img src="{{env('APP_URL').'/documents/website/'.$product->imagemain}}"
-                                         data-src="{{env('APP_URL').'/documents/website/'.$product->imagemain}}"
+                                    <img id="dialog_image"
+                                        src=""
+                                         data-src=""
                                          class="lazyload thumb-prod wp-post-image" alt=""/></td>
-                                <td class="hidden-xs hidden-sm" id="qb_name">{{$product->name}}</td>
+                                <td class="hidden-xs hidden-sm" id="qb_name"></td>
                                 <td id="qb_don_gia"></td>
                                 <td>
                                     <input id="qb_quantity" type="number" step="1" min="1" max="" name="po_quantity"
                                            value="1" size="4" pattern="[0-9]*" inputmode="numeric">
+                                    <input id="don_gia" type="hidden" value="">
                                 </td>
                                 <td><span class="del" data-dismiss="modal">Hủy</span></td>
                             </tr>
@@ -438,7 +441,7 @@
                                 </td>
                             </tr>
                             <tr>
-
+                                <td colspan="6" class="">Tổng tiền: <span class="cl_red"><span id="tongtien"></span> VNĐ</span></td>
                             </tr>
                             </tbody>
                         </table>
@@ -459,14 +462,7 @@
                                         </label>
                                         <br>
                                         <div class="bankInfo" style="padding-top: 5px;display: none; ">
-                                            <p><strong>Ngân hàng Techcombank</strong>
-                                                <br>Chủ tài khoản LE HONG THANH
-                                                <br>STK: 19132176668886
-                                                <br>SĐT: 0903043333
-                                                <br>Ngân hàng techcombank chi nhánh cầu giấy, Hà Nội</p>
-                                            Sau khi chuyển khoản, để việc gửi hàng được tiến hành nhanh chóng, Quý khách vui
-                                            lòng mail hóa đơn đã chuyển tiền hoặc điện thoại 090 304 3333. Xin cảm ơn Quý
-                                            khách.
+                                            {!! $shop_info->bankinfo !!}
                                         </div>
                                     </td>
                                 </tr>
@@ -529,13 +525,13 @@
                             {{--                            </div>--}}
                             {{--                        </div>--}}
                             <div class="none">
-                                <input type="text" name="tensanpham" value="{{$product->name}}"
-                                       class="ss-q-short form-control" id="entry_100017905" dir="auto"
+                                <input type="text" name="tensanpham" value=""
+                                       class="ss-q-short form-control" id="tensanpham" dir="auto"
                                        aria-label="Tên sản phẩm  " title="">
                                 <input type="text" name="dongia" value="" class="ss-q-short form-control"
                                        id="entry_1558387368" dir="auto" aria-label="Đơn giá hiện tại  " title="">
-                                <input type="text" name="anhsanpham" value="{{$product->imagemain}}" class="ss-q-short form-control"
-                                       id="entry_1558387368" dir="auto" aria-label="Đơn giá hiện tại  " title="">
+                                <input type="text" name="anhsanpham" value="" class="ss-q-short form-control"
+                                       id="anhsanpham" dir="auto" aria-label="Đơn giá hiện tại  " title="">
                                 {{--                            <input type="text" name="soluong" value="" class="ss-q-short form-control"--}}
                                 {{--                                   id="entry_1568021111" dir="auto" aria-label="Số lượng đặt mua  " title="">--}}
                             </div>
@@ -565,9 +561,24 @@
                 var productPrice = button.getAttribute("data-price");
 
 
+                var productImageDB = button.getAttribute("data-imagedb");
 
 
-                 document.getElementById("qb_don_gia").textContent = productPrice;
+
+
+                document.getElementById("qb_don_gia").textContent = productPrice;
+                document.getElementById("don_gia").value = productPrice;
+
+                document.getElementById("dialog_name").textContent = productName;
+                document.getElementById("qb_name").textContent = productName;
+                document.getElementById("dialog_image").src = productImage;
+
+
+
+                document.getElementById("tensanpham").value = productName;
+                document.getElementById("anhsanpham").value = productImageDB;
+
+
 
                 $('#quick-buy').modal('show');
         });
@@ -582,20 +593,72 @@
         var buttons = document.querySelectorAll(".bk-btn-installment-list");
         buttons.forEach(function(button) {
             button.addEventListener("click", function() {
-                // var productName = button.getAttribute("data-name");
-                // var productImage = button.getAttribute("data-image");
-                // var productPrice = button.getAttribute("data-price");
-                //
-                //
-                //
-                // document.getElementById("productName").textContent = "Tên sản phẩm: " + productName;
-                // document.getElementById("qb_don_gia").textContent = productPrice;
-                // document.getElementById("productImage").src = productImage;
+
+
+
+                var productName = button.getAttribute("data-name");
+                var productImage = button.getAttribute("data-image");
+                var productPrice = button.getAttribute("data-price");
+
+
+                var productImageDB = button.getAttribute("data-imagedb");
+
+
+
+
+                document.getElementById("qb_don_gia").textContent = productPrice;
+                document.getElementById("don_gia").value = productPrice;
+
+                document.getElementById("dialog_name").textContent = productName;
+                document.getElementById("qb_name").textContent = productName;
+                document.getElementById("dialog_image").src = productImage;
+
+
+
+                document.getElementById("tensanpham").value = productName;
+                document.getElementById("anhsanpham").value = productImageDB;
+
 
 
                 $('#quick-buy').modal('show');
             });
         });
+    </script>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            $( "#qb_quantity" ).blur(function() {
+
+                qualty = $('#qb_quantity').val();
+
+
+
+                chuoi = $('#don_gia').val();
+
+
+
+                pattern = /\d+/g;
+
+                matches = chuoi.match(pattern);
+
+                soGhepLai = "";
+
+                for (var i = 0; i < matches.length; i++) {
+                    soGhepLai += matches[i];
+                }
+
+
+                soNguyen = parseInt(soGhepLai, 10);
+
+                price = soNguyen;
+
+                tongtien = qualty * price ;
+
+                $('#tongtien, #qb_thanh_tien').html(formatNumber(tongtien));
+
+            });
+
+        }
     </script>
 
 

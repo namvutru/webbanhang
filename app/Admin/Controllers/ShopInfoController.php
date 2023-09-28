@@ -36,6 +36,8 @@ class ShopInfoController extends AdminController
         $grid->column('linkzalo', __('Link zalo'));
         $grid->column('linkfacebook', __('Link FaceBook'));
         $grid->column('footer', __('Thông tin cuối trang'));
+        $grid->column('bankinfo', __('Thông tin ngân hàng'));
+
 
 
         return $grid;
@@ -78,6 +80,7 @@ class ShopInfoController extends AdminController
         $form->text('linkzalo', __('Link zalo'));
         $form->text('linkfacebook', __('Link facebook'));
         $form->ckeditor('footer', __('Thông tin cuối trang'));
+        $form->ckeditor('bankinfo', __('Thông tin Ngân hàng'));
 
 
         return $form;

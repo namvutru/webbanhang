@@ -1973,27 +1973,23 @@
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'/>
 
     <!-- This site is optimized with the Yoast SEO plugin v19.11 - https://yoast.com/wordpress/plugins/seo/ -->
-    <title>Xe ga 50cc Valerio - Xe máy xăng cho học sinh không cần bằng</title>
+    <title>{{$shop_info->name}}</title>
     <link rel="stylesheet"
-          href="https://xedienvietthanh.com/wp-content/cache/min/1/7b6c40c842192a3528da105e3f8af942.css" media="all"
+          href="https://xedienvietthanh.com/wp-content/cache/min/1/6cf9e88bd4569045586feeecd42b1539.css" media="all"
           data-minify="1"/>
-    <link rel="canonical" href="https://xedienvietthanh.com/xe-ga-50cc-valerio/"/>
+    <link rel="canonical" href="{{env('APP_URL')}}"/>
+    <link rel="next" href="{{env('APP_URL')}}"/>
     <meta property="og:locale" content="vi_VN"/>
-    <meta property="og:type" content="article"/>
-    <meta property="og:title" content="Xe ga 50cc Valerio - Xe máy xăng cho học sinh không cần bằng"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title"
+          content="{{$shop_info->name}}"/>
     <meta property="og:description"
-          content="Xe ga 50cc Valerio là sản phẩm xe máy tay ga được sản xuất tại Việt Nam, chạy nhiên liệu xăng, dung tích xi-lanh nhỏ, người dùng không cần bằng lái."/>
-    <meta property="og:url" content="https://xedienvietthanh.com/xe-ga-50cc-valerio/"/>
+          content="{{env('APP_URL')}}"/>
+    <meta property="og:url" content="{{env('APP_URL')}}"/>
     <meta property="og:site_name"
-          content="Hệ Thống Xe Điện Việt Thanh - Bán xe máy 50cc - Xe đạp điện - Xe máy điện chính hãng, nhập khẩu"/>
-    <meta property="article:publisher" content="https://www.facebook.com/tapdoanxedien"/>
-    <meta property="article:modified_time" content="2023-08-29T06:44:45+00:00"/>
-    <meta property="og:image"
-          content="https://xedienvietthanh.com/wp-content/uploads/2019/09/avata-vespa-valerio-50cc.png"/>
-    <meta property="og:image:width" content="370"/>
-    <meta property="og:image:height" content="240"/>
-    <meta property="og:image:type" content="image/png"/>
+          content="{{env('APP_URL')}}"/>
     <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="google-site-verification" content="3nJMXEBYrR81OSurixmj5UuDl5wqdic8Tbq79DhoNMg"/>
     <!-- / Yoast SEO plugin. -->
 
 
@@ -2862,14 +2858,7 @@ fbq('track', 'PageView');
                                     </label>
                                     <br>
                                     <div class="bankInfo" style="padding-top: 5px;display: none; ">
-                                        <p><strong>Ngân hàng Techcombank</strong>
-                                            <br>Chủ tài khoản LE HONG THANH
-                                            <br>STK: 19132176668886
-                                            <br>SĐT: 0903043333
-                                            <br>Ngân hàng techcombank chi nhánh cầu giấy, Hà Nội</p>
-                                        Sau khi chuyển khoản, để việc gửi hàng được tiến hành nhanh chóng, Quý khách vui
-                                        lòng mail hóa đơn đã chuyển tiền hoặc điện thoại 090 304 3333. Xin cảm ơn Quý
-                                        khách.
+                                        {!! $shop_info->bankinfo !!}
                                     </div>
                                 </td>
                             </tr>
@@ -3611,37 +3600,7 @@ fbq('track', 'PageView');
                                         <span class="regular-price"><span class="price">{{$re_product->price}}</span></span>
                                     </div>
                                 </div>
-                                <div class="item-detail">
-                                    <div class="item-offers">
-                                        - Quà tặng trị giá tới 500K <br/> - Áp dụng giao hàng toàn quốc <br/></div>
-                                    <div class="item-link">
-                                        <button data-name="Xe ga 50cc Espero Diamond Pro"
-                                                data-image="https://xedienvietthanh.com/wp-content/uploads/2023/05/xe-ga-50cc-espero-diamond.jpg"
-                                                data-price="21900000"
-                                                class="btn btn-success bk-btn-paynow-list" id="" type="button"
-                                                style="width: 122px; height: 25px; margin-top: -3px; font-size: 11px">
-                                            MUA NGAY
-                                        </button>
-                                        <button data-name="Xe ga 50cc Espero Diamond Pro"
-                                                data-image="https://xedienvietthanh.com/wp-content/uploads/2023/05/xe-ga-50cc-espero-diamond.jpg"
-                                                data-price="21900000"
-                                                class="btn bk-btn-installment-list" id="" type="button"
-                                                style="width: 122px; height: 25px; margin-top: 5px; font-size: 11px; margin-left: 0px">
-                                            MUA
-                                            TRẢ GÓP
-                                        </button>
-                                    </div>
-                                    <!--                <div class="item-link">-->
-                                    <!--                    <a class="link-detail btn btn-warning" href="-->
-                                    <!--" title="Chi tiết --><!--">Chi tiết sản phẩm</a>-->
-                                    <!---->
-                                    <!--                    <a class="link-buy btn btn-success bold" href="-->
-                                    <!--" title="Mua trả góp">Mua trả góp</a>-->
-                                    <!--                    -->
-                                    <!--                        <a class="link-buy btn-success bold" href="-->
-                                    <!--" title="Đặt hàng nhanh">Đặt hàng nhanh</a>-->
-                                    <!--                    --><!--                </div>-->
-                                </div>
+                                <div class="item-detail"></div>
                             </div>
                         </div>
                     </div>

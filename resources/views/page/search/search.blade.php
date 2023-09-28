@@ -1973,20 +1973,23 @@
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'/>
 
     <!-- This site is optimized with the Yoast SEO plugin v19.11 - https://yoast.com/wordpress/plugins/seo/ -->
-    <title>Hệ thống Việt Thanh chuyên phân phối xe máy điện cao cấp</title>
+    <title>{{$shop_info->name}}</title>
     <link rel="stylesheet"
-          href="https://xedienvietthanh.com/wp-content/cache/min/1/5d3ff17da23707a0f3ec4bcc0d200bfd.css" media="all"
+          href="https://xedienvietthanh.com/wp-content/cache/min/1/6cf9e88bd4569045586feeecd42b1539.css" media="all"
           data-minify="1"/>
-    <link rel="canonical" href="https://xedienvietthanh.com/xe-may-dien/"/>
+    <link rel="canonical" href="{{env('APP_URL')}}"/>
+    <link rel="next" href="{{env('APP_URL')}}"/>
     <meta property="og:locale" content="vi_VN"/>
-    <meta property="og:type" content="article"/>
-    <meta property="og:title" content="Hệ thống Việt Thanh chuyên phân phối xe máy điện cao cấp"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title"
+          content="{{$shop_info->name}}"/>
     <meta property="og:description"
-          content="Hệ thống xe điện Việt Thanh chuyên phân phối các loại xe máy điện của các hãng Yadea, Vinfast, Honda, Giant, Aima, Vespa, Zoomer, xe máy điện 3 bánh,..."/>
-    <meta property="og:url" content="https://xedienvietthanh.com/xe-may-dien/"/>
+          content="{{env('APP_URL')}}"/>
+    <meta property="og:url" content="{{env('APP_URL')}}"/>
     <meta property="og:site_name"
-          content="Hệ Thống Xe Điện Việt Thanh - Bán xe máy 50cc - Xe đạp điện - Xe máy điện chính hãng, nhập khẩu"/>
+          content="{{env('APP_URL')}}"/>
     <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="google-site-verification" content="3nJMXEBYrR81OSurixmj5UuDl5wqdic8Tbq79DhoNMg"/>
     <!-- / Yoast SEO plugin. -->
 
 

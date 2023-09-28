@@ -3,8 +3,6 @@
 <html lang="vi" class="no-js">
 
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 
     <meta charset="UTF-8">
@@ -1977,21 +1975,21 @@
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'/>
 
     <!-- This site is optimized with the Yoast SEO plugin v19.11 - https://yoast.com/wordpress/plugins/seo/ -->
-    <title>Xe Điện Việt Thanh - Bán xe đạp điện, xe máy điện nhập khẩu</title>
+    <title>{{$shop_info->name}}</title>
     <link rel="stylesheet"
           href="https://xedienvietthanh.com/wp-content/cache/min/1/6cf9e88bd4569045586feeecd42b1539.css" media="all"
           data-minify="1"/>
-    <link rel="canonical" href="https://xedienvietthanh.com/"/>
-    <link rel="next" href="https://xedienvietthanh.com/page/2/"/>
+    <link rel="canonical" href="{{env('APP_URL')}}"/>
+    <link rel="next" href="{{env('APP_URL')}}"/>
     <meta property="og:locale" content="vi_VN"/>
     <meta property="og:type" content="website"/>
     <meta property="og:title"
-          content="Hệ Thống Xe Điện Việt Thanh - Bán xe máy 50cc - Xe đạp điện - Xe máy điện chính hãng, nhập khẩu"/>
+          content="{{$shop_info->name}}"/>
     <meta property="og:description"
-          content="Xe Điện Việt Thanh - Bán xe máy điện, xe đạp điện, xe điện chính hãng, xe điện nhập khẩu chất lượng hàng đầu Nijia, Giant, Xmen, Aima,...Bán trả góp xe đạp điện"/>
-    <meta property="og:url" content="https://xedienvietthanh.com/"/>
+          content="{{env('APP_URL')}}"/>
+    <meta property="og:url" content="{{env('APP_URL')}}"/>
     <meta property="og:site_name"
-          content="Hệ Thống Xe Điện Việt Thanh - Bán xe máy 50cc - Xe đạp điện - Xe máy điện chính hãng, nhập khẩu"/>
+          content="{{env('APP_URL')}}"/>
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="google-site-verification" content="3nJMXEBYrR81OSurixmj5UuDl5wqdic8Tbq79DhoNMg"/>
     <!-- / Yoast SEO plugin. -->

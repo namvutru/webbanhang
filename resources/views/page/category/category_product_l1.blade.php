@@ -1973,20 +1973,23 @@
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'/>
 
     <!-- This site is optimized with the Yoast SEO plugin v19.11 - https://yoast.com/wordpress/plugins/seo/ -->
-    <title>Hệ thống Việt Thanh chuyên phân phối xe máy điện cao cấp</title>
+    <title>{{$shop_info->name}}</title>
     <link rel="stylesheet"
-          href="https://xedienvietthanh.com/wp-content/cache/min/1/5d3ff17da23707a0f3ec4bcc0d200bfd.css" media="all"
+          href="https://xedienvietthanh.com/wp-content/cache/min/1/6cf9e88bd4569045586feeecd42b1539.css" media="all"
           data-minify="1"/>
-    <link rel="canonical" href="https://xedienvietthanh.com/xe-may-dien/"/>
+    <link rel="canonical" href="{{env('APP_URL')}}"/>
+    <link rel="next" href="{{env('APP_URL')}}"/>
     <meta property="og:locale" content="vi_VN"/>
-    <meta property="og:type" content="article"/>
-    <meta property="og:title" content="Hệ thống Việt Thanh chuyên phân phối xe máy điện cao cấp"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title"
+          content="{{$shop_info->name}}"/>
     <meta property="og:description"
-          content="Hệ thống xe điện Việt Thanh chuyên phân phối các loại xe máy điện của các hãng Yadea, Vinfast, Honda, Giant, Aima, Vespa, Zoomer, xe máy điện 3 bánh,..."/>
-    <meta property="og:url" content="https://xedienvietthanh.com/xe-may-dien/"/>
+          content="{{env('APP_URL')}}"/>
+    <meta property="og:url" content="{{env('APP_URL')}}"/>
     <meta property="og:site_name"
-          content="Hệ Thống Xe Điện Việt Thanh - Bán xe máy 50cc - Xe đạp điện - Xe máy điện chính hãng, nhập khẩu"/>
+          content="{{env('APP_URL')}}"/>
     <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="google-site-verification" content="3nJMXEBYrR81OSurixmj5UuDl5wqdic8Tbq79DhoNMg"/>
     <!-- / Yoast SEO plugin. -->
 
 
@@ -2672,59 +2675,66 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
             @foreach($list_product as $key => $product)
 
             <!-- loop product -->
-            <div class="col-xs-12 col-lg-4 col-md-4 display-pt10 item">
-                <div class="col-item">
-                    <div class="item-inner">
-                        <div class="product-wrapper transition">
-                            <a href="{{route('thong-tin-san-pham',$product->slug)}}"
-                               title="{{$product->name}}">
-                                <img width="367" height="248" alt="{{$product->name}}"
-                                     src="{{env('APP_URL') . '/documents/website/'.$product->imagemain}}"
-                                     data-src="{{env('APP_URL') . '/documents/website/'.$product->imagemain}}"
-                                     class="lazy lazyload transition">
-                            </a>
-                            <span class="icon ico-default ">Mặc định</span></div>
-                        <div class="item-info">
-                            <h5 class="item-title text-uppercase"><a class="bk-product-name"
-                                                                     href="{{route('thong-tin-san-pham',$product->slug)}}"
-                                                                     title="{{$product->name}}">{{$product->name}}</a></h5>
-                            <input type="hidden" value="1" class="bk-product-qty">
-                            <div class="item-price">
-                                <span class="old-price"><span class="price ">{{$product->old_price}}</span></span>
-                                <span class="regular-price"><span
-                                        class="price bk-product-price">{{$product->price}}</span></span>
+                <div class="col-xs-12 col-lg-4 col-md-4 display-pt10 item">
+                    <div class="col-item">
+                        <div class="item-inner">
+                            <div class="product-wrapper transition">
+                                <a href="{{route('thong-tin-san-pham',$product->slug)}}"
+                                   title="{{$product->name}}">
+                                    <img width="367" height="248" alt="{{$product->name}}"
+                                         src="{{env('APP_URL') . '/documents/website/'.$product->imagemain}}"
+                                         class="notlazy transition">
+                                </a>
+                                @if($product->hot ==0)
+                                    <span class="icon ico-default ">Mặc định</span>
+                                @elseif($product->hot ==1)
+                                    <span class="icon ico-moi ">Mới</span>
+                                @else
+                                    <span class="icon ico-hot ">Hot</span>
+                                @endif
+
                             </div>
-                        </div>
-                        <div class="item-detail">
-                            <!-- case: choose gift on product -->
-                            <div class="item-offers">
-                                - Quà tặng trị giá tới 500K <br/> - Áp dụng giao hàng toàn quốc<br/>
+                            <div class="item-info">
+                                <h5 class="item-title text-uppercase"><a
+                                        href="{{route('thong-tin-san-pham',$product->slug)}}"
+                                        title="X{{$product->name}}">{{$product->name}}</a></h5>
+                                <div class="item-price">
+                                    <span class="old-price"><span class="price">{{$product->old_price}}</span></span>
+                                    <span class="regular-price"><span class="price">{{$product->price}}</span></span>
+                                </div>
                             </div>
+                            <div class="item-detail">
+                                <!-- case: choose gift on product -->
+                                <div class="item-offers">
+                                    - Quà tặng trị giá tới 500K <br/> - Áp dụng giao hàng toàn quốc <br/>
+                                </div>
 
-                            <!-- case: choose gift on parent taxonomy -->
+                                <!-- case: choose gift on parent taxonomy -->
+
+                                <div class="item-link">
+                                    <button data-name="{{$product->name}}"
 
 
-                            <div class="item-link">
-                                <button data-name="{{$product->name}}"
-                                        data-image="{{env('APP_URL') . '/documents/website/'.$product->imagemain}}"
-                                        data-price="{{$product->price}}"
-                                        class="btn btn-success bk-btn-paynow-list" id="" type="button"
-                                        style="width: 122px; height: 25px; margin-top: -3px; font-size: 11px;">MUA NGAY
-                                </button>
-                                <button data-name="{{$product->name}}"
-                                        data-image="{{env('APP_URL') . '/documents/website/'.$product->imagemain}}"
-                                        data-price="{{$product->price}}"
-                                        class="btn bk-btn-installment-list" id="" type="button"
-                                        style="width: 122px; height: 25px; margin-top: 5px; font-size: 11px; margin-left: 0px">
-                                    MUA
-                                    TRẢ GÓP
-                                </button>
+                                            data-image="{{env('APP_URL') . '/documents/website/'.$product->imagemain}}"
+                                            data-price="{{$product->price}}"
+                                            data-imagedb="{{$product->imagemain}}"
+                                            class="btn btn-success bk-btn-paynow-list" id="openModalButton" type="button"
+                                            style="width: 122px; height: 25px; margin-top: -3px; font-size: 11px">MUA
+                                        NGAY
+                                    </button>
+                                    <button data-name="{{$product->name}}"
+                                            data-image="{{env('APP_URL') . '/documents/website/'.$product->imagemain}}"
+                                            data-price="{{$product->price}}"
+                                            class="btn bk-btn-installment-list" id="openModalButton" type="button"
+                                            style="width: 122px; height: 25px; margin-top: 5px; font-size: 11px; margin-left: 0px">
+                                        MUA
+                                        TRẢ GÓP
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
             @endforeach
             <!-- loop product -->
 
@@ -2825,6 +2835,167 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
         </div>
     </div>
 </section>
+
+<div class="modal fade  font16" id="quick-buy" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form method="post" id="ss-form" action="{{route('dat-hang')}}" class="form-quickbuy">
+                @csrf
+                <div class="modal-header">
+                    <h4 class="row text-center title_form text-uppercase" id ="dialog_name"></h4>
+                </div>
+                <div class="modal-body">
+                    <table class="table bold">
+                        <thead class="thead-inverse">
+                        <tr>
+                            <th class="hidden-xs hidden-sm">Hình ảnh</th>
+                            <th class="hidden-xs hidden-sm">Sản phẩm</th>
+                            <th>Đơn giá</th>
+                            <th>Số lượng</th>
+                            <th>Hủy</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="hidden-xs hidden-sm">
+                                <img id="dialog_image"
+                                     src=""
+                                     data-src=""
+                                     class="lazyload thumb-prod wp-post-image" alt=""/></td>
+                            <td class="hidden-xs hidden-sm" id="qb_name"></td>
+                            <td id="qb_don_gia"></td>
+                            <td>
+                                <input id="qb_quantity" type="number" step="1" min="1" max="" name="po_quantity"
+                                       value="1" size="4" pattern="[0-9]*" inputmode="numeric">
+                                <input id="don_gia" type="hidden" value="">
+                            </td>
+                            <td><span class="del" data-dismiss="modal">Hủy</span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">
+                                <div class="infopromotion">
+                                    <ul>
+                                        {{--                                        <li><i class="fa fa-gift"></i> Mũ bảo hiểm đạt chuẩn trị giá 250.000đ</li>--}}
+                                        {{--                                        <li><i class="fa fa-gift"></i> Áp dụng giao hàng toàn quốc</li>--}}
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="">Tổng tiền: <span class="cl_red"><span id="tongtien"></span> VNĐ</span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="wd100 khach-hang">
+                        <h4 class="row text-center title_form bold text-uppercase">Chọn phương thức thanh toán</h4>
+                        <div class="space20"></div>
+                        <p>Quý khách vui lòng chọn một hình thức thanh toán trong số các hình thức bên dưới phù hợp
+                            nhất.</p>
+
+                        <table width="100%" cellpadding="0" cellspacing="0" class="conTable">
+                            <tbody>
+                            <tr>
+                                <td width="20">
+                                    <input type="radio" id="pay_bank" name="paytype" value="3"
+                                           onclick="change_paytype(3)"></td>
+                                <td valign="top">
+                                    <label for="pay_bank"><strong class="payTitle">Chuyển khoản ngân hàng</strong>
+                                    </label>
+                                    <br>
+                                    <div class="bankInfo" style="padding-top: 5px;display: none; ">
+                                        <p><strong>Ngân hàng Techcombank</strong>
+                                            <br>Chủ tài khoản LE HONG THANH
+                                            <br>STK: 19132176668886
+                                            <br>SĐT: 0903043333
+                                            <br>Ngân hàng techcombank chi nhánh cầu giấy, Hà Nội</p>
+                                        Sau khi chuyển khoản, để việc gửi hàng được tiến hành nhanh chóng, Quý khách vui
+                                        lòng mail hóa đơn đã chuyển tiền hoặc điện thoại 090 304 3333. Xin cảm ơn Quý
+                                        khách.
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="20">
+                                    <input type="radio" id="pay_cod" name="paytype" value="1"
+                                           onclick="change_paytype(1)"></td>
+                                <td valign="top">
+                                    <label for="pay_cod"><strong class="payTitle">Trả tiền mặt trực tiếp ngay khi nhận
+                                            hàng</strong>
+                                    </label>
+                                    <div class="compInfo" style="margin-top: 25px; display: none;">
+                                        <p>Nhân viên của chúng tôi sẽ thu tiền khi giao nhận hàng hóa.</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+
+                        <h4 class="row text-center title_form text-uppercase">Nhập thông tin đơn hàng</h4>
+                        <div class="space20"></div>
+                        <div class="form-group">
+                            <label for="name" class="col-sm-2 control-label">Họ tên</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="hoten" value="" class="ss-q-short form-control"
+                                       id="entry_1918389590" dir="auto" aria-label="Họ tên  " title="">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-email" class="col-sm-2 control-label">Số điện thoại</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="sdt" value="" class="ss-q-short form-control"
+                                       id="entry_1974945640" dir="auto" aria-label="Điện thoại  Phải là một dãy số."
+                                       aria-required="true" required="" step="1"
+                                       title="Nhập đúng số điện thoại của bạn">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email" class="col-sm-2 control-label">Địa chỉ</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="diachi" value="" class="ss-q-short form-control"
+                                       id="entry_638975727" dir="auto" aria-label="Địa chỉ  " title="">
+                            </div>
+                        </div>
+                        {{--                        <div class="form-group none">--}}
+                        {{--                            <label for="contact-email" class="col-sm-2 control-label">Email</label>--}}
+                        {{--                            <div class="col-sm-10">--}}
+                        {{--                                <input type="text" name="email" value="" class="ss-q-short form-control"--}}
+                        {{--                                       id="entry_589038675" dir="auto" aria-label="Email  Phải chứa @" pattern=".*@.*"--}}
+                        {{--                                       title="Ph&#7843;i ch&#7913;a @">--}}
+                        {{--                            </div>--}}
+                        {{--                        </div>--}}
+                        {{--                        <div class="form-group none">--}}
+                        {{--                            <label for="contact-email" class="col-sm-2 control-label">Yêu cầu</label>--}}
+                        {{--                            <div class="col-sm-10">--}}
+                        {{--                                <textarea name="yeucau" rows="2" cols="0" class="ss-q-long form-control"--}}
+                        {{--                                          id="entry_1997209857" dir="auto" aria-label="Nội dung yêu cầu  "></textarea>--}}
+                        {{--                            </div>--}}
+                        {{--                        </div>--}}
+                        <div class="none">
+                            <input type="text" name="tensanpham" value=""
+                                   class="ss-q-short form-control" id="tensanpham" dir="auto"
+                                   aria-label="Tên sản phẩm  " title="">
+                            <input type="text" name="dongia" value="" class="ss-q-short form-control"
+                                   id="entry_1558387368" dir="auto" aria-label="Đơn giá hiện tại  " title="">
+                            <input type="text" name="anhsanpham" value="" class="ss-q-short form-control"
+                                   id="anhsanpham" dir="auto" aria-label="Đơn giá hiện tại  " title="">
+                            {{--                            <input type="text" name="soluong" value="" class="ss-q-short form-control"--}}
+                            {{--                                   id="entry_1568021111" dir="auto" aria-label="Số lượng đặt mua  " title="">--}}
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer wd100">
+                    <!-- <a class="btn btn-default" data-dismiss="modal">Close</a> -->
+                    <input type="submit" class="btn btn-primary" name="submit" value="Đặt hàng">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
 <nav class="bottom-nav full text-center" style="background: #dfe6e9;">
     <ul id="mainnav" class="nav nav-menu destop">
         @foreach($shop_categorys as $key => $shop_cate)
@@ -4398,6 +4569,121 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
    }
 </script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
+<script>
+    // Bắt sự kiện click trên nút "Mở Modal", mở modal
+
+    var buttons = document.querySelectorAll(".bk-btn-paynow-list");
+    buttons.forEach(function(button) {
+        button.addEventListener("click", function() {
+
+
+
+            var productName = button.getAttribute("data-name");
+            var productImage = button.getAttribute("data-image");
+            var productPrice = button.getAttribute("data-price");
+
+
+            var productImageDB = button.getAttribute("data-imagedb");
+
+
+
+
+            document.getElementById("qb_don_gia").textContent = productPrice;
+            document.getElementById("don_gia").value = productPrice;
+
+            document.getElementById("dialog_name").textContent = productName;
+            document.getElementById("qb_name").textContent = productName;
+            document.getElementById("dialog_image").src = productImage;
+
+
+
+            document.getElementById("tensanpham").value = productName;
+            document.getElementById("anhsanpham").value = productImageDB;
+
+
+
+            $('#quick-buy').modal('show');
+        });
+    });
+</script>
+
+<script>
+
+
+    // Bắt sự kiện click trên nút "Mở Modal", mở modal
+
+    var buttons = document.querySelectorAll(".bk-btn-installment-list");
+    buttons.forEach(function(button) {
+        button.addEventListener("click", function() {
+
+
+
+            var productName = button.getAttribute("data-name");
+            var productImage = button.getAttribute("data-image");
+            var productPrice = button.getAttribute("data-price");
+
+
+            var productImageDB = button.getAttribute("data-imagedb");
+
+
+
+
+            document.getElementById("qb_don_gia").textContent = productPrice;
+            document.getElementById("don_gia").value = productPrice;
+
+            document.getElementById("dialog_name").textContent = productName;
+            document.getElementById("qb_name").textContent = productName;
+            document.getElementById("dialog_image").src = productImage;
+
+
+
+            document.getElementById("tensanpham").value = productName;
+            document.getElementById("anhsanpham").value = productImageDB;
+
+
+
+            $('#quick-buy').modal('show');
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    window.onload = function() {
+        $( "#qb_quantity" ).blur(function() {
+
+            qualty = $('#qb_quantity').val();
+
+
+
+            chuoi = $('#don_gia').val();
+
+
+
+            pattern = /\d+/g;
+
+            matches = chuoi.match(pattern);
+
+            soGhepLai = "";
+
+            for (var i = 0; i < matches.length; i++) {
+                soGhepLai += matches[i];
+            }
+
+
+            soNguyen = parseInt(soGhepLai, 10);
+
+            price = soNguyen;
+
+            tongtien = qualty * price ;
+
+            $('#tongtien, #qb_thanh_tien').html(formatNumber(tongtien));
+
+        });
+
+    }
+</script>
 
 <!-- BK MODAL -->
 <!-- <div id='bk-modal'></div> -->

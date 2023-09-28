@@ -1973,21 +1973,23 @@
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'/>
 
     <!-- This site is optimized with the Yoast SEO plugin v19.11 - https://yoast.com/wordpress/plugins/seo/ -->
-    <title>TIN TỨC VỀ XE ĐIỆN MỚI NHẤT | Xe Điện Việt Thanh</title>
+    <title>{{$shop_info->name}}</title>
     <link rel="stylesheet"
-          href="https://xedienvietthanh.com/wp-content/cache/min/1/4b05f5f2afae0a8357421138f077c208.css" media="all"
+          href="https://xedienvietthanh.com/wp-content/cache/min/1/6cf9e88bd4569045586feeecd42b1539.css" media="all"
           data-minify="1"/>
-    <link rel="canonical" href="https://xedienvietthanh.com/tin-tuc/"/>
-    <link rel="next" href="https://xedienvietthanh.com/tin-tuc/page/2/"/>
+    <link rel="canonical" href="{{env('APP_URL')}}"/>
+    <link rel="next" href="{{env('APP_URL')}}"/>
     <meta property="og:locale" content="vi_VN"/>
-    <meta property="og:type" content="article"/>
-    <meta property="og:title" content="TIN TỨC VỀ XE ĐIỆN MỚI NHẤT | Xe Điện Việt Thanh"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title"
+          content="{{$shop_info->name}}"/>
     <meta property="og:description"
-          content="Tin tức tồng hợp về xe đạp điện, xe máy điện mới nhất. Thông tin chính thức tra cứu các mẫu xe điện HOT nhất thị trường - Xe điện Việt Thanh"/>
-    <meta property="og:url" content="https://xedienvietthanh.com/tin-tuc/"/>
+          content="{{env('APP_URL')}}"/>
+    <meta property="og:url" content="{{env('APP_URL')}}"/>
     <meta property="og:site_name"
-          content="Hệ Thống Xe Điện Việt Thanh - Bán xe máy 50cc - Xe đạp điện - Xe máy điện chính hãng, nhập khẩu"/>
+          content="{{env('APP_URL')}}"/>
     <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="google-site-verification" content="3nJMXEBYrR81OSurixmj5UuDl5wqdic8Tbq79DhoNMg"/>
     <!-- / Yoast SEO plugin. -->
 
 

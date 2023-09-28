@@ -232,11 +232,11 @@ class Shop extends Controller
         $list_products_l2= ShopProduct::where('status',1)->where('type',2)->orderBy('id', 'desc')->take(10)->get();
         $list_products_l3= ShopProduct::where('status',1)->where('type',3)->orderBy('id', 'desc')->take(10)->get();
 
-        $category = ShopCategoryCustom::where('slug',$slug)->first();
+        $category = ShopCategoryCustom::with('shop_category')->where('slug',$slug)->first();
 
         $list_product = ShopProduct::where('status',1)->where('shop_category_custom_id',$category->id)->orderBy('id','desc')->get();
 
-        if($category->type == 1){
+        if($category->shop_category->type == 1){
             return view('page.category.category_product_l1',
                 array(
                     'shop_info'=>$shop_info,
