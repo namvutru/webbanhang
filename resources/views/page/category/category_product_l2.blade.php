@@ -2684,7 +2684,7 @@ fbq('track', 'PageView');
                             <h5 class="item-title text-uppercase"><a
                                     href="{{route('thong-tin-san-pham',$product->slug)}}" title="{{$product->name}}">{{$product->name}}</a></h5>
                             <div class="item-price">
-                                <span class="old-price"><span class="price">{{$product->price}}</span></span>
+                                <span class="old-price"><span class="price">{{$product->old_price}}</span></span>
                                 <span class="regular-price"><span class="price">{{$product->price}}</span></span>
                             </div>
                         </div>
@@ -2734,7 +2734,7 @@ fbq('track', 'PageView');
                                     <div class="item-info">
                                         <h5 class="item-title text-uppercase"><a href="{{route('thong-tin-san-pham',$product_l2->slug)}}" title="{{$product_l2->name}}">{{$product_l2->name}}</a></h5>
                                         <div class="item-price">
-                                            <span class="old-price"><span class="price">{{$product_l2->price}}</span></span>
+                                            <span class="old-price"><span class="price">{{$product_l2->old_price}}</span></span>
                                             <span class="regular-price"><span class="price">{{$product_l2->price}}</span></span>
                                         </div>
                                     </div>
@@ -2767,7 +2767,7 @@ fbq('track', 'PageView');
                                     <div class="item-info">
                                         <h5 class="item-title text-uppercase"><a href="{{route('thong-tin-san-pham',$product_l3->slug)}}" title="{{$product_l3->name}}">{{$product_l3->name}}</a></h5>
                                         <div class="item-price">
-                                            <span class="old-price"><span class="price">{{$product_l3->price}}</span></span>
+                                            <span class="old-price"><span class="price">{{$product_l3->old_price}}</span></span>
                                             <span class="regular-price"><span class="price">{{$product_l3->price}}</span></span>
                                         </div>
                                     </div>

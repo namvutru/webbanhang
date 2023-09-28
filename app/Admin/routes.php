@@ -26,7 +26,7 @@ Route::group([
     $router->resource('shop-infos', ShopInfoController::class);
     $router->resource('shop-addresses', ShopAddressController::class);
     $router->resource('shop-policies', ShopPolicyController::class);
-
+    $router->resource('shop_contact', ShopContactController::class);
 
 
 

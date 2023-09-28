@@ -2715,10 +2715,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
 <div class="modal fade  font16" id="quick-buy" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form method="post" id="ss-form" class="form-quickbuy">
+            <form method="post" id="ss-form" action="{{route('dat-hang')}}" class="form-quickbuy">
+                @csrf
                 <div class="modal-header">
-                    <h4 class="row text-center title_form text-uppercase">{{$product->name}}
-                        </h4>
+                    <h4 class="row text-center title_form text-uppercase">{{$product->name}}</h4>
                 </div>
                 <div class="modal-body">
                     <table class="table bold">
@@ -2728,40 +2728,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
                             <th class="hidden-xs hidden-sm">Sản phẩm</th>
                             <th>Đơn giá</th>
                             <th>Số lượng</th>
-                            <th class="hidden-xs hidden-sm">Thành tiền</th>
                             <th>Hủy</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
                             <td class="hidden-xs hidden-sm">
-                                <img src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                     data-src="https://xedienvietthanh.com/wp-content/uploads/2023/04/ac-quy-xe-dien-yadea-60v-22ah.jpg"
+                                <img src="{{env('APP_URL').'/documents/website/'.$product->imagemain}}"
+                                     data-src="{{env('APP_URL').'/documents/website/'.$product->imagemain}}"
                                      class="lazyload thumb-prod wp-post-image" alt=""/></td>
-                            <td class="hidden-xs hidden-sm" id="qb_name">{{$product->name}}
-                            </td>
-                            <td id="qb_don_gia">{{$product->price}}</td>
+                            <td class="hidden-xs hidden-sm" id="qb_name">{{$product->name}}</td>
+                            <td id="qb_don_gia" >{{$product->price}}</td>
                             <td>
-                                <input type="hidden" value="{{$product->price}}" id ="don_gia">
                                 <input id="qb_quantity" type="number" step="1" min="1" max="" name="po_quantity"
-                                       value="1" size="4" pattern="[0-9]*" onkeyup="subtotal()" inputmode="numeric">
+                                       value="1" size="4" pattern="[0-9]*" inputmode="numeric">
+                                <input id="don_gia" type="hidden" value="{{$product->price}}">
                             </td>
-                            <td class="hidden-xs hidden-sm" id="qb_thanh_tien"></td>
                             <td><span class="del" data-dismiss="modal">Hủy</span></td>
                         </tr>
                         <tr>
                             <td colspan="6">
                                 <div class="infopromotion">
                                     <ul>
-                                        <li><i class="fa fa-gift"></i></li>
-                                        <li><i class="fa fa-gift"></i></li>
+                                        {{--                                        <li><i class="fa fa-gift"></i> Mũ bảo hiểm đạt chuẩn trị giá 250.000đ</li>--}}
+                                        {{--                                        <li><i class="fa fa-gift"></i> Áp dụng giao hàng toàn quốc</li>--}}
                                     </ul>
                                 </div>
                             </td>
                         </tr>
+
                         <tr>
-                            <td colspan="6" class="">Tổng tiền: <span class="cl_red"><span
-                                        id="tongtien">4.000.000</span> VNĐ</span></td>
+                            <td colspan="6" class="">Tổng tiền: <span class="cl_red"><span id="tongtien"></span> VNĐ</span></td>
                         </tr>
                         </tbody>
                     </table>
@@ -2813,7 +2810,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
                         <h4 class="row text-center title_form text-uppercase">Nhập thông tin đơn hàng</h4>
                         <div class="space20"></div>
                         <div class="form-group">
-                            <label for="contact-name" class="col-sm-2 control-label">Họ tên</label>
+                            <label for="name" class="col-sm-2 control-label">Họ tên</label>
                             <div class="col-sm-10">
                                 <input type="text" name="hoten" value="" class="ss-q-short form-control"
                                        id="entry_1918389590" dir="auto" aria-label="Họ tên  " title="">
@@ -2823,8 +2820,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
                         <div class="form-group">
                             <label for="contact-email" class="col-sm-2 control-label">Số điện thoại</label>
                             <div class="col-sm-10">
-                                <input type="number" name="sdt" value="" class="ss-q-short form-control"
-                                       id="entry_1974945640" dir="auto" aria-label="Điện thoại  Phải là một số nguyên."
+                                <input type="text" name="sdt" value="" class="ss-q-short form-control"
+                                       id="entry_1974945640" dir="auto" aria-label="Điện thoại  Phải là một dãy số."
                                        aria-required="true" required="" step="1"
                                        title="Nhập đúng số điện thoại của bạn">
                             </div>
@@ -2836,29 +2833,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
                                        id="entry_638975727" dir="auto" aria-label="Địa chỉ  " title="">
                             </div>
                         </div>
-                        <div class="form-group none">
-                            <label for="contact-email" class="col-sm-2 control-label">Email</label>
-                            <div class="col-sm-10">
-                                <input type="text" name="email" value="" class="ss-q-short form-control"
-                                       id="entry_589038675" dir="auto" aria-label="Email  Phải chứa @" pattern=".*@.*"
-                                       title="Ph&#7843;i ch&#7913;a @">
-                            </div>
-                        </div>
-                        <div class="form-group none">
-                            <label for="contact-email" class="col-sm-2 control-label">Yêu cầu</label>
-                            <div class="col-sm-10">
-                                <textarea name="yeucau" rows="2" cols="0" class="ss-q-long form-control"
-                                          id="entry_1997209857" dir="auto" aria-label="Nội dung yêu cầu  "></textarea>
-                            </div>
-                        </div>
+                        {{--                        <div class="form-group none">--}}
+                        {{--                            <label for="contact-email" class="col-sm-2 control-label">Email</label>--}}
+                        {{--                            <div class="col-sm-10">--}}
+                        {{--                                <input type="text" name="email" value="" class="ss-q-short form-control"--}}
+                        {{--                                       id="entry_589038675" dir="auto" aria-label="Email  Phải chứa @" pattern=".*@.*"--}}
+                        {{--                                       title="Ph&#7843;i ch&#7913;a @">--}}
+                        {{--                            </div>--}}
+                        {{--                        </div>--}}
+                        {{--                        <div class="form-group none">--}}
+                        {{--                            <label for="contact-email" class="col-sm-2 control-label">Yêu cầu</label>--}}
+                        {{--                            <div class="col-sm-10">--}}
+                        {{--                                <textarea name="yeucau" rows="2" cols="0" class="ss-q-long form-control"--}}
+                        {{--                                          id="entry_1997209857" dir="auto" aria-label="Nội dung yêu cầu  "></textarea>--}}
+                        {{--                            </div>--}}
+                        {{--                        </div>--}}
                         <div class="none">
-                            <input type="text" name="tensanpham" value="ẮC QUY XE ĐIỆN YADEA 60V &#8211; 22AH TTFAR"
+                            <input type="text" name="tensanpham" value="{{$product->name}}"
                                    class="ss-q-short form-control" id="entry_100017905" dir="auto"
                                    aria-label="Tên sản phẩm  " title="">
-                            <input type="text" name="dongia" value="4.000.000" class="ss-q-short form-control"
+                            <input type="text" name="dongia" value="" class="ss-q-short form-control"
                                    id="entry_1558387368" dir="auto" aria-label="Đơn giá hiện tại  " title="">
-                            <input type="text" name="soluong" value="" class="ss-q-short form-control"
-                                   id="entry_1568021111" dir="auto" aria-label="Số lượng đặt mua  " title="">
+                            <input type="text" name="anhsanpham" value="{{$product->imagemain}}" class="ss-q-short form-control"
+                                   id="entry_1558387368" dir="auto" aria-label="Đơn giá hiện tại  " title="">
+                            {{--                            <input type="text" name="soluong" value="" class="ss-q-short form-control"--}}
+                            {{--                                   id="entry_1568021111" dir="auto" aria-label="Số lượng đặt mua  " title="">--}}
                         </div>
                     </div>
                 </div>
@@ -2950,14 +2949,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
 
 
                     <span class="old-price"><span
-                            class="price product-price-old">{{$product->price}}</span>
+                            class="price product-price-old">{{$product->old_price}}</span>
                     </span> <!-- Giá gốc -->
 
                     <span class="special-price"><span
                             class="price product-price">{{$product->price}}</span> </span>
                     <!-- Giá Khuyến mại -->
 
-                    <span class="special-offers">-0 %</span>
+{{--                    <span class="special-offers">-0 %</span>--}}
 
 
                 </div>
@@ -3128,7 +3127,7 @@ window.onload = function() {
                                     <div class="item-info">
                                         <h5 class="item-title text-uppercase"><a href="{{route('thong-tin-san-pham',$product_l2->slug)}}" title="{{$product_l2->name}}">{{$product_l2->name}}</a></h5>
                                         <div class="item-price">
-                                            <span class="old-price"><span class="price">{{$product_l2->price}}</span></span>
+                                            <span class="old-price"><span class="price">{{$product_l2->old_price}}</span></span>
                                             <span class="regular-price"><span class="price">{{$product_l2->price}}</span></span>
                                         </div>
                                     </div>
@@ -3161,7 +3160,7 @@ window.onload = function() {
                                     <div class="item-info">
                                         <h5 class="item-title text-uppercase"><a href="{{route('thong-tin-san-pham',$product_l3->slug)}}" title="{{$product_l3->name}}">{{$product_l3->name}}</a></h5>
                                         <div class="item-price">
-                                            <span class="old-price"><span class="price">{{$product_l3->price}}</span></span>
+                                            <span class="old-price"><span class="price">{{$product_l3->old_price}}</span></span>
                                             <span class="regular-price"><span class="price">{{$product_l3->price}}</span></span>
                                         </div>
                                     </div>
@@ -4679,15 +4678,36 @@ window.onload = function() {
     }, !1)</script>
 <script data-no-minify="1" async
         src="https://xedienvietthanh.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.5/lazyload.min.js"></script>
-<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+<script type="text/javascript">
     window.onload = function() {
-      $( "#qb_quantity" ).blur(function() {
+        $( "#qb_quantity" ).blur(function() {
 
-          qualty = $('#qb_quantity').val();
+            qualty = $('#qb_quantity').val();
 
-          tongtien = qualty * 4000000 ;
 
-          $('#tongtien, #qb_thanh_tien').html(formatNumber(tongtien));
+
+            chuoi = $('#don_gia').val();
+
+
+
+            pattern = /\d+/g;
+
+            matches = chuoi.match(pattern);
+
+            soGhepLai = "";
+
+            for (var i = 0; i < matches.length; i++) {
+                soGhepLai += matches[i];
+            }
+
+
+            soNguyen = parseInt(soGhepLai, 10);
+
+            price = soNguyen;
+
+            tongtien = qualty * price ;
+
+            $('#tongtien, #qb_thanh_tien').html(formatNumber(tongtien));
 
         });
 

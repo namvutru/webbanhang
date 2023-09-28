@@ -22,3 +22,5 @@ Route::get('/danh-muc-bai-viet/{slug}', [Shop::class, 'category_news'])->name('d
 Route::get('/bai-viet/{slug}', [Shop::class, 'news'])->name('bai-viet');
 Route::get('/chinh-sach/{slug}', [Shop::class, 'policy'])->name('chinh-sach');
 Route::get('/tim-kiem',[Shop::class, 'search'])->name('tim-kiem');
+Route::post('/dat-hang',[Shop::class, 'postContact'])->name('dat-hang');
+

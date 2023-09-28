@@ -9,6 +9,7 @@ use App\Models\ShopAddress;
 use App\Models\ShopBanner;
 use App\Models\ShopCategory;
 use App\Models\ShopCategoryCustom;
+use App\Models\ShopContact;
 use App\Models\ShopImageProduct;
 use App\Models\ShopInfo;
 use App\Models\ShopPolicy;
@@ -499,6 +500,36 @@ class Shop extends Controller
 
     public function videos(){
 
+    }
+
+    public function postContact(Request $request)
+    {
+
+        //Send email
+
+            $data            = $request->all();
+//            $data['content'] = str_replace("\n", "<br>", $data['content']);
+            // ShopContact::insert(["name"=> $data["name"], "title"=> $data["title"], "content"=> $data["content"],"email"=> $data["email"],"phone"=> $data["phone"],
+            // "created_at" => \Carbon\Carbon::now()  ]);
+            // Mail::send('vendor.mail.contact', $data, function ($message) use ($data) {
+            //     $message->to($this->configs['site_email'], $this->configs['site_title']);
+            //     $message->replyTo($data['email'], $data['name']);
+            //     $message->subject($data['title']);
+            // });
+            $contact = new ShopContact;
+            $contact->name = $data["hoten"];
+            $contact->phone = $data["sdt"];
+            $contact->address = $data["diachi"];
+            $contact->nameproduct = $data["tensanpham"];
+            $contact->imageproduct = $data["anhsanpham"];
+            $contact->numberproduct = $data["po_quantity"];
+            $contact->created_at = \Carbon\Carbon::now() ;
+            $contact->updated_at = \Carbon\Carbon::now() ;
+            $contact->save();
+
+
+
+        return redirect()->back();
     }
 
 

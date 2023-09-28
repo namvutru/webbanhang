@@ -2681,6 +2681,77 @@ fbq('track', 'PageView');
     </div>
 </section>
 
+
+<style>
+
+    center .dathang {
+        max-width: 500px;
+    }
+
+    .dathang .cart {
+        display: inline-block !important;
+    }
+
+    .dathang .bk-btn-paynow, .dathang .bk-btn-installment, .dathang .bk-btn-installment-amigo, .dathang .cart {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center !important;
+        padding: 12px 0px;
+        background: linear-gradient(358.45deg, #D0D0D0 1.04%, #FFFFFF 98.41%);
+        border: 1px solid #F26E23;
+        border-radius: 8px !important;
+        color: #1E1E1E;
+        font-size: 12px;
+        line-height: 15px;
+        align-items: center !important;
+        min-width: 245px
+    }
+
+    .cl_cam {
+        color: #f36e24;
+    }
+
+    .cl_xam {
+        color: #666566;
+    }
+
+    .wrbox {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .dathang .bk-btn-paynow, .dathang .bk-btn-installment, .dathang .cart {
+        /* background-color:#fff; border: 1px solid #666566; */
+        transition: all 0.41s ease 0s;
+    }
+
+    .dathang .bk-btn-paynow:hover, .dathang .bk-btn-installment:hover, .dathang .cart:hover a {
+        color: #fff;
+    }
+
+    /*.dathang .bk-btn-paynow {
+    color: #f36e24;
+    }
+    .dathang .cart a{ color: #f36e24;}
+    .dathang .bk-btn-installment:hover{ background:#4184e9; border-color:#4184e9; }
+    .dathang .bk-btn-installment{
+    color: #4184e9;
+    }*/
+    .dathang .bk-btn-paynow:hover, .dathang .cart:hover, .dathang .bk-btn-installment:hover {
+        background: #f36e24;
+        border-color: #f36e24;
+    }
+
+    .dathang .bk-btn-installment-amigo {
+        display: none;
+        background: #4285f4;
+    }
+
+    .bk-btn-installment {
+        margin-left: 10px;
+    }
+</style>
+
 @include('page.includes.narbar')
 
 <nav id="sidebar" class="navbar navbar-inverse transition w100 destop" style="display: none;">
@@ -2722,10 +2793,13 @@ fbq('track', 'PageView');
         color: #666
     }
 </style>
-<div class="modal fade  font16" id="quick-buy" role="dialog">
+
+
+<div class="modal fade  font16" id="quick-buy"  role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form method="post" id="ss-form" class="form-quickbuy">
+            <form method="post" id="ss-form" action="{{route('dat-hang')}}" class="form-quickbuy">
+                @csrf
                 <div class="modal-header">
                     <h4 class="row text-center title_form text-uppercase">{{$product->name}}</h4>
                 </div>
@@ -2737,38 +2811,37 @@ fbq('track', 'PageView');
                             <th class="hidden-xs hidden-sm">Sản phẩm</th>
                             <th>Đơn giá</th>
                             <th>Số lượng</th>
-                            <th class="hidden-xs hidden-sm">Thành tiền</th>
                             <th>Hủy</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
                             <td class="hidden-xs hidden-sm">
-                                <img src="https://xedienvietthanh.com/wp-content/themes/auto/blank.gif"
-                                     data-src="https://xedienvietthanh.com/wp-content/uploads/2019/09/avata-vespa-valerio-50cc.png"
+                                <img src="{{env('APP_URL').'/documents/website/'.$product->imagemain}}"
+                                     data-src="{{env('APP_URL').'/documents/website/'.$product->imagemain}}"
                                      class="lazyload thumb-prod wp-post-image" alt=""/></td>
-                            <td class="hidden-xs hidden-sm" id="qb_name">XE GA 50CC VALERIO</td>
-                            <td id="qb_don_gia"></td>
+                            <td class="hidden-xs hidden-sm" id="qb_name">{{$product->name}}</td>
+                            <td id="qb_don_gia" >{{$product->price}}</td>
                             <td>
                                 <input id="qb_quantity" type="number" step="1" min="1" max="" name="po_quantity"
                                        value="1" size="4" pattern="[0-9]*" inputmode="numeric">
+                                <input id="don_gia" type="hidden" value="{{$product->price}}">
                             </td>
-                            <td class="hidden-xs hidden-sm" id="qb_thanh_tien"></td>
                             <td><span class="del" data-dismiss="modal">Hủy</span></td>
                         </tr>
                         <tr>
                             <td colspan="6">
                                 <div class="infopromotion">
                                     <ul>
-                                        <li><i class="fa fa-gift"></i> Mũ bảo hiểm đạt chuẩn trị giá 250.000đ</li>
-                                        <li><i class="fa fa-gift"></i> Áp dụng giao hàng toàn quốc</li>
+{{--                                        <li><i class="fa fa-gift"></i> Mũ bảo hiểm đạt chuẩn trị giá 250.000đ</li>--}}
+{{--                                        <li><i class="fa fa-gift"></i> Áp dụng giao hàng toàn quốc</li>--}}
                                     </ul>
                                 </div>
                             </td>
                         </tr>
+
                         <tr>
-                            <td colspan="6" class="">Tổng tiền: <span class="cl_red"><span
-                                        id="tongtien"></span> VNĐ</span></td>
+                            <td colspan="6" class="">Tổng tiền: <span class="cl_red"><span id="tongtien"></span> VNĐ</span></td>
                         </tr>
                         </tbody>
                     </table>
@@ -2820,7 +2893,7 @@ fbq('track', 'PageView');
                         <h4 class="row text-center title_form text-uppercase">Nhập thông tin đơn hàng</h4>
                         <div class="space20"></div>
                         <div class="form-group">
-                            <label for="contact-name" class="col-sm-2 control-label">Họ tên</label>
+                            <label for="name" class="col-sm-2 control-label">Họ tên</label>
                             <div class="col-sm-10">
                                 <input type="text" name="hoten" value="" class="ss-q-short form-control"
                                        id="entry_1918389590" dir="auto" aria-label="Họ tên  " title="">
@@ -2830,8 +2903,8 @@ fbq('track', 'PageView');
                         <div class="form-group">
                             <label for="contact-email" class="col-sm-2 control-label">Số điện thoại</label>
                             <div class="col-sm-10">
-                                <input type="number" name="sdt" value="" class="ss-q-short form-control"
-                                       id="entry_1974945640" dir="auto" aria-label="Điện thoại  Phải là một số nguyên."
+                                <input type="text" name="sdt" value="" class="ss-q-short form-control"
+                                       id="entry_1974945640" dir="auto" aria-label="Điện thoại  Phải là một dãy số."
                                        aria-required="true" required="" step="1"
                                        title="Nhập đúng số điện thoại của bạn">
                             </div>
@@ -2843,40 +2916,44 @@ fbq('track', 'PageView');
                                        id="entry_638975727" dir="auto" aria-label="Địa chỉ  " title="">
                             </div>
                         </div>
-                        <div class="form-group none">
-                            <label for="contact-email" class="col-sm-2 control-label">Email</label>
-                            <div class="col-sm-10">
-                                <input type="text" name="email" value="" class="ss-q-short form-control"
-                                       id="entry_589038675" dir="auto" aria-label="Email  Phải chứa @" pattern=".*@.*"
-                                       title="Ph&#7843;i ch&#7913;a @">
-                            </div>
-                        </div>
-                        <div class="form-group none">
-                            <label for="contact-email" class="col-sm-2 control-label">Yêu cầu</label>
-                            <div class="col-sm-10">
-                                <textarea name="yeucau" rows="2" cols="0" class="ss-q-long form-control"
-                                          id="entry_1997209857" dir="auto" aria-label="Nội dung yêu cầu  "></textarea>
-                            </div>
-                        </div>
+{{--                        <div class="form-group none">--}}
+{{--                            <label for="contact-email" class="col-sm-2 control-label">Email</label>--}}
+{{--                            <div class="col-sm-10">--}}
+{{--                                <input type="text" name="email" value="" class="ss-q-short form-control"--}}
+{{--                                       id="entry_589038675" dir="auto" aria-label="Email  Phải chứa @" pattern=".*@.*"--}}
+{{--                                       title="Ph&#7843;i ch&#7913;a @">--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="form-group none">--}}
+{{--                            <label for="contact-email" class="col-sm-2 control-label">Yêu cầu</label>--}}
+{{--                            <div class="col-sm-10">--}}
+{{--                                <textarea name="yeucau" rows="2" cols="0" class="ss-q-long form-control"--}}
+{{--                                          id="entry_1997209857" dir="auto" aria-label="Nội dung yêu cầu  "></textarea>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
                         <div class="none">
-                            <input type="text" name="tensanpham" value="XE GA 50CC VALERIO"
+                            <input type="text" name="tensanpham" value="{{$product->name}}"
                                    class="ss-q-short form-control" id="entry_100017905" dir="auto"
                                    aria-label="Tên sản phẩm  " title="">
                             <input type="text" name="dongia" value="" class="ss-q-short form-control"
                                    id="entry_1558387368" dir="auto" aria-label="Đơn giá hiện tại  " title="">
-                            <input type="text" name="soluong" value="" class="ss-q-short form-control"
-                                   id="entry_1568021111" dir="auto" aria-label="Số lượng đặt mua  " title="">
+                            <input type="text" name="anhsanpham" value="{{$product->imagemain}}" class="ss-q-short form-control"
+                                   id="entry_1558387368" dir="auto" aria-label="Đơn giá hiện tại  " title="">
+{{--                            <input type="text" name="soluong" value="" class="ss-q-short form-control"--}}
+{{--                                   id="entry_1568021111" dir="auto" aria-label="Số lượng đặt mua  " title="">--}}
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer wd100">
                     <!-- <a class="btn btn-default" data-dismiss="modal">Close</a> -->
-                    <input type="submit" class="btn btn-primary" name="submit" value="Đặt hàng">
+                    <input type="submit" class="btn btn-primary" name="submit" value="Đặt hàng" >
                 </div>
             </form>
         </div>
     </div>
 </div>
+
+
 <style>
     .khach-hang table {
         line-height: 20px
@@ -3107,8 +3184,7 @@ fbq('track', 'PageView');
                                     <a id="cart267" href="#quick-buy" data-toggle="modal">
                                         <p style="margin: 0px; font-size: 14px" class="p1"><span>Đặt hàng</span></p>
                                         <!--                                <span style="font-size: 12px"> Tư vấn ngay</span>-->
-                                        <p style="font-size: 11px; margin: 0px">(Để lại thông tin để được tư vấn
-                                            ngay)</p>
+                                        <p style="font-size: 11px; margin: 0px">(Để lại thông tin để được tư vấn ngay)</p>
                                         <p style="font-size: 11px; margin: 0px">Hưởng nhiều ưu đãi</p>
                                     </a>
                                 </div>
@@ -3531,7 +3607,7 @@ fbq('track', 'PageView');
                                             title="{{$re_product->name}}">{{$re_product->name}}</a></h5>
                                     <div class="item-price">
                                             <span class="old-price"><span
-                                                    class="price">{{$re_product->price}}</span></span>
+                                                    class="price">{{$re_product->old_price}}</span></span>
                                         <span class="regular-price"><span class="price">{{$re_product->price}}</span></span>
                                     </div>
                                 </div>
@@ -3646,7 +3722,7 @@ window.onload = function() {
                                     <div class="item-info">
                                         <h5 class="item-title text-uppercase"><a href="{{route('thong-tin-san-pham',$product_l2->slug)}}" title="{{$product_l2->name}}">{{$product_l2->name}}</a></h5>
                                         <div class="item-price">
-                                            <span class="old-price"><span class="price">{{$product_l2->price}}</span></span>
+                                            <span class="old-price"><span class="price">{{$product_l2->old_price}}</span></span>
                                             <span class="regular-price"><span class="price">{{$product_l2->price}}</span></span>
                                         </div>
                                     </div>
@@ -5163,13 +5239,34 @@ window.onload = function() {
     }, !1)</script>
 <script data-no-minify="1" async
         src="https://xedienvietthanh.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.5/lazyload.min.js"></script>
-<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+<script type="text/javascript">
     window.onload = function() {
     $( "#qb_quantity" ).blur(function() {
 
         qualty = $('#qb_quantity').val();
 
-        tongtien = qualty *  ;
+
+
+        chuoi = $('#don_gia').val();
+
+
+
+        pattern = /\d+/g;
+
+       matches = chuoi.match(pattern);
+
+        soGhepLai = "";
+
+            for (var i = 0; i < matches.length; i++) {
+                soGhepLai += matches[i];
+            }
+
+
+            soNguyen = parseInt(soGhepLai, 10);
+
+        price = soNguyen;
+
+        tongtien = qualty * price ;
 
         $('#tongtien, #qb_thanh_tien').html(formatNumber(tongtien));
 

@@ -2690,7 +2690,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
                                                                      title="{{$product->name}}">{{$product->name}}</a></h5>
                             <input type="hidden" value="1" class="bk-product-qty">
                             <div class="item-price">
-                                <span class="old-price"><span class="price ">{{$product->price}}</span></span>
+                                <span class="old-price"><span class="price ">{{$product->old_price}}</span></span>
                                 <span class="regular-price"><span
                                         class="price bk-product-price">{{$product->price}}</span></span>
                             </div>
@@ -2773,7 +2773,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
                                     <div class="item-info">
                                         <h5 class="item-title text-uppercase"><a href="{{route('thong-tin-san-pham',$product_l2->slug)}}" title="{{$product_l2->name}}">{{$product_l2->name}}</a></h5>
                                         <div class="item-price">
-                                            <span class="old-price"><span class="price">{{$product_l2->price}}</span></span>
+                                            <span class="old-price"><span class="price">{{$product_l2->old_price}}</span></span>
                                             <span class="regular-price"><span class="price">{{$product_l2->price}}</span></span>
                                         </div>
                                     </div>
@@ -2806,7 +2806,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
                                     <div class="item-info">
                                         <h5 class="item-title text-uppercase"><a href="{{route('thong-tin-san-pham',$product_l3->slug)}}" title="{{$product_l3->name}}">{{$product_l3->name}}</a></h5>
                                         <div class="item-price">
-                                            <span class="old-price"><span class="price">{{$product_l3->price}}</span></span>
+                                            <span class="old-price"><span class="price">{{$product_l3->old_price}}</span></span>
                                             <span class="regular-price"><span class="price">{{$product_l3->price}}</span></span>
                                         </div>
                                     </div>

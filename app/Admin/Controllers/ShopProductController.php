@@ -37,6 +37,7 @@ class ShopProductController extends AdminController
         $grid->column('slug', __('Slug'));
         $grid->column('imagemain', __('ImageMain'))->image();
         $grid->column('price', __('Price'));
+        $grid->column('old_price', __('Old Price'));
         $grid->column('color', __('Color'));
         $grid->column('type', __('Type'))->display(function ($type) {
             if($type == 1) return 'Xe điện';
@@ -109,6 +110,7 @@ class ShopProductController extends AdminController
             $form->text('name', __('Name'));
             $form->text('slug', __('Slug'));
             $form->text('price', __('Price'));
+            $form->text('old_price', __('Old Price'));
             $form->text('color', __('Color'));
             $form->select('type', __('Type'))->options($this->typeproduct);
             $form->select('hot', __('Hot'))->options($this->hot);
