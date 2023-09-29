@@ -539,7 +539,7 @@
                     </div>
                     <div class="modal-footer wd100">
                         <!-- <a class="btn btn-default" data-dismiss="modal">Close</a> -->
-                        <input type="submit" class="btn btn-primary" name="submit" value="Đặt hàng">
+                        <input type="submit" class="btn btn-primary" name="submit" id="dialog_submit" value="Đặt hàng">
                     </div>
                 </form>
             </div>
@@ -660,10 +660,5 @@
 
         }
     </script>
-
-
-
-
-
 
 @endsection

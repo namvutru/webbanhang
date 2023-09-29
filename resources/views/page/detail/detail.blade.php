@@ -1975,7 +1975,7 @@
     <!-- This site is optimized with the Yoast SEO plugin v19.11 - https://yoast.com/wordpress/plugins/seo/ -->
     <title>{{$shop_info->name}}</title>
     <link rel="stylesheet"
-          href="https://xedienvietthanh.com/wp-content/cache/min/1/6cf9e88bd4569045586feeecd42b1539.css" media="all"
+          href="https://xedienvietthanh.com/wp-content/cache/min/1/7b6c40c842192a3528da105e3f8af942.css" media="all"
           data-minify="1"/>
     <link rel="canonical" href="{{env('APP_URL')}}"/>
     <link rel="next" href="{{env('APP_URL')}}"/>

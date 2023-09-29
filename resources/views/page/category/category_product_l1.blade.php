@@ -2575,7 +2575,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
 
                         <div class="col-md-4 text-center">
 
-                            <a href="https://xedienvietthanh.com/mau-xe-dien-xe-may-50cc-ban-chay-nhat-cho-hoc-sinh/"
+                            <a href=""
                                title="{{$shop_info->slogan}}"><span>{{$shop_info->slogan}}</span></a>
 
                         </div>
@@ -2589,14 +2589,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
 
                         <div class="col-md-4 text-left" id="kinhnghiemhay">
 
-                            <span class="bold">Kinh nghiệm hay</span><br>
+                            <span class="bold"></span><br>
 
 
                             <ul class="slider-kinhnghiemhay">
 
 
                                 <li>
-                                    <a href="https://xedienvietthanh.com/mau-xe-dien-xe-may-50cc-ban-chay-nhat-cho-hoc-sinh/"
+                                    <a href=""
                                        title="{{$shop_info->slogan2}}"><span>{{$shop_info->slogan2}}</span></a>
                                 </li>
 

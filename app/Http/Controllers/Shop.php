@@ -74,6 +74,8 @@ class Shop extends Controller
                 'shop_videos'=>$shop_videos,
                 'shop_video_top'=>$shop_video_top,
 
+
+
             )
         );
 
@@ -529,7 +531,7 @@ class Shop extends Controller
 
 
 
-        return redirect()->back();
+        return redirect()->back()->with('message','gửi thông tin đơn hàng thành công');
     }
 
 

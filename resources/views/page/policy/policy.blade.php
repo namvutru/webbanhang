@@ -719,48 +719,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
 
 </header>
 
-<div class="table-service destop ipad-mini wrap-camket">
-    <div class="container service">
-        <div class="+row ">
-            <div class="no-padding col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <div class="service-th service-th-1">
-                    <a href="https://xedienvietthanh.com/cam-ket-chat-luong-hang-chinh-hang/" class="service-th-div">
-                        <div class="service-th-div-mask"><p>CAM KẾT CHẤT LƯỢNG<br />
-                                CHÍNH HÃNG</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="no-padding col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <div class="service-th service-th-2">
-                    <a href="https://xedienvietthanh.com/giao-hang-mien-phi-nhanh-uy-tin/" class="service-th-div">
-                        <div class="service-th-div-mask"><p>GIAO HÀNG MIỄN PHÍ<br />
-                                NHANH &#8211; UY TÍN</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="no-padding col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <div class="service-th service-th-3">
-                    <a href="https://xedienvietthanh.com/mua-hang-tra-gop-thu-tuc-nhanh-gon/" class="service-th-div">
-                        <div class="service-th-div-mask"><p>MUA HÀNG TRẢ GÓP<br />
-                                THỦ TỤC NHANH GỌN</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="no-padding col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <div class="service-th service-th-4">
-                    <a href="https://xedienvietthanh.com/sua-chua/" class="service-th-div">
-                        <div class="service-th-div-mask"><p>SỬA CHỮA TẬN NƠI<br />
-                                CỨU HỘ KHẨN CẤP</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div><div class="main_content">
+@include('page.includes.narbar')
+
+<div class="main_content">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-8 left-panel">
