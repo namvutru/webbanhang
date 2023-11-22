@@ -2696,32 +2696,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
                                             class="price bk-product-price">{{$product->price}}</span></span>
                                 </div>
                             </div>
-                            <div class="item-detail">
-                                <!-- case: choose gift on product -->
-                                <div class="item-offers">
-                                    - Quà tặng trị giá tới 500K <br/> - Áp dụng giao hàng toàn quốc<br/>
-                                </div>
+{{--                            <div class="item-detail">--}}
+{{--                                <!-- case: choose gift on product -->--}}
+{{--                                <div class="item-offers">--}}
+{{--                                    - Quà tặng trị giá tới 500K <br/> - Áp dụng giao hàng toàn quốc<br/>--}}
+{{--                                </div>--}}
 
-                                <!-- case: choose gift on parent taxonomy -->
+{{--                                <!-- case: choose gift on parent taxonomy -->--}}
 
 
-                                <div class="item-link">
-                                    <button data-name="{{$product->name}}"
-                                            data-image="{{env('APP_URL') . '/documents/website/'.$product->imagemain}}"
-                                            data-price="{{$product->price}}"
-                                            class="btn btn-success bk-btn-paynow-list" id="" type="button"
-                                            style="width: 122px; height: 25px; margin-top: -3px; font-size: 11px;">MUA NGAY
-                                    </button>
-                                    <button data-name="{{$product->name}}"
-                                            data-image="{{env('APP_URL') . '/documents/website/'.$product->imagemain}}"
-                                            data-price="{{$product->price}}"
-                                            class="btn bk-btn-installment-list" id="" type="button"
-                                            style="width: 122px; height: 25px; margin-top: 5px; font-size: 11px; margin-left: 0px">
-                                        MUA
-                                        TRẢ GÓP
-                                    </button>
-                                </div>
-                            </div>
+{{--                                <div class="item-link">--}}
+{{--                                    <button data-name="{{$product->name}}"--}}
+{{--                                            data-image="{{env('APP_URL') . '/documents/website/'.$product->imagemain}}"--}}
+{{--                                            data-price="{{$product->price}}"--}}
+{{--                                            class="btn btn-success bk-btn-paynow-list" id="" type="button"--}}
+{{--                                            style="width: 122px; height: 25px; margin-top: -3px; font-size: 11px;">MUA NGAY--}}
+{{--                                    </button>--}}
+{{--                                    <button data-name="{{$product->name}}"--}}
+{{--                                            data-image="{{env('APP_URL') . '/documents/website/'.$product->imagemain}}"--}}
+{{--                                            data-price="{{$product->price}}"--}}
+{{--                                            class="btn bk-btn-installment-list" id="" type="button"--}}
+{{--                                            style="width: 122px; height: 25px; margin-top: 5px; font-size: 11px; margin-left: 0px">--}}
+{{--                                        MUA--}}
+{{--                                        TRẢ GÓP--}}
+{{--                                    </button>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
                         </div>
                     </div>
                 </div>
@@ -4397,6 +4397,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
    }
 </script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<script type="text/javascript" src="{{asset('wp-content/themes/auto/owl-carousel/owl.carousel.min.js')}}"></script>
+
+<script type="text/javascript" src="{{asset('wp-content/themes/auto/bxslider/jquery.bxslider.min.js')}}"></script>
+
+<script type="text/javascript" data-minify="1" src="{{asset('wp-content/cache/min/1/wp-content/themes/auto/fotorama/fotorama.js?ver=1694882061')}}" ></script>
+<script type="text/javascript" data-minify="1" src="{{asset('wp-content/cache/min/1/wp-content/themes/auto/js/detail-prod.js?ver=1694882061')}}" ></script>
+
+<link rel="stylesheet" href="{{asset('wp-content/cache/min/1/7b6c40c842192a3528da105e3f8af942.css')}}"
+      media="all" data-minify="1" />
 
 <!-- BK MODAL -->
 <!-- <div id='bk-modal'></div> -->

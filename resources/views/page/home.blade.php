@@ -3,6 +3,8 @@
 @section('content')
 
 
+
+
     <section id="mainSlide" class="">
 
 
@@ -12,10 +14,10 @@
                 @foreach($banner_trangchu as $key => $ban_trachu)
                     @if($key == 0)
                         <div class="item active" style="padding: 0 !important;">
-                            <a href="#" title="{{$ban_trachu->title}}">
+                            <a href="{{$ban_trachu->link}}" title="{{$ban_trachu->title}}">
                                 <img class="img-full" width="1540" height="407"
                                      src="{{env('APP_URL') . '/documents/website/'.$ban_trachu->image}}"
-                                     alt=" {{$ban_trachu->title}}">
+                                     alt=" {{$ban_trachu->title}}" >
                                 {{--                                 data-lazy-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/xe-dien-xe-may-50cc-khuyen-mai-gia-tot-PC-scaled.jpg">--}}
                                 {{--                            <noscript><img class="img-full" width="1540" height="407"--}}
                                 {{--                                           src="https://xedienvietthanh.com/wp-content/uploads/2020/04/xe-dien-xe-may-50cc-khuyen-mai-gia-tot-PC-scaled.jpg"--}}
@@ -25,8 +27,9 @@
 
                     @else
                         <div class="item" style="padding: 0 !important;">
-                            <a href="#" title="{{$ban_trachu->title}}">
+                            <a href="{{$ban_trachu->link}}" title="{{$ban_trachu->title}}">
                                 <img class="img-full" width="1540" height="407"
+
                                      src="{{env('APP_URL') . '/documents/website/'.$ban_trachu->image}}"
                                      alt=" {{$ban_trachu->title}}">
                                 {{--                                 data-lazy-src="https://xedienvietthanh.com/wp-content/uploads/2020/04/xe-dien-xe-may-50cc-khuyen-mai-gia-tot-PC-scaled.jpg">--}}
@@ -626,39 +629,37 @@
     </script>
 
     <script type="text/javascript">
-        window.onload = function() {
-            $( "#qb_quantity" ).blur(function() {
-
-                qualty = $('#qb_quantity').val();
+        const quantityInput = document.getElementById("qb_quantity");
+        quantityInput.addEventListener("change", function() {
 
 
-
-                chuoi = $('#don_gia').val();
+            qualty = $('#qb_quantity').val();
 
 
 
-                pattern = /\d+/g;
-
-                matches = chuoi.match(pattern);
-
-                soGhepLai = "";
-
-                for (var i = 0; i < matches.length; i++) {
-                    soGhepLai += matches[i];
-                }
+            chuoi = $('#don_gia').val();
 
 
-                soNguyen = parseInt(soGhepLai, 10);
 
-                price = soNguyen;
+            pattern = /\d+/g;
 
-                tongtien = qualty * price ;
+            matches = chuoi.match(pattern);
 
-                $('#tongtien, #qb_thanh_tien').html(formatNumber(tongtien));
+            soGhepLai = "";
 
-            });
+            for (var i = 0; i < matches.length; i++) {
+                soGhepLai += matches[i];
+            }
 
-        }
+
+            soNguyen = parseInt(soGhepLai, 10);
+
+            price = soNguyen;
+
+            tongtien = qualty * price ;
+
+            $('#tongtien, #qb_thanh_tien').html(formatNumber(tongtien));
+        });
     </script>
 
 @endsection

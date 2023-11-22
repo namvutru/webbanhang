@@ -530,8 +530,45 @@ class Shop extends Controller
             $contact->save();
 
 
+        $shop_info = ShopInfo::first();
 
-        return redirect()->back()->with('message','gửi thông tin đơn hàng thành công');
+        $shop_policy = ShopPolicy::where('status',1)->get();
+        $shop_address = ShopAddress::where('status',1)->get();
+
+        $banner_duoiphai = ShopBanner::where('status',1)->where('typebanner',4)->orderBy('id', 'desc')->orderBy('sort','desc')->first();
+
+        $shop_categorys = ShopCategory::where('status',1)->orderBy('id','asc')->get();
+        $shop_category_custom =  ShopCategoryCustom::where('status',1)->get();
+        $cms_category = CmsCategory::where('status',1)->get();
+
+        $list_products_l2= ShopProduct::where('status',1)->where('type',2)->orderBy('id', 'desc')->take(10)->get();
+        $list_products_l3= ShopProduct::where('status',1)->where('type',3)->orderBy('id', 'desc')->take(10)->get();
+
+
+
+
+
+        return view('page.thanks.thanks',
+
+        array(
+            'shop_info'=>$shop_info,
+
+            'shop_policy'=>$shop_policy,
+            'shop_address'=>$shop_address,
+
+            'banner_duoiphai'=>$banner_duoiphai,
+
+            'shop_categorys' => $shop_categorys,
+            'shop_category_custom' => $shop_category_custom,
+            'cms_category'=>$cms_category,
+
+            'list_products_l2'=> $list_products_l2,
+            'list_products_l3'=> $list_products_l3,
+
+
+
+        )
+        );
     }
 
 

@@ -2588,7 +2588,7 @@ fbq('track', 'PageView');
 
                         <div class="col-md-4 text-left" id="kinhnghiemhay">
 
-                            <span class="bold"></span><br>
+
 
 
                             <ul class="slider-kinhnghiemhay">
@@ -4362,6 +4362,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
 </script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="{{asset('wp-content/themes/auto/owl-carousel/owl.carousel.min.js')}}"></script>
+
+<script type="text/javascript" src="{{asset('wp-content/themes/auto/bxslider/jquery.bxslider.min.js')}}"></script>
+
+<script type="text/javascript" data-minify="1" src="{{asset('wp-content/cache/min/1/wp-content/themes/auto/fotorama/fotorama.js?ver=1694882061')}}" ></script>
+<script type="text/javascript" data-minify="1" src="{{asset('wp-content/cache/min/1/wp-content/themes/auto/js/detail-prod.js?ver=1694882061')}}" ></script>
+
+<link rel="stylesheet" href="{{asset('wp-content/cache/min/1/7b6c40c842192a3528da105e3f8af942.css')}}"
+      media="all" data-minify="1" />
 
 <!-- BK MODAL -->
 <!-- <div id='bk-modal'></div> -->

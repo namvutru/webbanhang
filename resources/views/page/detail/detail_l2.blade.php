@@ -4589,6 +4589,17 @@ window.onload = function() {
         }
 </script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<script type="text/javascript" src="{{asset('wp-content/themes/auto/owl-carousel/owl.carousel.min.js')}}"></script>
+
+<script type="text/javascript" src="{{asset('wp-content/themes/auto/bxslider/jquery.bxslider.min.js')}}"></script>
+
+<script type="text/javascript" data-minify="1" src="{{asset('wp-content/cache/min/1/wp-content/themes/auto/fotorama/fotorama.js?ver=1694882061')}}" ></script>
+<script type="text/javascript" data-minify="1" src="{{asset('wp-content/cache/min/1/wp-content/themes/auto/js/detail-prod.js?ver=1694882061')}}" ></script>
+
+<link rel="stylesheet" href="{{asset('wp-content/cache/min/1/7b6c40c842192a3528da105e3f8af942.css')}}"
+      media="all" data-minify="1" />
+
 <script type='text/javascript' src='https://xedienvietthanh.com/wp-content/plugins/ccodon-optimizer/lab.min.js'
         id='ccodon-lab-js'></script>
 <script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript'
@@ -4670,39 +4681,37 @@ window.onload = function() {
 
 
 <script type="text/javascript">
-    window.onload = function() {
-        $( "#qb_quantity" ).blur(function() {
-
-            qualty = $('#qb_quantity').val();
+    const quantityInput = document.getElementById("qb_quantity");
+    quantityInput.addEventListener("change", function() {
 
 
-
-            chuoi = $('#don_gia').val();
+        qualty = $('#qb_quantity').val();
 
 
 
-            pattern = /\d+/g;
-
-            matches = chuoi.match(pattern);
-
-            soGhepLai = "";
-
-            for (var i = 0; i < matches.length; i++) {
-                soGhepLai += matches[i];
-            }
+        chuoi = $('#don_gia').val();
 
 
-            soNguyen = parseInt(soGhepLai, 10);
 
-            price = soNguyen;
+        pattern = /\d+/g;
 
-            tongtien = qualty * price ;
+        matches = chuoi.match(pattern);
 
-            $('#tongtien, #qb_thanh_tien').html(formatNumber(tongtien));
+        soGhepLai = "";
 
-        });
+        for (var i = 0; i < matches.length; i++) {
+            soGhepLai += matches[i];
+        }
 
-    }
+
+        soNguyen = parseInt(soGhepLai, 10);
+
+        price = soNguyen;
+
+        tongtien = qualty * price ;
+
+        $('#tongtien, #qb_thanh_tien').html(formatNumber(tongtien));
+    });
 </script>
 
 <!-- Google Tag Manager 23-4-2020 -->

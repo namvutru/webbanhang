@@ -6,6 +6,25 @@
 
 
     <meta charset="UTF-8">
+
+    <script src="jquery.min.js"></script>
+    <script src="owl.carousel.min.js"></script>
+
+    <script type="text/javascript" src="{{asset('wp-content/themes/auto/owl-carousel/owl.carousel.min.js')}}"></script>
+
+    <script type="text/javascript" src="{{asset('wp-content/themes/auto/bxslider/jquery.bxslider.min.js')}}"></script>
+
+    <script type="text/javascript" data-minify="1" src="{{asset('wp-content/cache/min/1/wp-content/themes/auto/fotorama/fotorama.js?ver=1694882061')}}" ></script>
+    <script type="text/javascript" data-minify="1" src="{{asset('wp-content/cache/min/1/wp-content/themes/auto/js/detail-prod.js?ver=1694882061')}}" ></script>
+
+    <link rel="stylesheet" href="{{asset('wp-content/cache/min/1/7b6c40c842192a3528da105e3f8af942.css')}}"
+          media="all" data-minify="1" />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
      <script>if (navigator.userAgent.match(/MSIE|Internet Explorer/i) || navigator.userAgent.match(/Trident\/7\..*?rv:11/i)) {
             var href = document.location.href;
             if (!href.match(/[?&]nowprocket/)) {
@@ -431,7 +450,7 @@
         }
 
         #myCarousel img {
-            max-height: 410px;
+            max-height: 600px;
             margin: 0 auto;
             max-width: 1540px
         }
@@ -4124,7 +4143,10 @@ fbq('track', 'PageView');
 
 
 </style>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
+
+
 
 
 <script type="rocketlazyloadscript" data-minify="1"

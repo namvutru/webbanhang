@@ -66,7 +66,7 @@ class ShopAddressController extends AdminController
         $form->text('address', __('Address'));
         $form->switch('status',__('Status'));
         $form->text('linkmap', __('Linkmap'));
-        $form->mobile('phone', __('Phone'));
+        $form->text('phone', __('Phone'));
 
         return $form;
     }

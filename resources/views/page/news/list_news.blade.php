@@ -2695,7 +2695,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
                                         href="{{env('APP_URL').'/bai-viet/'.$cms_con->slug}}"></fb:comments-count>
                                     Comments<!-- 36 Comments --></a></div>
                         </div>
-                        <div class="intro">{{$cms_con->summary_content}}
+                        <div class="intro">
+                            {{$cms_con->summary_content}}
                         </div>
                         <div class="clearfix">
                             <a class="link"
@@ -4255,6 +4256,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
         }
 </script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="{{asset('wp-content/themes/auto/owl-carousel/owl.carousel.min.js')}}"></script>
+
+<script type="text/javascript" src="{{asset('wp-content/themes/auto/bxslider/jquery.bxslider.min.js')}}"></script>
+
+<script type="text/javascript" data-minify="1" src="{{asset('wp-content/cache/min/1/wp-content/themes/auto/fotorama/fotorama.js?ver=1694882061')}}" ></script>
+<script type="text/javascript" data-minify="1" src="{{asset('wp-content/cache/min/1/wp-content/themes/auto/js/detail-prod.js?ver=1694882061')}}" ></script>
+
+<link rel="stylesheet" href="{{asset('wp-content/cache/min/1/7b6c40c842192a3528da105e3f8af942.css')}}"
+      media="all" data-minify="1" />
 <script type='text/javascript' src='https://xedienvietthanh.com/wp-content/plugins/ccodon-optimizer/lab.min.js'
         id='ccodon-lab-js'></script>
 <script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript'

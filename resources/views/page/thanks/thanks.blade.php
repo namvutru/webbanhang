@@ -719,56 +719,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://ww
 
 </header>
 
-@include('page.includes.narbar')
-
-<div class="main_content">
+<section class="thank-wrap">
     <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 left-panel">
-                <h1 class="tit_content full">{{$policy->title}}</h1>
-                <div class="clearfix marb10"></div>
-{{--                <span class="author nhaxuatban left" style="margin-left: 0;"><i style="margin-left: 0;" class="fa fa-user"></i><a href="https://xedienvietthanh.com/author/sonnguyen/" title="Đăng bởi Dory" rel="author">Dory</a></span>--}}
-{{--                <span class="nhaxuatban left"><i class="fa fa-calendar"></i>27/02/2017</span>--}}
-                <div class="clearfix mar10"></div>
-                <div class="the_content">
+        <div class="thank-body text-center bg-default">
+            <div class="row">
+                <div class="col-lg-offset-1 col-lg-10 col-md-12 " style="margin-top: 50px;">
+                    <h1 class="font20">
+                        <i class="fa fa-check-circle" style="color: #2db300; font-size: 38px;" aria-hidden="true"></i><br> <span class="inline-block text-middle">Cảm ơn bạn đã lựa chọn <br> {{$shop_info->name}}</span>
+                    </h1>
+                    <br>
+                    <div class="caption z_16 lh24">
+                        <p></p>
+                        <p>Chúng tôi đã nhận được đơn hàng!</p>
+                        <br>
+                        <p><strong>Bộ phận chăm sóc khách hàng sẽ liên hệ với bạn!</strong></p>
 
-                    {!! $policy->description !!}
+                        <i>Nếu không nhận được phản hồi, vui lòng kiểm tra lại thông tin đã gửi hoặc gọi trực tiếp tới Hotline.</i>
+                    </div>
                 </div>
-                <div class="pull-left">
-
-                </div>
-            </div>  <!-- /.left-panel -->
-
-            <div class="col-xs-12 col-md-4 col-lg-4 boc-sidebar" id="sidebar-right">
-                <div id="list_post_thumb_id-2" class="LPT box-sidebar">
-                    <div class="tit_box_tin"> khác</div>
-                    <ul class="list-unstyled full">
-
-                        @foreach($related_news as $key =>$re_news)
-
-                        <li class="full marb10">
-                            <a href="{{route('bai-viet',$re_news->slug)}}" title="{{$re_news->title}}">
-                                <img src="{{env('APP_URL').'/documents/website/'.$re_news->image}}" data-src="{{env('APP_URL').'/documents/website/'.$re_news->image}}" class="lazyload img-thumb lazyload wp-post-image" alt="" loading="lazy" />		<span>Khuyến mãi cho học sinh &#8211; Chào năm học mới 2023</span>
-
-                            </a></li>
-                        @endforeach
-
-
-                    </ul>
-                    <div class="full space10"></div>
-                    <a href="{{route('danh-sach-bai-viet')}}" class="btn_xemthem full" title="Xem thêm  khác">Xem thêm</a>
-                </div>	<div class="ads_467_466" id="text-3">
-                    <a href="{{$banner_duoiphai->linkbanner}}" title="">
-                        <img class="img-responsive lazyload lazy"
-                             src="{{env('APP_URL').'/documents/website/'.$banner_duoiphai->image}}"
-                             data-src="{{env('APP_URL').'/documents/website/'.$banner_duoiphai->image}}"
-                             alt=""/>
-                    </a>
-                </div>
-            </div><!-- end #sidebar -->
+            </div>
         </div>
     </div>
-</div><!-- main-content -->
+
+</section>
+
+<!-- main-content -->
 <style>
     .overhiden{overflow: hidden}
 </style>

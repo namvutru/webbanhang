@@ -87,7 +87,7 @@ class ShopContactController extends Controller
             $grid->disableExport();
             $grid->disableCreateButton();
             $grid->disableRowSelector();
-            $grid->disableActions();
+
         });
     }
 

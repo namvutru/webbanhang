@@ -2820,7 +2820,15 @@ fbq('track', 'PageView');
                             <td id="qb_don_gia" >{{$product->price}}</td>
                             <td>
                                 <input id="qb_quantity" type="number" step="1" min="1" max="" name="po_quantity"
-                                       value="1" size="4" pattern="[0-9]*" inputmode="numeric">
+                                       value="1" size="4" pattern="[0-9]*" inputmode="numeric" >
+
+
+
+
+
+
+
+
                                 <input id="don_gia" type="hidden" value="{{$product->price}}">
                             </td>
                             <td><span class="del" data-dismiss="modal">Hủy</span></td>
@@ -5120,6 +5128,16 @@ window.onload = function() {
     }
 </script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="{{asset('wp-content/themes/auto/owl-carousel/owl.carousel.min.js')}}"></script>
+
+<script type="text/javascript" src="{{asset('wp-content/themes/auto/bxslider/jquery.bxslider.min.js')}}"></script>
+
+<script type="text/javascript" data-minify="1" src="{{asset('wp-content/cache/min/1/wp-content/themes/auto/fotorama/fotorama.js?ver=1694882061')}}" ></script>
+<script type="text/javascript" data-minify="1" src="{{asset('wp-content/cache/min/1/wp-content/themes/auto/js/detail-prod.js?ver=1694882061')}}" ></script>
+
+<link rel="stylesheet" href="{{asset('wp-content/cache/min/1/7b6c40c842192a3528da105e3f8af942.css')}}"
+      media="all" data-minify="1" />
+
 <script type='text/javascript' src='https://xedienvietthanh.com/wp-content/plugins/ccodon-optimizer/lab.min.js'
         id='ccodon-lab-js'></script>
 <script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript'
@@ -5199,22 +5217,23 @@ window.onload = function() {
 <script data-no-minify="1" async
         src="https://xedienvietthanh.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.5/lazyload.min.js"></script>
 <script type="text/javascript">
-    window.onload = function() {
-    $( "#qb_quantity" ).blur(function() {
-
-        qualty = $('#qb_quantity').val();
+    const quantityInput = document.getElementById("qb_quantity");
+    quantityInput.addEventListener("change", function() {
 
 
-
-        chuoi = $('#don_gia').val();
+            qualty = $('#qb_quantity').val();
 
 
 
-        pattern = /\d+/g;
+            chuoi = $('#don_gia').val();
 
-       matches = chuoi.match(pattern);
 
-        soGhepLai = "";
+
+            pattern = /\d+/g;
+
+            matches = chuoi.match(pattern);
+
+            soGhepLai = "";
 
             for (var i = 0; i < matches.length; i++) {
                 soGhepLai += matches[i];
@@ -5223,15 +5242,15 @@ window.onload = function() {
 
             soNguyen = parseInt(soGhepLai, 10);
 
-        price = soNguyen;
+            price = soNguyen;
 
-        tongtien = qualty * price ;
+            tongtien = qualty * price ;
 
-        $('#tongtien, #qb_thanh_tien').html(formatNumber(tongtien));
+            $('#tongtien, #qb_thanh_tien').html(formatNumber(tongtien));
+    });
 
-      });
 
-  }
+
 </script>
 
 <!-- Google Tag Manager 23-4-2020 -->
